@@ -1,0 +1,33 @@
+{
+  "name": "Intelligent classification",
+  "author": "NightRainMilkyWay",
+  "version": "V1",
+  "Classify": "/storage/emulated/0/Classify",
+  "ThirdParty": {
+    "Download": "/storage/emulated/0/Download"
+  },
+  "DefaultFolder": {
+    "Compressed": ["zip","rar","7z","tar","gz","bz2","xz","z","iso"],
+    "Programs": ["exe", "msi", "bat", "sh"],
+    "Video": ["mp4", "mkv", "avi", "mov", "wmv"],
+    "Document": ["doc", "docx", "pdf", "txt", "xls", "xlsx", "ppt", "pptx"],
+    "Apk": ["apk","apks"],
+    "Music": ["mp3", "wav", "flac", "aac"],
+    "Picture": ["jpg", "jpeg", "png", "gif", "bmp"],
+    "Other": ["null"]
+  },
+  "EmptyFolder": {
+    "default": "/storage/emulated/0"
+  },
+  "IgnorFoldeer": {
+    "default1": "/storage/emulated/0/Android",
+    "default2": "/storage/emulated/0/Classify"
+    
+  },
+  "ForceDelete": {
+    "default1": "/storage/emulated/0/MIUI",
+    "default2": "/storage/emulated/0/.xlDownload",
+    "default3": "/storage/emulated/0/Tencent"
+    
+  }
+}
