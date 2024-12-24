@@ -13,8 +13,8 @@ export default hopeTheme({
 
   iconAssets: "fontawesome",
 
-  logo: "/.vuepress/public/刻晴Q.png",
-  favicon: "/.vuepress/public/刻晴Q.png",
+  logo: "https://intelligent.nightrainmilkyway.cn/刻晴Q.png",
+  favicon: "https://intelligent.nightrainmilkyway.cn/刻晴Q.png",
 
   repo: "NightRainMilkyWay/Intelligent_docs",
 

@@ -2,7 +2,7 @@
 home: true
 icon: home
 title: 项目主页
-heroImage: /.vuepress/public/刻晴.png
+heroImage: https://intelligent.nightrainmilkyway.cn/刻晴.png
 heroText: Intelligent
 tagline: 憧憬是距离理解最遥远的感情.
 actions:
