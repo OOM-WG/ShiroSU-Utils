@@ -13,12 +13,9 @@ ui_print "完全支持定义配置文"
 ui_print "支持第三方文件重定向(刨坑中，后面回咕咕)"
 ui_print "删除某些空文件夹以及文件(支持白名单...)"
 
-//判断是否存在文件夹
-if [ ! -d "/storage/emulated/0/Android/Intelligent" ]; then
-  mkdir -p /storage/emulated/0/Android/Intelligent
+#判断是否存在文件夹
 
-fi
-
+mkdir -p /storage/emulated/0/Android/Intelligent
 cp -r $MODPATH/config.json /storage/emulated/0/Android/Intelligent
 rm -rf $MODPATH/config.json
 
