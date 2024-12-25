@@ -2,6 +2,9 @@
 
 ## ✨什么是Intelligen
 
+
+<img src="https://intelligent.nightrainmilkyway.cn/刻晴.png" style="width: 96px;" alt="logo">
+
 * ## [文档地址](https://intelligent.nightrainmilkyway.cn)
 
 * ## [自定义配置文件](https://intelligent.nightrainmilkyway.cn/demo/)
