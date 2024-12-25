@@ -16,7 +16,7 @@ export default hopeTheme({
   logo: "https://intelligent.nightrainmilkyway.cn/刻晴Q.png",
   favicon: "https://intelligent.nightrainmilkyway.cn/刻晴Q.png",
 
-  repo: "NightRainMilkyWay/Intelligent_docs",
+  repo: "NightRainMilkyWay/Intelligent",
 
   docsDir: "src",
 
