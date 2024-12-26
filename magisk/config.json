@@ -24,7 +24,9 @@
   },
   "IgnorFoldeer": {
     "default1": "/storage/emulated/0/Android",
-    "default2": "/storage/emulated/0/Classify"
+    "default2": "/storage/emulated/0/Classify",
+    "Telegram": "/storage/emulated/0/Download/Telegram",
+    "QQ": "/storage/emulated/0/Download/QQ"
   },
   "ForceDelete": {
     "default1": "/storage/emulated/0/MIUI",
