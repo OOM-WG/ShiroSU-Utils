@@ -1,13 +1,10 @@
 {
   "name": "Intelligent classification",
-  "author": "NightRainMilkyWay",
+  "author": "YumeYuka",
   "version": "V1",
   "Classify": "/storage/emulated/0/Classify",
   "ThirdParty": {
-    "Download": "/storage/emulated/0/Download",
-    "Telegram": "/storage/emulated/0/Download/Telegram",
-    "QQ": "/storage/emulated/0/Download/QQ",
-    "QQfile_recv": "/storage/emulated/0/Android/data/com.tencent.mobileqq/Tencent/QQfile_recv"
+    "Download": "/storage/emulated/0/Download"
   },
   "DefaultFolder": {
     "Compressed": ["zip", "rar", "7z", "tar", "gz", "bz2", "xz", "z", "iso"],
@@ -24,9 +21,7 @@
   },
   "IgnorFoldeer": {
     "default1": "/storage/emulated/0/Android",
-    "default2": "/storage/emulated/0/Classify",
-    "Telegram": "/storage/emulated/0/Download/Telegram",
-    "QQ": "/storage/emulated/0/Download/QQ"
+    "default2": "/storage/emulated/0/Classify"
   },
   "ForceDelete": {
     "default1": "/storage/emulated/0/MIUI",

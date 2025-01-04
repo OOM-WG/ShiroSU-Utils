@@ -10,4 +10,4 @@
 * 支持自定义配置文件，随心所欲地分类文件
 
 ## 协议
-### [Apache License 2.0](https://github.com/NightRainMilkyWay/intelligent/blob/master/LICENSE)
+### [Apache License 2.0](https://github.com/YumeYuka/intelligent/blob/master/LICENSE)
