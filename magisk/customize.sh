@@ -24,4 +24,4 @@ rm -rf $MODPATH/config.json
 
 ui_print ""
 ui_print ""
-ui_print "Github: https://github.com/NightRainMilkyWay/intelligent"
+ui_print "Github: https://github.com/YumeYuka/intelligent"

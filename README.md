@@ -9,7 +9,9 @@
 
 * ## [自定义配置文件](https://intelligent.nightrainmilkyway.cn/demo/)
 
-`Intelligen` 是一个由C++编写的`magisk/Kernelsu`模块，智能分类管理文件，让你的设备文件夹不再混乱。你可以自定义文件夹的分类规则，使设备文件夹更加整洁。
+`Intelligen` 是一个由C++编写的`magisk/Kernelsu`模块，
+
+`智能分类管理文件，重定向第三方文件，干掉lg文件夹`
 
 * 完全支持`magisk`和`Kernelsu`，支持`Android 8.0`以上的设备
 * 强制去除空文件夹及空文件
