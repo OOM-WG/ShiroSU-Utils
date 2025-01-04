@@ -68,7 +68,7 @@ category:
     "Music": ["mp3", "wav", "flac", "aac"],
     "Picture": ["jpg", "jpeg", "png", "gif", "bmp"],
     "Other": ["null"],
-    "test": ["nell"]
+    "test": ["null"]
       ...
   },
 
