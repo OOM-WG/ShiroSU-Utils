@@ -1,4 +1,4 @@
-MODDIR=${0%/*}
+// code by @YumeYuka
 
 sleep 120
 chmod 777 $MODDIR/Intelligent
