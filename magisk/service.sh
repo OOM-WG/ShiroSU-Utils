@@ -1,5 +1,5 @@
-// code by @YumeYuka
+# code by @YumeYuka
 
 sleep 120
-chmod 777 $MODDIR/Intelligent
-nohup $MODDIR/Intelligent > /dev/null 2>&1 &
+chmod 777 ./Intelligent
+nohup ./Intelligent > /dev/null 2>&1 &
