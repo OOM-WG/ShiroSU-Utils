@@ -22,5 +22,5 @@
 > 由于本人无法提供太多规则,请自行添加规则,可以pr到此仓库,具体自定义规则请查看[文档](https://intelligent.nightrainmilkyway.cn)
 
 
-## 协议
+## 开源许可证
 ### [Apache License 2.0](https://github.com/NightRainMilkyWay/intelligent/blob/master/LICENSE)

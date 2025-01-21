@@ -26,7 +26,7 @@ cover_config() {
   key=$(until_key)
   
   if [ "$key" = "down" ]; then
-    cp "$Config" "$Config_DIR"  
+    cp -f "$Config" "$Config_DIR"  
     ui_print "- 配置文件已覆盖"
   else
     ui_print "- 配置文件未覆盖"
@@ -38,12 +38,13 @@ if [ -d "$Config_DIR" ]; then
     cover_config
 else
     mkdir -p "$Config_DIR"
-    cp "$Config" "$Config_DIR"
+    cp -f "$Config" "$Config_DIR"
     rm -rf "$Config"
 fi
 
-ui_print ""
-ui_print ""
+sleep 0.5
+ui_print "配置路径在/storage/emulated/0/Android/Intelligent/config.json"
 ui_print "Github: https://github.com/YumeYuka/intelligent"
+ui_print "如果可以的话，请给我一个Star"
 
 skt_mod_install_finish # Don't write code after this line!
