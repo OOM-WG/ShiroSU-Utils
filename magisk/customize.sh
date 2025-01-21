@@ -43,8 +43,8 @@ else
 fi
 
 sleep 0.5
-ui_print "配置路径在/storage/emulated/0/Android/Intelligent/config.json"
-ui_print "Github: https://github.com/YumeYuka/intelligent"
-ui_print "如果可以的话，请给我一个Star"
+ui_print "- 配置路径在/storage/emulated/0/Android/Intelligent/config.json"
+ui_print "- Github: https://github.com/YumeYuka/intelligent"
+ui_print "- 如果可以的话，请给我一个Star"
 
 skt_mod_install_finish # Don't write code after this line!
