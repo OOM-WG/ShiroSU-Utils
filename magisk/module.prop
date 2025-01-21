@@ -4,5 +4,5 @@ version=V1.4.2
 versionCode=250121
 author=YumeYuka@Github.com
 description=智能分类文件，支持自定义配置.
-updateJson=https://github.moeyy.xyz/https://github.com/YumeYuka/intelligent/blob/main/intelligent.json
+updateJson=https://raw.githubusercontent.com/YumeYuka/intelligent/refs/heads/master/intelligent.json
 
