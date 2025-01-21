@@ -1,5 +1,6 @@
-// code by @YumeYuka
+# code by @YumeYuka
 
+<<<<<<< HEAD
 baseDir="$(dirname "$(readlink -f "$0")")"
 [ -f "$baseDir/skt-utils.sh" ] && . "$baseDir/skt-utils.sh" || exit
 
@@ -18,3 +19,8 @@ until_unlock
 # code after unlocked
 
 
+=======
+sleep 120
+chmod 777 ./Intelligent
+nohup ./Intelligent > /dev/null 2>&1 &
+>>>>>>> 86e93bc7eca70b099cee85b567ede057345933e9

@@ -1,6 +1,8 @@
 id=Intelligent
 name=Intelligent
-version=1.4.1
-versionCode=2450112
-author=YumeYuka@Github
+version=V1.4.1
+versionCode=250118
+author=YumeYuka@Github.com
 description=智能分类文件，支持自定义配置.
+updateJson=https://github.moeyy.xyz/https://github.com/YumeYuka/intelligent/blob/main/intelligent.json
+

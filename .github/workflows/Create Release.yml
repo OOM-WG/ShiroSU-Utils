@@ -37,7 +37,7 @@ jobs:
           
           
           # 创建 module.prop 文件
-          echo 'id=id=Intelligent
+          echo 'id=Intelligent
           name=Intelligent
           version='"${VERSION}"'
           versionCode='"${VERSIONCODE}"'
