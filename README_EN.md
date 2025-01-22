@@ -9,11 +9,9 @@
 
 <img src="https://intelligent.nightrainmilkyway.cn/刻晴.png" style="width: 96px;" alt="logo">
 
-* ## [Document location
-](https://intelligent.nightrainmilkyway.cn)
+* ## [Document location](https://intelligent.nightrainmilkyway.cn)
 
-* ## [Custom configuration file
-](https://intelligent.nightrainmilkyway.cn/demo/)
+* ## [Custom configuration file](https://intelligent.nightrainmilkyway.cn/demo/)
 
 `Intelligen` It's a `magisk/Kernelsu` module written in C++.
 
