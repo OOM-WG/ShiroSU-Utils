@@ -1,7 +1,4 @@
-喷射脑浆软件激活码合集
-https://3.jetbra.in/
-如遇高版本无法激活问题
-https://zhile.io/2024/09/05/jetbrains-2024-2-region.html
+
 ## 更新日志
 
 * 修复模块无法运行错误
