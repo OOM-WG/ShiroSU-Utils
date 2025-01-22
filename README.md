@@ -1,3 +1,5 @@
+**简体中文** | [English](README_EN.md) | [简体中文](README.md) 
+
 # 指南
 
 ## ✨什么是Intelligen
