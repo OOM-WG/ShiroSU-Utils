@@ -57,7 +57,7 @@ jobs:
         with:
           tag_name: ${{ env.VERSION }}
           body_path: ${{ github.workspace }}/changelog.md
-          name: Tritium_${{ env.VERSION }}
+          name: Intelligen_${{ env.VERSION }}
           prerelease: ${{ env.IS_PRERELEASE }}
           body: ${{ env.RELEASE_NOTES }}
 
