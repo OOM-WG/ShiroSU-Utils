@@ -2,6 +2,7 @@
 ## 更新日志
 
 * 优化customize.sh @GunRain
+* 更新 skt-utils.sh 
 
 ## 未来计划
 
