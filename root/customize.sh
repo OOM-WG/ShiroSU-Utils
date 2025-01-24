@@ -1,50 +1,63 @@
 [ -f "$MODPATH/skt-utils.sh" ] && . "$MODPATH/skt-utils.sh" || abort '! File "skt-utils.sh" does not exist!'
-
-skt_mod_install # Don't write code before this line!
+skt_install_init # Don't write code before this line!
 
 Config="$MODPATH/config.json"
-Config_DIR="/storage/emulated/0/Android/Intelligent/"
+Config_DIR="/sdcard/Android/Intelligent/"
 
-ui_print "- Magisk Version: $MAGISK_VER"
-ui_print "- Magisk Version Code: $MAGISK_VER_CODE"
-ui_print "- Device Architecture: $ARCH"
-ui_print "- Is 64-bit: $IS64BIT"
-ui_print "- API Level: $API"
+not_magisk && {
+  is_ksu && {
+    skt_print "Root Type: KernelSU"
+    skt_print "KernelSU Version: $KSU_VER"
+    skt_print "KernelSU Version Code: $KSU_VER_CODE"
+    skt_print "KernelSU Kernel Version Code: $KSU_KERNEL_VER_CODE"
+  }
+  is_ap && {
+    skt_print "Root Type: APatch"
+    skt_print "APatch Version: $APATCH_VER"
+    skt_print "APatch Version Code: $APATCH_VER_CODE"
+  }
+} || {
+  skt_print "Root Type: Magisk"
+  skt_print "Magisk Version: $MAGISK_VER"
+  skt_print "Magisk Version Code: $MAGISK_VER_CODE"
+}
+skt_print "Device Architecture: $ARCH"
+skt_print "Is 64-bit: $IS64BIT"
+skt_print "API Level: $API"
+newline
+skt_print "智能分类文件夹，以及干掉一些垃圾的文件夹"
+skt_print "完全支持定义配置文件"
+skt_print "支持第三方文件重定向"
+skt_print "删除某些空文件夹以及文件(支持白名单...)"
+newline 2
 
-ui_print "- 智能分类文件夹，以及干掉一些垃圾的文件夹"
-ui_print "- 完全支持定义配置文件"
-ui_print "- 支持第三方文件重定向"
-ui_print "- 删除某些空文件夹以及文件(支持白名单...)"
-
-ui_print ""
-ui_print ""
-
-cover_config() {
-  ui_print "- 是否覆盖配置文件..."
-  ui_print "- 按下音量下键覆盖"
-  sleep 0.5
-  key=$(until_key)
-  
-  if [ "$key" = "down" ]; then
-    cp -f "$Config" "$Config_DIR"  
-    ui_print "- 配置文件已覆盖"
-  else
-    ui_print "- 配置文件未覆盖"
-  fi
+[ -d "$Config_DIR" ] && {
+  skt_print "是否覆盖配置文件..."
+  skt_print "按下音量下键覆盖(其他任意键取消)"
+  newline
+  [ `until_key` = down ] && { 
+    skt_print "配置文件已覆盖"
+    cp -f "$Config" "$Config_DIR"
+    true
+  } || skt_print "配置文件未覆盖"
+  true
+} || {
+  mkdir -p "$Config_DIR"
+  cp -f "$Config" "$Config_DIR"
 }
 
+newline 2
+skt_print "配置路径在 /sdcard/Android/Intelligent/config.json"
+skt_print "Github: https://github.com/YumeYuka/intelligent"
+skt_print "如果可以的话，请给我一个Star"
+newline
+skt_print "按下音量下键跳转浏览器进入Github地址(其他任意键取消)"
+newline
 
-if [ -d "$Config_DIR" ]; then
-    cover_config
-else
-    mkdir -p "$Config_DIR"
-    cp -f "$Config" "$Config_DIR"
-    rm -rf "$Config"
-fi
+[ `until_key` = down ] && { 
+  skt_print "已跳转"
+  goto_url 'https://github.com/YumeYuka/intelligent'
+  true
+} || skt_print "已取消跳转"
 
-sleep 0.5
-ui_print "- 配置路径在/storage/emulated/0/Android/Intelligent/config.json"
-ui_print "- Github: https://github.com/YumeYuka/intelligent"
-ui_print "- 如果可以的话，请给我一个Star"
-
-skt_mod_install_finish # Don't write code after this line!
+skt_install_done # Don't write code after this line!
