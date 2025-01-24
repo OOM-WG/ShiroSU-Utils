@@ -1,0 +1,12 @@
+#!/bin/sh
+
+# recovery flash script, not used in root manager
+
+umask 000
+OUTFD="$2"
+ZIPFILE="$3"
+mount /data
+[ ! -f '/data/adb/magisk/util_functions.sh' ] && { false ; exit ; } || source '/data/adb/magisk/util_functions.sh'
+install_module
+true
+exit

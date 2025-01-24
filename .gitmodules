@@ -1,0 +1,3 @@
+[submodule "workdir/src/mod-utils"]
+	path = workdir/src/mod-utils
+	url = https://github.com/GunRain/SKT-Utils.git

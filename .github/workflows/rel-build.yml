@@ -1,0 +1,83 @@
+name: Release Build
+
+on:
+  workflow_dispatch:
+    inputs:
+      repo:
+        description: 'GitHub Repo Path (eg YumeYuka/intelligent)'
+        required: true
+      chglog:
+        description: 'Path to Changelog in Repo (eg path/changelog.md)'
+        required: true
+        default: 'changelog.md'
+      upinfo:
+        description: 'Path to Update Json in Repo (eg path/update.json)'
+        required: true
+        default: 'update.json'
+      version:
+        description: 'Version Name Head (eg Release Version, will be Release Version <Version in "module.prop">)'
+        required: true
+        default: 'Release Version'
+      zip:
+        description: 'Zip Name (eg instpkg)'
+        required: true
+        default: 'instpkg'
+      ghp:
+        description: 'Github Proxy Url (eg https://localhost/)'
+        required: false
+
+jobs:
+  rel_build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          submodules: true
+      - name: Setup Git Info
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.23'
+      - name: Setup Android NDK
+        uses: nttld/setup-ndk@v1
+        with:
+          ndk-version: r27
+      - name: Setup Pkgs
+        run: |
+          sudo apt install p7zip-full jq -y
+          go install mvdan.cc/garble@latest
+      - name: Setup Source
+        run: git clone --depth 1 --recurse-submodules https://${{ secrets.USER_GITHUB_TOKEN }}@github.com/${{ github.event.inputs.repo }}.git workdir/list/targetMod
+      - name: Build Release
+        run: |
+          cd workdir
+          bash build.sh targetMod
+          [ "${{ github.event.inputs.zip }}" = instpkg ] || mv -f output/targetMod/instpkg.zip "output/targetMod/${{ github.event.inputs.zip }}.zip"
+      - name: Get Module Version
+        run: |
+          echo "VERSION=$(grep -m 1 '^version=' "workdir/list/targetMod/root/module.prop" | sed 's/^version=//')" >> $GITHUB_ENV
+          echo "VERSION_CODE=$(grep -m 1 '^versionCode=' "workdir/list/targetMod/root/module.prop" | sed 's/^versionCode=//')" >> $GITHUB_ENV
+      - name: Upload Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ env.VERSION_CODE }}
+          body_path: workdir/list/targetMod/${{ github.event.inputs.chglog }}
+          name: ${{ github.event.inputs.version }} ${{ env.VERSION }}
+          files: workdir/output/targetMod/${{ github.event.inputs.zip }}.zip
+          repository: ${{ github.event.inputs.repo }}
+          token: ${{ secrets.USER_GITHUB_TOKEN }}
+      - name: Upload Update Json
+        run: |
+          cd workdir/list/targetMod
+          upinfo="${{ github.event.inputs.upinfo }}"
+          jq '.versionCode = ${{ env.VERSION_CODE }} | .version = "${{ env.VERSION }}" | .zipUrl = "${{ github.event.inputs.ghp }}https://github.com/${{ github.event.inputs.repo }}/releases/download/${{ env.VERSION_CODE }}/${{ github.event.inputs.zip }}.zip"' ${{ github.event.inputs.upinfo }} > tmp.json && mv -f tmp.json ${{ github.event.inputs.upinfo }}
+          git add "$upinfo"
+          git commit -m "Auto Update" --allow-empty
+          git push origin HEAD
+        env:
+          GITHUB_TOKEN: ${{ secrets.USER_GITHUB_TOKEN }}
