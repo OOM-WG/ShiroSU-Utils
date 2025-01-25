@@ -6,7 +6,7 @@ baseDir="$(dirname "$(readlink -f "$0")")"
 # code before boot completed
 
 until_boot 90
-nohup_bin "$baseDir/Intelligent" 
+nohup_bin "$baseDir/bin/Intelligent" 
 
 # code after boot completed and before unlocked
 
