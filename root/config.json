@@ -24,8 +24,7 @@
     "default2": "/storage/emulated/0/Classify"
   },
   "ForceDelete": {
-    "default1": "/storage/emulated/0/MIUI",
-    "default2": "/storage/emulated/0/.xlDownload",
-    "default3": "/storage/emulated/0/Tencent"
+    "default1": "/storage/emulated/0/.xlDownload",
+    "default2": "/storage/emulated/0/Tencent"
   }
 }

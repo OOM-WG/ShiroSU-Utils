@@ -1,7 +1,7 @@
 id=Intelligent
 name=Intelligent
-version=V1.0.0_Beta
-versionCode=250124
+version=V1.0.1_Beta
+versionCode=250126
 author=YumeYuka@Github.com
 description=智能分类文件，支持自定义配置.
 updateJson=https://github.com/YumeYuka/intelligent/raw/master/update.json
