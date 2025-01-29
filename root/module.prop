@@ -1,7 +1,7 @@
 id=Intelligent
 name=Intelligent
-version=V1.0.1_Beta
-versionCode=250126
+version=V1.0.2_Beta
+versionCode=250129
 author=YumeYuka@Github.com
-description=智能分类文件，支持自定义配置.
+description=Intelligently categorize files, with support for custom configurations.
 updateJson=https://github.com/YumeYuka/intelligent/raw/master/update.json

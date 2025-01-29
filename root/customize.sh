@@ -31,7 +31,7 @@ skt_print "支持第三方文件重定向"
 skt_print "删除某些空文件夹以及文件(支持白名单...)"
 newline 2
 skt_print "刷入后自行评估文件位置移动带来的后果"
-newline2
+newline 2
 
 [ -d "$Config_DIR" ] && {
   skt_print "是否覆盖配置文件..."
@@ -47,7 +47,7 @@ newline2
   mkdir -p "$Config_DIR"
   cp -f "$Config" "$Config_DIR"
 }
-
+get_target_bin intelligent
 newline 2
 skt_print "配置路径在 /sdcard/Android/Intelligent/config.json"
 skt_print "Github: https://github.com/YumeYuka/intelligent"
