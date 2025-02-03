@@ -28,7 +28,7 @@ category:
 ## version
 
 * 类型: `string`
-* 默认值: `1.0`
+* 默认值: `1.0.0`
 `version`是一个字符串，用于定义配置文件的版本。
 
 ## Classify
@@ -36,6 +36,9 @@ category:
 * 类型: `String`
 * 默认值: `/storage/emulated/0/Classify`
 `Classify`是一个字符串，用于定义分类文件夹的路径。
+::: caution
+文件一旦被分类，将不会再次被分类，且此字段应改在刷入模块前确定，更改后先前的文件将不会被分类到新的文件夹
+:::
 
 ## ThirdParty
 
@@ -43,6 +46,9 @@ category:
 * 默认值: `Download`
 `ThirdParty`是一个字符串数组，用于定义第三方文件夹的名称。
 可以添加多个第三方文件夹，例如`Download`、`Tencent`、`WeChat`等。
+::: important
+ThirdPart中的文件夹将会一直打开监听
+:::
 
 ``` json
 "ThirdParty": {
@@ -57,6 +63,10 @@ category:
 `DefaultFolder`是一个字符串数组，用于定义分类文件夹的名称.
 可以添加多个分类文件夹，例如`Apk`、`Document`、`Music`等.
 其对应值为分类文件的类型.
+
+::: tip
+`Other`请勿删除，用于分类未知文件类型
+:::
 
 ``` json
 "DefaultFolder": {
@@ -102,7 +112,6 @@ category:
 
 ``` json
 "ForceDelete": {
-    "default1": "/storage/emulated/0/MIUI",
     "default2": "/storage/emulated/0/.xlDownload",
     "default3": "/storage/emulated/0/Tencent"
      ...

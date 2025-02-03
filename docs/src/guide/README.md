@@ -7,16 +7,17 @@ category:
 icon: lightbulb
 ---
 
-# 指南
+# ✨什么是Intelligen
 
-## ✨什么是Intelligen
+Intelligen，一款为您的设备注入魔力的智能文件分类管理法术，能够轻松重定向第三方文件，轻灵地驱逐 lg 文件夹的杂物。
 
-`Intelligen` 是一个由C++编写的`magisk/Kernelsu`模块，智能分类管理文件，让你的设备文件夹不再混乱。你可以自定义文件夹的分类规则，使设备文件夹更加整洁。
+* 完美兼容 Magisk 和 Kernelsu，支持 Android 8.0 及以上版本的设备
+* 施放强力咒语，自动清除空文件夹与无用文件
+* 净化设备，除去厂商留存的无意义文件，释放魔法般的存储空间
+* 允许自定义魔法配置文件，随心所欲地编排文件，尽显个性
 
-* 完全支持`magisk`和`Kernelsu`，支持`Android 8.0`以上的设备
-* 强制去除空文件夹及空文件
-* 删除厂商留在设备上的无用文件
-* 支持自定义配置文件，随心所欲地分类文件
+> [!TIP]
+> 版本迭代过快，请及时更新模块
 
-## 协议
-### [Apache License 2.0]()
+# 协议
+## [Apache License 2.0](https://github.com/NightRainMilkyWay/intelligent/blob/master/LICENSE)
