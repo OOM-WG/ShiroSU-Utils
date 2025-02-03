@@ -1,5 +1,5 @@
 [ -f "$MODPATH/skt-utils.sh" ] && . "$MODPATH/skt-utils.sh" || abort '! File "skt-utils.sh" does not exist!'
-skt_install_init # Don't write code before this line!
+skt_install_init config.json # Don't write code before this line!
 
 Config="$MODPATH/config.json"
 Config_DIR="/sdcard/Android/Intelligent/"
@@ -29,9 +29,9 @@ skt_print "智能分类文件夹，以及干掉一些垃圾的文件夹"
 skt_print "完全支持定义配置文件"
 skt_print "支持第三方文件重定向"
 skt_print "删除某些空文件夹以及文件(支持白名单...)"
-newline 2
+newline 
 skt_print "刷入后自行评估文件位置移动带来的后果"
-newline 2
+newline 
 
 [ -d "$Config_DIR" ] && {
   skt_print "是否覆盖配置文件..."
@@ -48,7 +48,7 @@ newline 2
   cp -f "$Config" "$Config_DIR"
 }
 get_target_bin intelligent
-newline 2
+newline 
 skt_print "配置路径在 /sdcard/Android/Intelligent/config.json"
 skt_print "Github: https://github.com/YumeYuka/intelligent"
 skt_print "如果可以的话,请给我一个Star"
