@@ -1,10 +1,9 @@
 ## 更新日志
 
 * [更新] skt-utils.sh @GunRain
-* [优化] **日志重复输出** 
-* [优化] 模块内容加密
+* [修复] 文件挂载系统不同的问题
 
-#### 完整更新日志请查看 [V1.0.2_beta -> V1.0.3_beta](https://github.com/YumeYuka/intelligent/commits/master/)  
+#### 完整更新日志请查看 [V1.0.3_beta -> V1.0.4_beta](https://github.com/YumeYuka/intelligent/commits/master/)  
 
 > [!TIP]
 > 强烈建议更新到最新版本
