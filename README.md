@@ -25,3 +25,5 @@ Intelligen，一款为您的设备注入魔力的智能文件分类管理法术�
 
 ## 开源许可证
 ### [Apache License 2.0](https://github.com/NightRainMilkyWay/intelligent/blob/master/LICENSE)
+
+[![Star History Chart](https://api.star-history.com/svg?repos=YumeYuka/intelligent&type=Timeline)](https://star-history.com/#YumeYuka/intelligent&Timeline)

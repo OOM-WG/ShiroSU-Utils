@@ -25,3 +25,5 @@ Intelligen, a spellbinding intelligent file categorization and management tool, 
 
 ## Open Source License
 ### [Apache License 2.0](https://github.com/YumeYuka/intelligent/blob/master/LICENSE)
+
+[![Star History Chart](https://api.star-history.com/svg?repos=YumeYuka/intelligent&type=Timeline)](https://star-history.com/#YumeYuka/intelligent&Timeline)
