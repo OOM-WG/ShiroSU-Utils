@@ -2,5 +2,5 @@
   "versionCode": 250205,
   "version": "V1.0.4_Beta",
   "zipUrl": "https://github.com/YumeYuka/intelligent/releases/download/250205/instpkg.zip",
-  "changelog": "https://github.com/YumeYuka/intelligent/raw/master/changelog.md"
+  "changelog": "https://raw.githubusercontent.com/YumeYuka/intelligent/refs/heads/master/changelog.md"
 }
