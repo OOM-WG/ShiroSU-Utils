@@ -1,8 +1,6 @@
 **简体中文** | [English](README_EN.md) | [简体中文](README.md) 
 
-# 指南
-
-## ✨什么是Intelligen
+# ✨什么是Intelligen
 
 
 <img src="https://intelligent.nightrainmilkyway.cn/刻晴.png" style="width: 96px;" alt="logo">
@@ -18,10 +16,20 @@ Intelligen，一款为您的设备注入魔力的智能文件分类管理法术�
 * 净化设备，除去厂商留存的无意义文件，释放魔法般的存储空间
 * 允许自定义魔法配置文件，随心所欲地编排文件，尽显个性
 
+# 分享你的配置
+* 自定义配置看[文档](https://intelligent.nightrainmilkyway.cn)
+* 具体请看[pull request说明](config/index.md)
+
+
 > [!TIP]
 > 版本迭代过快，请及时更新模块  
 > 由于本人无法提供太多规则,请自行添加规则,可以pr到此仓库,具体自定义规则请查看[文档](https://intelligent.nightrainmilkyway.cn)
 
+## 感谢名单(排名不分先后)
+* @YumeYuka
+* @GunRain
+* 酷安@Luxus_
+* 酷安@爱生活的土豆子
 
 ## 开源许可证
 ### [Apache License 2.0](https://github.com/NightRainMilkyWay/intelligent/blob/master/LICENSE)
