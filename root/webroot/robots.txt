@@ -1,0 +1,5 @@
+
+User-agent:*
+Disallow:
+
+Sitemap: https://github.com/NightRainMilkyWay/Intelligent_docs/sitemap.xml
