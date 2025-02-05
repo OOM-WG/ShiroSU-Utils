@@ -4,7 +4,6 @@
 * [修复] 文件分类错误
 * [优化] 优化代码结构 by @GunRain
 * [添加] 更多规则 by 酷安@Luxus_  酷安@爱生活的土豆子
-* [添加] `KernelSu/Apatch` WebUI支持
 * [添加] `action.sh`支持
 
 #### 完整更新日志请查看 [V1.0.5_beta -> V1.0.6_beta](https://github.com/YumeYuka/intelligent/commits/master/)  
