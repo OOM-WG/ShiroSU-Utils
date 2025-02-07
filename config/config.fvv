@@ -89,7 +89,7 @@
   EmptyFolder = [
     "/sdcard"
   ];
-  IgnorFoldeer = [
+  IgnoreFolder = [
     "/sdcard/Android",
     "/sdcard/DCIM",
     "/sdcard/Documents",
