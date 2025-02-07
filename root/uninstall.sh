@@ -1,8 +1,6 @@
-# code by @YumeYuka
-
 baseDir="$(dirname "$(readlink -f "$0")")"
 [ -f "$baseDir/skt-utils.sh" ] && . "$baseDir/skt-utils.sh" || exit
 
-until_unlock 30
+until_unlock 5
 
-nohup_bin "$baseDir/intelligent"
+del -rf /sdcard/Android/Intelligent
