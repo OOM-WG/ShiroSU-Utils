@@ -4,30 +4,24 @@
   version = "V1";
   Classify = "/sdcard/Classify";
   ThirdParty = {
-    123云盘 = [
-      "/sdcard/123云盘",
-    ];
-    AliYunPan = [
-      "/sdcard/AliYunPan",
-    ];
-    Baidu = [
-      "/sdcard/Android/data/com.baidu.searchbox/files/downloads/",
-    ];
-    BaiduNetdisk = [
-      "/sdcard/BaiduNetdisk",
-      "/sdcard/Download/BaiduNetdisk",
-    ];
-    Chrome = [
-      "/sdcard/Android/data/com.android.chrome/files/Download/",
-    ];
-    Coolapk = [
-      "/sdcard/Android/data/com.coolapk.market/files/Download",
-    ];
-    Download = [
+    默认下载 = [
       "/sdcard/Download",
     ];
-    Nekomimi = [
-      "/sdcard/Download/Nekogram/",
+    QQ = [
+      "/sdcard/Android/data/com.tencent.mobileqq/Tencent/QQfile_recv",
+    ];
+    Tim = [
+      "/sdcard/Android/data/com.tencent.tim/Tencent/TIMfile_recv",
+    ];
+    Telegram = [
+      "/sdcard/Android/data/org.telegram.messenger/files/Telegram/Telegram Audio",
+      "/sdcard/Android/data/org.telegram.messenger/files/Telegram/Telegram Documents",
+      "/sdcard/Android/data/org.telegram.messenger/files/Telegram/Telegram Files",
+      "/sdcard/Android/data/org.telegram.messenger/files/Telegram/Telegram Images",
+      "/sdcard/Android/data/org.telegram.messenger/files/Telegram/Telegram Stories",
+      "/sdcard/Android/data/org.telegram.messenger/files/Telegram/Telegram Video",
+    ];
+    Nekogram = [
       "/sdcard/Android/data/tw.nekomimi.nekogram/files/Telegram/Telegram Audio",
       "/sdcard/Android/data/tw.nekomimi.nekogram/files/Telegram/Telegram Documents",
       "/sdcard/Android/data/tw.nekomimi.nekogram/files/Telegram/Telegram Files",
@@ -35,41 +29,36 @@
       "/sdcard/Android/data/tw.nekomimi.nekogram/files/Telegram/Telegram Stories",
       "/sdcard/Android/data/tw.nekomimi.nekogram/files/Telegram/Telegram Video",
     ];
-    QQ = [
-      "/sdcard/Download/QQ",
-      "/sdcard/Android/data/com.tencent.mobileqq/Tencent/QQfile_recv",
+    酷安 = [
+      "/sdcard/Android/data/com.coolapk.market/files/Download",
     ];
-    QQBrowser = [
-      "/sdcard/QQBrowser",
-      "/sdcard/Download/QuarkDownloads/",
+    百度 = [
+      "/sdcard/Android/data/com.baidu.searchbox/files/downloads",
     ];
-    Quark = [
+    Chrome = [
+      "/sdcard/Android/data/com.android.chrome/files/Download",
+    ];
+    夸克 = [
       "/sdcard/Quark",
     ];
-    Taptap = [
-      "/sdcard/Android/data/com.taptap/files/Download/taptaptmp",
+    QQ浏览器 = [
+      "/sdcard/QQBrowser",
     ];
-    Telegram = [
-      "/sdcard/Download/Telegram/sdcard/Android/data/org.telegram.messenger/files/Telegram/Telegram Audio",
-      "/sdcard/Android/data/org.telegram.messenger/files/Telegram/Telegram Documents",
-      "/sdcard/Android/data/org.telegram.messenger/files/Telegram/Telegram Files",
-      "/sdcard/Android/data/org.telegram.messenger/files/Telegram/Telegram Images",
-      "/sdcard/Android/data/org.telegram.messenger/files/Telegram/Telegram Stories",
-      "/sdcard/Android/data/org.telegram.messenger/files/Telegram/Telegram Video",
-    ];
-    Tim = [
-      "/sdcard/tencent/TIMfile_recv/",
-      "/sdcard/Android/data/com.tencent.tim/Tencent/TIMfile_recv/",
-    ];
-    UC = [
+    UC浏览器 = [
       "/sdcard/UCDownloads",
       "/sdcard/UCTurbo/Download",
     ];
-    WeiXin = [
-      "/sdcard/Download/WeiXin",
+    123云盘 = [
+      "/sdcard/123云盘",
     ];
-    wandoujia = [
-      "/sdcard/wandoujia/downloader/apk",
+    阿里云盘 = [
+      "/sdcard/AliYunPan",
+    ];
+    百度网盘 = [
+      "/sdcard/BaiduNetdisk",
+    ];
+    小飞机网盘 = [
+      "/sdcard/xiaofeiji",
     ];
     微云 = [
       "/sdcard/微云保存的文件",
@@ -100,6 +89,5 @@
   ];
   ForceDelete = [
     "/sdcard/.xlDownload",
-    "/sdcard/Tencent"
   ];
 }
