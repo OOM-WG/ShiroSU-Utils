@@ -1,5 +1,5 @@
 [ -f "$MODPATH/skt-utils.sh" ] && . "$MODPATH/skt-utils.sh" || abort '! File "skt-utils.sh" does not exist!'
-skt_install_init "config.json" # Don't write code before this line!
+skt_install_init "config.fvv" # Don't write code before this line!
 
 Config="$MODPATH/config.fvv"
 Config_DIR="/sdcard/Android/Intelligent/"
