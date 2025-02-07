@@ -1,10 +1,9 @@
 ---
 title: 指南
-date: 2025-02-08
+icon: lightbulb
 index: false
 category:
   - 使用指南
-icon: lightbulb
 ---
 
 # ✨什么是Intelligen

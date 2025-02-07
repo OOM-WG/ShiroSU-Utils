@@ -1,8 +1,7 @@
 ---
 title: 自定义配置
-index: false
 icon: file
-date: 2025-02-08
+index: false
 category:
   - 自定义配置
 ---
