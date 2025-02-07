@@ -4,4 +4,4 @@ version=V1.0.6_Beta
 versionCode=250207
 author=YumeYuka@Github.com
 description=Intelligently categorize files, with support for custom configurations.
-updateJson=https://github.com/YumeYuka/intelligent/raw/master/update.json
+updateJson=https://raw.githubusercontent.com/YumeYuka/intelligent/master/update.json
