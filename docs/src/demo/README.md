@@ -81,19 +81,19 @@ EmptyFolder = [
 `EmptyFolder`是一个字符串数组，用于定义清理空文件夹的路径。
 改规则遵循白名单机制，不在白名单中的文件夹将被删除。
 
-## IgnorFolder
+## IgnoreFolder
 
 * 类型: `string[]`
 * 示例值:
 ``` fvv
-IgnorFoldeer = [
+IgnoreFolder = [
   "/sdcard/Android",
   <其他路径...>
 ];
 ```
-`IgnorFoldeer`是一个字符串数组，用于定义忽略清理空文件夹的路径。
+`IgnoreFolder`是一个字符串数组，用于定义忽略清理空文件夹的路径。
 ::: important
-`Classify`的路径会被自动添加进`IgnorFoldeer`，无需手动配置
+`Classify`的路径会被自动添加进`IgnoreFolder`，无需手动配置
 :::
 
 ## ForceDelete
