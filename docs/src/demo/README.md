@@ -2,7 +2,7 @@
 title: 自定义配置
 index: false
 icon: file
-date: 2024-12-24
+date: 2025-02-08
 category:
   - 自定义配置
 ---
@@ -10,110 +10,101 @@ category:
 
 阅读此模块可以了解如何配置`Intelligen`模块自定义配置文件。
 
-<!-- more -->
+###### 注意
+
+Intelligen使用开源的[FVV文本格式](https://github.com/GunRain/FVV)，您应该先了解该文本格式后再配置配置文件。
 
 ## name
 
 * 类型: `string`
-* 默认值: `intelligen`
+* 示例值: `Intelligent Config`
 `name`是一个字符串，用于定义配置文件的名称。
 
 ## author
 
 * 类型: `string`
-* 默认值: `intelligen`
-* 作者: `intelligen`
+* 示例值: `张三`
 `author`是一个字符串，用于定义配置文件的作者。
 
 ## version
 
 * 类型: `string`
-* 默认值: `1.0.0`
+* 示例值: `1.0.0`
 `version`是一个字符串，用于定义配置文件的版本。
 
 ## Classify
 
 * 类型: `String`
-* 默认值: `/storage/emulated/0/Classify`
+* 示例值: `/sdcard/Classify`
 `Classify`是一个字符串，用于定义分类文件夹的路径。
-::: caution
-文件一旦被分类，将不会再次被分类，且此字段应改在刷入模块前确定，更改后先前的文件将不会被分类到新的文件夹
-:::
 
 ## ThirdParty
 
 * 类型: `String[]`
-* 默认值: `Download`
+* 示例值:
+``` fvv
+ThirdParty = {
+  默认下载路径 = ["/sdcard/Download"];
+  <其他路径...>
+};
+```
 `ThirdParty`是一个字符串数组，用于定义第三方文件夹的名称。
 可以添加多个第三方文件夹，例如`Download`、`Tencent`、`WeChat`等。
 ::: important
-ThirdPart中的文件夹将会一直打开监听
+`ThirdPart`中的文件夹将会一直被监听，请勿写入嵌套路径等可能导致运行出错的配置
 :::
 
-``` json
-"ThirdParty": {
-    "Download": "/storage/emulated/0/Download"
-      ...
-  },
-```
 ## DefaultFolder
 
 * 类型: `String[]`
-* 默认值: `Apk ...`
-`DefaultFolder`是一个字符串数组，用于定义分类文件夹的名称.
-可以添加多个分类文件夹，例如`Apk`、`Document`、`Music`等.
-其对应值为分类文件的类型.
-
-::: tip
-`Other`请勿删除，用于分类未知文件类型
-:::
-
-``` json
-"DefaultFolder": {
-    "Compressed": ["zip","rar","7z","tar","gz","bz2","xz","z","iso"],
-    "Programs": ["exe", "msi", "bat", "sh"],
-    "Video": ["mp4", "mkv", "avi", "mov", "wmv"],
-    "Document": ["doc", "docx", "pdf", "txt", "xls", "xlsx", "ppt", "pptx"],
-    "Apk": ["apk","apks"],
-    "Music": ["mp3", "wav", "flac", "aac"],
-    "Picture": ["jpg", "jpeg", "png", "gif", "bmp"],
-    "Other": ["null"],
-    "test": ["null"]
-      ...
-  },
-
+* 示例值:
+``` fvv
+DefaultFolder = {
+  FVV文本文件 = ["fvv", "fw", "rpp", "rxx", "r++"];
+  RKSTDC压缩文件 = ["rkc"];
+  <其他后缀...>
+};
 ```
+`DefaultFolder`是一个字符串数组，用于定义分类文件夹的名称。
+可以添加多个分类文件夹，例如`Apk`、`Document`、`Music`等。
+其对应值为分类文件的类型。
 
 ## EmptyFolder
 
-* 类型: `string`
-* 默认值: `/storage/emulated/0`
-`EmptyFolder`是一个字符串，用于定义清理空文件夹的路径
-改规则遵循白名单机制，不在白名单中的文件夹将被删除
-
-## IgnorFoldeer
-
-* 类型: `string`
-* 默认值: `/storage/emulated/0/Android/data`
-`IgnorFoldeer`是一个字符串数组，用于定义忽略清理空文件夹的路径
-
-``` json
-"IgnorFoldeer": {
-    "default1": "/storage/emulated/0/Android",
-    "default2": "/storage/emulated/0/Classify"
-     ...
-  }
+* 类型: `string[]`
+* 示例值:
+``` fvv
+EmptyFolder = [
+  "/sdcard",
+  <其他路径...>
+];
 ```
+`EmptyFolder`是一个字符串数组，用于定义清理空文件夹的路径。
+改规则遵循白名单机制，不在白名单中的文件夹将被删除。
+
+## IgnorFolder
+
+* 类型: `string[]`
+* 示例值:
+``` fvv
+IgnorFoldeer = [
+  "/sdcard/Android",
+  <其他路径...>
+];
+```
+`IgnorFoldeer`是一个字符串数组，用于定义忽略清理空文件夹的路径。
+::: important
+`Classify`的路径会被自动添加进`IgnorFoldeer`，无需手动配置
+:::
+
 ## ForceDelete
 
-* 类型: `string`
-* 默认值: `/storage/emulated/0/*`
-`ForceDelete`是一个字符串数组，用于定义强制删除文件夹的路径,用于删除厂商留在设备上的无用文件
-
-``` json
-"ForceDelete": {
-    "default2": "/storage/emulated/0/.xlDownload",
-    "default3": "/storage/emulated/0/Tencent"
-     ...
-  }
+* 类型: `string[]`
+* 示例值:
+``` fvv
+ForceDelete = [
+  "/sdcard/.xlDownload",
+  <其他路径...>
+];
 ```
+`ForceDelete`是一个字符串数组，用于定义强制删除文件夹的路径,用于删除厂商留在设备上的无用文件。

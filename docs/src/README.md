@@ -2,7 +2,7 @@
 home: true
 icon: home
 title: 项目主页
-heroImage: https://intelligent.nightrainmilkyway.cn/刻晴.png
+heroImage: ./刻晴.png
 heroText: Intelligent
 tagline: 憧憬是距离理解最遥远的感情.
 actions:
@@ -40,18 +40,10 @@ features:
     icon: table-columns
     details: 从第三方app文件中转移文件
 
-  - title: 开源
-    icon: code
-    details:  项目完全开源，欢迎贡献代码
-
   - title: 去除垃圾
     icon: code
     details: 强制去除厂商垃圾文件
 
-
-
-
 copyright: false
 footer: 使用 <a href="https://theme-hope.vuejs.press/zh/" target="_blank">VuePress Theme Hope</a> 主题 | MIT 协议</br>版权所有 © 2024-至今 NightRain
 ---
-
