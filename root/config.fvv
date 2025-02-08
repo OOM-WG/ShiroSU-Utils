@@ -1,7 +1,7 @@
 {
-  name = "Intelligent classification";
-  author = "YumeYuka";
-  version = "V1";
+  Name = "Intelligent classification";
+  Author = "YumeYuka";
+  Version = "V1";
   Classify = "/sdcard/Classify";
   ThirdParty = {
     默认下载 = [
