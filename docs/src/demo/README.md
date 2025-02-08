@@ -49,7 +49,7 @@ ThirdParty = {
 ```
 `ThirdParty`是一个字符串数组，用于定义第三方文件夹的名称。
 可以添加多个第三方文件夹，例如`Download`、`Tencent`、`WeChat`等。
-::: dangerous
+::: caution
 `ThirdPart`中的文件夹将会一直被监听，**请勿写入嵌套路径等可能导致运行出错的配置！！！** (eg. 已经有了`/sdcard/Download`还写入`/sdcard/Download/XXX`或者再写入`/storage/emulated/0/Download`)
 :::
 
