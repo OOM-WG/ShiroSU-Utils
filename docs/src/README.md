@@ -35,10 +35,6 @@ features:
   - title: 内容监听
     icon: code
     details: 监听文件夹中的文件变化，自动整理
- 
-  - title: 第三方app文件从定向
-    icon: table-columns
-    details: 从第三方app文件中转移文件
 
   - title: 去除垃圾
     icon: code
