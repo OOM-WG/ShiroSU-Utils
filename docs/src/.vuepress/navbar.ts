@@ -11,6 +11,6 @@ export default navbar([
   {
     text: "文档",
     icon: "book",
-    link: "https://github.com/NightRainMilkyWay/Intelligent_docs",
+    link: "https://github.com/YumeYuka/Intelligent_docs",
   },
 ]);

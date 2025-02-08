@@ -4,19 +4,19 @@ import navbar from "./navbar.js";
 import sidebar from "./sidebar.js";
 
 export default hopeTheme({
-  hostname: "https://github.com/NightRainMilkyWay/Intelligent_docs",
+  hostname: "https://github.com/YumeYuka/Intelligent_docs",
 
   author: {
-    name: "NightRain",
-    url: "https://github.com/NightRainMilkyWay",
+    name: "YumeYuka",
+    url: "https://github.com/YumeYuka",
   },
 
   iconAssets: "fontawesome",
 
-  logo: "https://intelligent.nightrainmilkyway.cn/刻晴Q.png",
-  favicon: "https://intelligent.nightrainmilkyway.cn/刻晴Q.png",
+  logo: "https://intelligent.YumeYuka.cn/刻晴Q.png",
+  favicon: "https://intelligent.YumeYuka.cn/刻晴Q.png",
 
-  repo: "NightRainMilkyWay/Intelligent",
+  repo: "YumeYuka/Intelligent",
 
   docsDir: "src",
 

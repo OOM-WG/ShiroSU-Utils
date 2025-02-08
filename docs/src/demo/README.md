@@ -13,19 +13,19 @@ category:
 
 Intelligen使用开源的[FVV文本格式](https://github.com/GunRain/FVV)，您应该先了解该文本格式后再配置配置文件。
 
-## name
+## Name
 
 * 类型: `string`
 * 示例值: `Intelligent Config`
 `name`是一个字符串，用于定义配置文件的名称。
 
-## author
+## Author
 
 * 类型: `string`
 * 示例值: `张三`
 `author`是一个字符串，用于定义配置文件的作者。
 
-## version
+## Version
 
 * 类型: `string`
 * 示例值: `1.0.0`
