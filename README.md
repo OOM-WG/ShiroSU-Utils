@@ -18,7 +18,7 @@ Intelligen，一款为您的设备注入魔力的智能文件分类管理法术�
 
 # 分享你的配置
 * 自定义配置看[文档](https://intelligent.nightrainmilkyway.cn)
-* 具体请看[pull request说明](config/index.md)
+* 具体请看[pull request说明](config/)
 
 
 > [!TIP]
