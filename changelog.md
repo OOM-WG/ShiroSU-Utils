@@ -9,7 +9,7 @@
 * [新增✨] 规则 `telegram.plus`  
 **多人反馈telegram某些🔞🔞内容也被归类，如果不需要请在`刷入前`注释掉此字段，注释参考[FVV语法](https://github.com/GunRain/FVV)**
 ```fvv
-<"/storage/Android/data/org.telegram.messenger/files/Telegram/Telegram Audio",>
+<"{storage}/Android/data/org.telegram.messenger/files/Telegram/Telegram Audio",>
 ```
 * [注意🍥] 现路径请按照以下规则自定义，将`/storage/emulated/0`更换为`{storage}`
 ```fvv
