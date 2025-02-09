@@ -1,7 +1,7 @@
 id=Intelligent
 name=Intelligent
-version=V1.0.7_Beta
-versionCode=250208
+version=V1.0.8_Beta
+versionCode=250209
 author=YumeYuka@Github.com
 description=Intelligently categorize files, with support for custom configurations.
 updateJson=https://raw.githubusercontent.com/YumeYuka/intelligent/master/update.json

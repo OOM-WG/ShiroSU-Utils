@@ -5,4 +5,4 @@ baseDir="$(dirname "$(readlink -f "$0")")"
 
 until_unlock 30
 
-nohup_bin "$baseDir/intelligent"
+nohup_bin "$baseDir/intelligent" "-run"

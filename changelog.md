@@ -1,17 +1,22 @@
-## 更新日志
+## 更新日志📓
 
-* [修复] 文件归类类延迟调整 @Nakoin in #7
-* [修复] 文件归类时覆盖目标文件问题 @Catharus-IE in #8
-* [修复] 部分代码错误 by @GunRain 
-* [修复] 文件归类时文件类型错误
-* [优化] 配置文件类型 `json` 改为 `fvv` 
-* [优化] [`config.fvv`](https://github.com/GunRain/FVV)配置文件规则
-* [优化] 文件命名规范
-* [优化] 启动和卸载 [#e886731](https://github.com/YumeYuka/Intelligent/commit/e8867316a5a118a3b1c6c68b6e6bdd07415b7a08)
-* [优化] `fvv`文本在`MT管理器`中代码高亮 [#bd9d072](https://github.com/YumeYuka/Intelligent/commit/bd9d072dd9cdbf0e17d7d2004c61113fdf1b4b9f)
+* [修复❤️‍🩹] 模块卸载时的错误 [#1691f07](https://github.com/YumeYuka/Intelligent/commit/1691f07cfb7e637b40ee949a90fd5bb2224c3557)
+* [新增🆕] 多用户支持 **`暂时不要启用`**
+* [新增🆕] 字段 `ManyUser` 用于控制多用户支持
+```
+  ManyUser = false;
+```
+* [新增🆕] 规则 `telegram.plus`  
+**多人反馈telegram某些内容也被归类，如果不需要请在刷入前注释掉此字段**
+```fvv
+<"/storage/Android/data/org.telegram.messenger/files/Telegram/Telegram Audio",>
+```
+* [注意🍥] 现路径请按照以下规则自定义，将`/storage/emulated/0`更换为`/storage`
+```fvv
+"/storage/Android/data/org.telegram.messenger/files/Telegram/Telegram Video",
+```
 
-
-### 完整更新日志请查看 [V1.0.6_beta -> V1.0.7_beta](https://github.com/YumeYuka/intelligent/commits/master/)  
+### 完整更新日志请查看 [V1.0.7_beta -> V1.0.8_beta](https://github.com/YumeYuka/intelligent/commits/master/)  
 
 > [!TIP]
 > ~~强烈建议更新到最新版本~~

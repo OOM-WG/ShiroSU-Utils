@@ -1,67 +1,68 @@
 {
-  Name = "Intelligent classification";
-  Author = "YumeYuka";
-  Version = "V1";
+  name = "Intelligent classification";
+  author = "YumeYuka";
+  version = "V1";
   Classify = "/sdcard/Classify";
+  ManyUser = false;
   ThirdParty = {
     默认下载 = [
-      "/sdcard/Download",
+      "/storage/Download",
     ];
     QQ = [
-      "/sdcard/Android/data/com.tencent.mobileqq/Tencent/QQfile_recv",
+      "/storage/Android/data/com.tencent.mobileqq/Tencent/QQfile_recv",
     ];
     Tim = [
-      "/sdcard/Android/data/com.tencent.tim/Tencent/TIMfile_recv",
+      "/storage/Android/data/com.tencent.tim/Tencent/TIMfile_recv",
     ];
     Telegram = [
-      "/sdcard/Android/data/org.telegram.messenger/files/Telegram/Telegram Audio",
-      "/sdcard/Android/data/org.telegram.messenger/files/Telegram/Telegram Documents",
-      "/sdcard/Android/data/org.telegram.messenger/files/Telegram/Telegram Files",
-      "/sdcard/Android/data/org.telegram.messenger/files/Telegram/Telegram Images",
-      "/sdcard/Android/data/org.telegram.messenger/files/Telegram/Telegram Stories",
-      "/sdcard/Android/data/org.telegram.messenger/files/Telegram/Telegram Video",
+      "/storage/Android/data/org.telegram.messenger/files/Telegram/Telegram Audio",
+      "/storage/Android/data/org.telegram.messenger/files/Telegram/Telegram Documents",
+      "/storage/Android/data/org.telegram.messenger/files/Telegram/Telegram Files",
+      "/storage/Android/data/org.telegram.messenger/files/Telegram/Telegram Images",
+      "/storage/Android/data/org.telegram.messenger/files/Telegram/Telegram Stories",
+      "/storage/Android/data/org.telegram.messenger/files/Telegram/Telegram Video",
     ];
     Nekogram = [
-      "/sdcard/Android/data/tw.nekomimi.nekogram/files/Telegram/Telegram Audio",
-      "/sdcard/Android/data/tw.nekomimi.nekogram/files/Telegram/Telegram Documents",
-      "/sdcard/Android/data/tw.nekomimi.nekogram/files/Telegram/Telegram Files",
-      "/sdcard/Android/data/tw.nekomimi.nekogram/files/Telegram/Telegram Images",
-      "/sdcard/Android/data/tw.nekomimi.nekogram/files/Telegram/Telegram Stories",
-      "/sdcard/Android/data/tw.nekomimi.nekogram/files/Telegram/Telegram Video",
+      "/storage/Android/data/tw.nekomimi.nekogram/files/Telegram/Telegram Audio",
+      "/storage/Android/data/tw.nekomimi.nekogram/files/Telegram/Telegram Documents",
+      "/storage/Android/data/tw.nekomimi.nekogram/files/Telegram/Telegram Files",
+      "/storage/Android/data/tw.nekomimi.nekogram/files/Telegram/Telegram Images",
+      "/storage/Android/data/tw.nekomimi.nekogram/files/Telegram/Telegram Stories",
+      "/storage/Android/data/tw.nekomimi.nekogram/files/Telegram/Telegram Video",
     ];
     酷安 = [
-      "/sdcard/Android/data/com.coolapk.market/files/Download",
+      "/storage/Android/data/com.coolapk.market/files/Download",
     ];
     百度 = [
-      "/sdcard/Android/data/com.baidu.searchbox/files/downloads",
+      "/storage/Android/data/com.baidu.searchbox/files/downloads",
     ];
     Chrome = [
-      "/sdcard/Android/data/com.android.chrome/files/Download",
+      "/storage/Android/data/com.android.chrome/files/Download",
     ];
     夸克 = [
-      "/sdcard/Quark",
+      "/storage/Quark",
     ];
     QQ浏览器 = [
-      "/sdcard/QQBrowser",
+      "/storage/QQBrowser",
     ];
     UC浏览器 = [
-      "/sdcard/UCDownloads",
-      "/sdcard/UCTurbo/Download",
+      "/storage/UCDownloads",
+      "/storage/UCTurbo/Download",
     ];
     123云盘 = [
-      "/sdcard/123云盘",
+      "/storage/123云盘",
     ];
     阿里云盘 = [
-      "/sdcard/AliYunPan",
+      "/storage/AliYunPan",
     ];
     百度网盘 = [
-      "/sdcard/BaiduNetdisk",
+      "/storage/BaiduNetdisk",
     ];
     小飞机网盘 = [
-      "/sdcard/xiaofeiji",
+      "/storage/xiaofeiji",
     ];
     微云 = [
-      "/sdcard/微云保存的文件",
+      "/storage/微云保存的文件",
     ];
   };
   DefaultFolder = {
@@ -76,18 +77,18 @@
     Others = ["null"];
   };
   EmptyFolder = [
-    "/sdcard"
+    "/storage"
   ];
   IgnoreFolder = [
-    "/sdcard/Android",
-    "/sdcard/DCIM",
-    "/sdcard/Documents",
-    "/sdcard/Download",
-    "/sdcard/Movies",
-    "/sdcard/Pictures",
-    "/sdcard/Screenshots",
+    "/storage/Android",
+    "/storage/DCIM",
+    "/storage/Documents",
+    "/storage/Download",
+    "/storage/Movies",
+    "/storage/Pictures",
+    "/storage/Screenshots",
   ];
   ForceDelete = [
-    "/sdcard/.xlDownload",
+    "/storage/.xlDownload",
   ];
 }
