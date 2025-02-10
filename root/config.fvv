@@ -1,7 +1,7 @@
 {
-  name = "Intelligent classification";
-  author = "YumeYuka";
-  version = "V1";
+  Name = "Intelligent classification";
+  Author = "YumeYuka";
+  Version = "V1";
   Classify = "/sdcard/Classify";
   MultiUser = false;
   ThirdParty = {
@@ -15,28 +15,13 @@
       "{storage}/Android/data/com.tencent.tim/Tencent/TIMfile_recv",
     ];
     Telegram = [
-      "{storage}/Android/data/org.telegram.messenger/files/Telegram/Telegram Audio",
-      "{storage}/Android/data/org.telegram.messenger/files/Telegram/Telegram Documents",
-      "{storage}/Android/data/org.telegram.messenger/files/Telegram/Telegram Files",
-      "{storage}/Android/data/org.telegram.messenger/files/Telegram/Telegram Images",
-      "{storage}/Android/data/org.telegram.messenger/files/Telegram/Telegram Stories",
-      "{storage}/Android/data/org.telegram.messenger/files/Telegram/Telegram Video",
+      "{storage}/Android/data/org.telegram.messenger/files/Telegram",
     ];
     Nekogram = [
-      "{storage}/Android/data/tw.nekomimi.nekogram/files/Telegram/Telegram Audio",
-      "{storage}/Android/data/tw.nekomimi.nekogram/files/Telegram/Telegram Documents",
-      "{storage}/Android/data/tw.nekomimi.nekogram/files/Telegram/Telegram Files",
-      "{storage}/Android/data/tw.nekomimi.nekogram/files/Telegram/Telegram Images",
-      "{storage}/Android/data/tw.nekomimi.nekogram/files/Telegram/Telegram Stories",
-      "{storage}/Android/data/tw.nekomimi.nekogram/files/Telegram/Telegram Video",
+      "{storage}/Android/data/tw.nekomimi.nekogram/files/Telegram",
     ];
      TelegramPlus = [
-      "{storage}/Android/data/org.telegram.messenger/files/Telegram/Telegram Audio",
-      "{storage}/Android/data/org.telegram.messenger/files/Telegram/Telegram Documents",
-      "{storage}/Android/data/org.telegram.messenger/files/Telegram/Telegram Files",
-      "{storage}/Android/data/org.telegram.messenger/files/Telegram/Telegram Images",
-      "{storage}/Android/data/org.telegram.messenger/files/Telegram/Telegram Stories",
-      "{storage}/Android/data/org.telegram.messenger/files/Telegram/Telegram Video",
+      "{storage}/Android/data/org.telegram.plus/files/Telegram",
     ];
     酷安 = [
       "{storage}/Android/data/com.coolapk.market/files/Download",
