@@ -3,5 +3,5 @@ baseDir="$(dirname "$(readlink -f "$0")")"
 
 {
   until_unlock 5
-  del -rf /sdcard/Android/Intelligent
+  del -rf /sdcard/Android/Suu-Nyanya
 } &

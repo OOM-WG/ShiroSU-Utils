@@ -1,22 +1,19 @@
 ## 更新日志🎉🎉
 
-* [修复❤️‍🩹] 模块卸载时的错误 [#1691f07](https://github.com/YumeYuka/Intelligent/commit/1691f07cfb7e637b40ee949a90fd5bb2224c3557)
-* [新增✨] 多用户支持 **`不知道不要启用`**
-* [新增✨] 字段 `MultiUser` 用于控制多用户支持
-```
-  MultiUser = false;
-```
-* [新增✨] 规则 `telegram.plus`  
-**多人反馈telegram某些🔞🔞内容也被归类，如果不需要请在`刷入前`注释掉此字段，注释参考[FVV语法](https://github.com/GunRain/FVV)**
-```fvv
-<"{storage}/Android/data/org.telegram.messenger/files/Telegram/Telegram Audio",>
-```
-* [注意🍥] 现路径请按照以下规则自定义，将`/storage/emulated/0`更换为`{storage}`
-```fvv
-"{storage}/Android/data/org.telegram.messenger/files/Telegram/Telegram Video",
-```
+**项目名称变更为 `Suu-Nyanya` Super User Util，SUU，中文苏柚**
+### 🍥🍥🍥Suu-Nyanya App 推出
+* 请一并下载&刷入附加模块
+**附加模块用于加载开机自启动，推荐安装**
 
-### 完整更新日志请查看 [V1.0.7_beta -> V1.0.8_beta](https://github.com/YumeYuka/intelligent/commits/master/)  
+## 模块更新日志
+* [更新✨] `Config.fvv`配置更新为中文字段
+* [新增✨] 新增字段 `SubApp` 用于控制分应用支持(默认：`Bool`)
+* [新增🍥] 新增字段 `Delay` 用于延时归类文件(单位：秒)
+* [新增🍥] 新增字段 `SubApp` 用于控制分应用支持
+* [移除🎉] 删除某些内容，如清理空文件夹，`等待重构`
+* [移除🎉] 支持更多架构 `arm64-v8a` `armeabi-v7a` `x86_64`
+
+### 完整更新日志请查看 [V1.0.8_beta -> V1.0.9_beta](https://github.com/YumeYuka/Suu-Nyanya/commits/master/)  
 
 > [!TIP]
 > ~~强烈建议更新到最新版本~~

@@ -1,7 +1,7 @@
-id=Intelligent
-name=Intelligent
-version=V1.0.8_Beta
-versionCode=250209
-author=YumeYuka@Github.com
-description=Intelligently categorize files, with support for custom configurations.
-updateJson=https://raw.githubusercontent.com/YumeYuka/intelligent/master/update.json
+id=Suu-Nyanya
+name=Suu-Nyanya
+version=V1.0.9_Beta
+versionCode=250210
+author=YumeYuka&咲汀
+description=让杂乱无章的文件世界变得如同精美画卷般整洁可爱喵~✨
+updateJson=https://raw.githubusercontent.com/YumeYuka/Suu-Nyanya/master/update.json

@@ -2,7 +2,7 @@
 skt_install_init "config.fvv" # Don't write code before this line!
 
 Config="$MODPATH/config.fvv"
-Config_DIR="/sdcard/Android/Intelligent/"
+Config_DIR="/sdcard/Android/Suu-Nyanya/"
 
 not_magisk && {
   is_ksu && {
@@ -29,15 +29,15 @@ skt_print "智能分类文件夹，以及干掉一些垃圾的文件夹"
 skt_print "完全支持定义配置文件"
 skt_print "支持第三方文件重定向"
 skt_print "删除某些空文件夹以及文件(支持白名单...)"
-newline 
+newline
 skt_print "刷入后自行评估文件位置移动带来的后果"
-newline 
+newline
 
 [ -d "$Config_DIR" ] && {
   skt_print "是否覆盖配置文件..."
   skt_print "按下音量下键覆盖(其他任意键取消)"
   newline
-  [ `until_key` = down ] && { 
+  [ $(until_key) = down ] && {
     skt_print "配置文件已覆盖"
     cp -f "$Config" "$Config_DIR"
     true
@@ -47,18 +47,18 @@ newline
   mkdir -p "$Config_DIR"
   cp -f "$Config" "$Config_DIR"
 }
-get_target_bin intelligent
-newline 
-skt_print "配置路径在 /sdcard/Android/Intelligent/config.json"
-skt_print "Github: https://github.com/YumeYuka/intelligent"
+get_target_bin Suu-Core
+newline
+skt_print "配置路径在 /sdcard/Android/Suu-Nyanya/config.json"
+skt_print "Github: https://github.com/YumeYuka/Suu-Nyanya"
 skt_print "如果可以的话,请给我一个Star"
 newline
 skt_print "按下音量下键跳转浏览器进入Github地址(其他任意键取消)"
 newline
 
-[ `until_key` = down ] && { 
+[ $(until_key) = down ] && {
   skt_print "已跳转"
-  goto_url 'https://github.com/YumeYuka/intelligent'
+  goto_url 'https://github.com/YumeYuka/Suu-Nyanya'
   true
 } || skt_print "已取消跳转"
 
