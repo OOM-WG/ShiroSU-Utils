@@ -16,7 +16,7 @@ actions:
 
 
 features:
-  - title: 定时整理
+  - title: 智能整理
     icon: clipboard-check
     details: 整理文件夹中的文件，智能分类
 
@@ -27,10 +27,6 @@ features:
   - title: 自由
     icon: bell
     details: 完全允许自定义配置文件
-
-  - title: 选项卡
-    icon: table-columns
-    details: 使用选项卡对相似内容进行分组
 
   - title: 内容监听
     icon: code
