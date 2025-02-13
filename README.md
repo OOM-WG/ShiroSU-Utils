@@ -4,7 +4,7 @@
 
 * ## [文档地址](https://suu.ad.200ok.work)
 
-* ## [自定义配置文件](https://suu.ad.200ok.work/demo/)
+* ## [自定义配置文件](https://suu.ad.200ok.work/config/)
 
 SuuNyanya，让杂乱无章的文件世界变得如同精美画卷般整洁可爱喵~✨
 
