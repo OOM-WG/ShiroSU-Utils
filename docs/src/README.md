@@ -6,9 +6,9 @@ heroImage: ./刻晴.png
 heroText: 苏柚Nyanya
 tagline: 憧憬是距离理解最遥远的感情.
 actions:
-  - text: 使用指南
+  - text: 配置文件指南
     icon: lightbulb
-    link: ./guide/
+    link: ./config/
     type: primary
 
   - text: 反馈
