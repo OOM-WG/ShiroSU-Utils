@@ -25,10 +25,7 @@ skt_print "Device Architecture: $ARCH"
 skt_print "Is 64-bit: $IS64BIT"
 skt_print "API Level: $API"
 newline
-skt_print "智能分类文件夹，以及干掉一些垃圾的文件夹"
-skt_print "完全支持定义配置文件"
-skt_print "支持第三方文件重定向"
-skt_print "删除某些空文件夹以及文件(支持白名单...)"
+skt_print "让杂乱无章的文件世界变得如同精美画卷般整洁可爱喵~✨"
 newline
 skt_print "刷入后自行评估文件位置移动带来的后果"
 newline
@@ -47,7 +44,7 @@ newline
   mkdir -p "$Config_DIR"
   cp -f "$Config" "$Config_DIR"
 }
-get_target_bin Suu-Core
+get_target_bin SUU-tidy
 newline
 skt_print "配置路径在 /sdcard/Android/Suu-Nyanya/config.json"
 skt_print "Github: https://github.com/YumeYuka/Suu-Nyanya"

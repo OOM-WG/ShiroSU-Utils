@@ -1,5 +1,3 @@
-**简体中文** | [English](README_EN.md) | [简体中文](README.md) 
-
 # ✨什么是Suu-Nyanya
 
 <img src="https://suu.ad.200ok.work/刻晴.png" style="width: 96px;" alt="logo">
