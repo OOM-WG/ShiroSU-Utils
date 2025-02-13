@@ -3,9 +3,9 @@ import { navbar } from "vuepress-theme-hope";
 export default navbar([
   "/",
   {
-    text: "指南",
+    text: "配置指南",
     icon: "lightbulb",
-    prefix: "/guide/",
+    prefix: "/config/",
     children: [],
   },
   {
