@@ -3,7 +3,7 @@ home: true
 icon: home
 title: 项目主页
 heroImage: ./刻晴.png
-heroText: Intelligent
+heroText: Suu-Nyanya
 tagline: 憧憬是距离理解最遥远的感情.
 actions:
   - text: 使用指南
