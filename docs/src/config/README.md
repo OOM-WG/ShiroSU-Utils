@@ -7,16 +7,16 @@ category:
 ---
 
 
-阅读此模块可以了解如何配置`Suu-Nyanya`模块自定义配置文件。
+阅读此模块可以了解如何配置`苏柚Nyanya`模块自定义配置文件。
 
 ###### 注意
 
-Suu-Nyanya使用开源的[FVV文本格式](https://github.com/GunRain/FVV)，您应该先了解该文本格式后再配置配置文件。
+苏柚Nyanya使用开源的[FVV文本格式](https://github.com/GunRain/FVV)，您应该先了解该文本格式后再配置配置文件。
 
 ## Name
 
 * 类型: `string`
-* 示例值: `Suu-Nyanya Config`
+* 示例值: `苏柚Nyanya配置文件`
 `name`是一个字符串，用于定义配置文件的名称。
 
 ## Author
@@ -67,4 +67,3 @@ SuffixList = {
 `SuffixList`是一个字符串数组，用于定义分类文件夹的名称。
 可以添加多个分类文件夹，例如`Apk`、`Document`、`Music`等。
 其对应值为分类文件的类型。
-
