@@ -1,10 +1,8 @@
-**简体中文** | [English](README_EN.md) | [简体中文](README.md) 
-
 # ✨什么是Suu-Nyanya
 
 <img src="https://SuuNyanya.yumeyuka.cn/刻晴.png" style="width: 96px;" alt="logo">
 
-* ## [文档地址](https://SuuNyanya.yumeyuka.cn.yumeyuka.cn)
+* ## [文档地址](https://SuuNyanya.yumeyuka.cn)
 
 * ## [自定义配置文件](https://SuuNyanya.yumeyuka.cn/demo/)
 
