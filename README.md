@@ -1,4 +1,4 @@
-# ✨什么是Suu-Nyanya
+# ✨什么是苏柚Nyanya
 
 <img src="https://suu.ad.200ok.work/刻晴.png" style="width: 96px;" alt="logo">
 
@@ -6,7 +6,7 @@
 
 * ## [自定义配置文件](https://suu.ad.200ok.work/config/)
 
-SuuNyanya，让杂乱无章的文件世界变得如同精美画卷般整洁可爱喵~✨
+苏柚Nyanya，让杂乱无章的文件世界变得如同精美画卷般整洁可爱喵~✨
 
 * 完美兼容`Magisk`、`KernelSU`或`APatch`，支持`Android 5.0`及以上版本的设备
 * 允许自定义魔法配置文件，随心所欲地编排文件，尽显个性
