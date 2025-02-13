@@ -3,4 +3,4 @@ baseDir="$(dirname "$(readlink -f "$0")")"
 
 until_unlock 30
 
-nohup_bin "$baseDir/SUU-tidy" "tidy"
+nohup_bin "$baseDir/SUU-Tidy" "tidy"
