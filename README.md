@@ -2,11 +2,11 @@
 
 # ✨什么是Suu-Nyanya
 
-<img src="https://SuuNyanya.yumeyuka.cn/刻晴.png" style="width: 96px;" alt="logo">
+<img src="https://suu.ad.200ok.work/刻晴.png" style="width: 96px;" alt="logo">
 
-* ## [文档地址](https://SuuNyanya.yumeyuka.cn.yumeyuka.cn)
+* ## [文档地址](https://suu.ad.200ok.work)
 
-* ## [自定义配置文件](https://SuuNyanya.yumeyuka.cn/demo/)
+* ## [自定义配置文件](https://suu.ad.200ok.work/demo/)
 
 SuuNyanya，让杂乱无章的文件世界变得如同精美画卷般整洁可爱喵~✨
 
@@ -14,13 +14,13 @@ SuuNyanya，让杂乱无章的文件世界变得如同精美画卷般整洁可�
 * 允许自定义魔法配置文件，随心所欲地编排文件，尽显个性
 
 # 分享你的配置
-* 自定义配置看[文档](https://SuuNyanya.yumeyuka.cn)
+* 自定义配置看[文档](https://suu.ad.200ok.work)
 * 具体请看[pull request说明](config/)
 
 
 > [!TIP]
 > 版本迭代过快，请及时更新模块  
-> 由于本人无法提供太多规则,请自行添加规则,可以pr到此仓库,具体自定义规则请查看[文档](https://SuuNyanya.yumeyuka.cn)
+> 由于本人无法提供太多规则,请自行添加规则,可以pr到此仓库,具体自定义规则请查看[文档](https://suu.ad.200ok.work)
 
 ## 感谢名单(排名不分先后)
 * @YumeYuka
@@ -29,6 +29,6 @@ SuuNyanya，让杂乱无章的文件世界变得如同精美画卷般整洁可�
 * 酷安@爱生活的土豆子
 
 ## 开源许可证
-### [Apache License 2.0](https://github.com/yumeyuka/Suu-Nyanya/blob/master/LICENSE)
+### [Apache License 2.0](LICENSE)
 
 [![Star History Chart](https://api.star-history.com/svg?repos=YumeYuka/Suu-Nyanya&type=Timeline)](https://star-history.com/#YumeYuka/Suu-Nyanya&Timeline)
