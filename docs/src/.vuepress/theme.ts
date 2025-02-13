@@ -13,10 +13,10 @@ export default hopeTheme({
 
   iconAssets: "fontawesome",
 
-  logo: "https://intelligent.YumeYuka.cn/刻晴Q.png",
-  favicon: "https://intelligent.YumeYuka.cn/刻晴Q.png",
+  logo: "https://suunyanya.yumeyuka.cn/刻晴Q.png",
+  favicon: "https://suunyanya.yumeyuka.cn/刻晴Q.png",
 
-  repo: "YumeYuka/Intelligent",
+  repo: "YumeYuka/Suu-Nyanya",
 
   docsDir: "src",
 

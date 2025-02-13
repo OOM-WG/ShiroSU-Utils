@@ -44,6 +44,10 @@ copyright: false
 footer: 使用 <a href="https://theme-hope.vuejs.press/zh/" target="_blank">VuePress Theme Hope</a> 主题 | MIT 协议</br>版权所有 © 2024-至今 YumeYuka
 ---
 
+:::caution
+您可以选择完整功能的苏柚APP，也可以选择仅整理功能的苏柚Nyanya模块，但请勿同时使用两者！
+:::
+
 # ✨什么是苏柚Nyanya
 
 苏柚Nyanya，一款为您的设备注入魔力的智能文件分类管理法术，能够轻松重定向第三方文件，轻灵地驱逐 lg 文件夹的杂物。
@@ -54,8 +58,7 @@ footer: 使用 <a href="https://theme-hope.vuejs.press/zh/" target="_blank">VueP
 * 允许自定义魔法配置文件，随心所欲地编排文件，尽显个性
 
 :::important
-版本迭代过快，请及时更新模块  
-由于本人无法提供太多规则,请自行添加规则,可以pr到此仓库,具体自定义规则请查看文档
+版本迭代过快，请及时更新模块
 :::
 
 # 协议
