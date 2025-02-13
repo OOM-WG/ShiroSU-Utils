@@ -33,13 +33,31 @@ category:
 
 ## Classify
 
-* 类型: `String`
+* 类型: `string`
 * 示例值: `/sdcard/Classify`
 `Classify`是一个字符串，用于定义分类文件夹的路径。
 
+## Delay
+
+* 类型: `int`
+* 示例值: `60`
+`Delay`是一个整数，用于定义分类文件前的延时时间，单位为`喵(秒)`。
+
+## MultiUser
+
+* 类型: `bool`
+* 示例值: `false`
+`MultiUser`是一个布尔值，用于定义是否启用多用户功能，如果您的设备上没有启用多用户，开启与关闭没有区别，请按需选择。
+
+## SubApp
+
+* 类型: `bool`
+* 示例值: `true`
+`SubApp`是一个布尔值，用于定义是否启用分监听路径分类功能，开启后会以监听路径组名称为分类文件的分类路径，关闭则是所有分类文件放到同一分类路径。
+
 ## ListenList
 
-* 类型: `String[]`
+* 类型: `string[]`
 * 示例值:
 ``` fvv
 ListenList = {
@@ -55,7 +73,7 @@ ListenList = {
 
 ## SuffixList 
 
-* 类型: `String[]`
+* 类型: `string[]`
 * 示例值:
 ``` fvv
 SuffixList = {
