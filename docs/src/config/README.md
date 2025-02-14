@@ -65,13 +65,13 @@ ListenList = {
   <其他路径...>
 };
 ```
-`ListenList`是一个字符串数组，用于定义第三方文件夹的名称。
+`ListenList`是一个字符串组组，用于定义第三方文件夹的名称。
 可以添加多个第三方文件夹，例如`Download`、`Tencent`、`WeChat`等。
 ::: caution
 `ListenList`中的文件夹将会一直被监听，**请勿写入嵌套路径等可能导致运行出错的配置！！！** (eg. 已经有了`/sdcard/Download`还写入`/sdcard/Download/XXX`或者再写入`/storage/emulated/0/Download`)
 :::
 
-## SuffixList 
+## SuffixList
 
 * 类型: `string[]`
 * 示例值:
@@ -82,6 +82,18 @@ SuffixList = {
   <其他后缀...>
 };
 ```
-`SuffixList`是一个字符串数组，用于定义分类文件夹的名称。
+`SuffixList`是一个字符串组组，用于定义分类文件夹的名称。
 可以添加多个分类文件夹，例如`Apk`、`Document`、`Music`等。
 其对应值为分类文件的类型。
+
+## IgnoreList
+
+* 类型: `string[]`
+* 示例值:
+``` fvv
+IgnoreList = [
+  "bak",
+  <其他后缀...>
+];
+```
+`IgnoreList`是一个字符串组，用于定义要忽略的文件后缀的名称。
