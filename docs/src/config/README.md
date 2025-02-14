@@ -65,10 +65,10 @@ ListenList = {
   <其他路径...>
 };
 ```
-`ListenList`是一个字符串组组，用于定义第三方文件夹的名称。
-可以添加多个第三方文件夹，例如`Download`、`Tencent`、`WeChat`等。
+`ListenList`是一个字符串组组，用于定义监听路径的名称以及路径。
+可以添加多个监听路径，例如`Download`、`Tencent`、`WeChat`等。
 ::: caution
-`ListenList`中的文件夹将会一直被监听，**请勿写入嵌套路径等可能导致运行出错的配置！！！** (eg. 已经有了`/sdcard/Download`还写入`/sdcard/Download/XXX`或者再写入`/storage/emulated/0/Download`)
+`ListenList`中的路径将会一直被监听，**请勿写入嵌套路径等可能导致运行出错的配置！！！** (eg. 已经有了`/sdcard/Download`还写入`/sdcard/Download/XXX`或者再写入`/storage/emulated/0/Download`)
 :::
 
 ## SuffixList
@@ -82,7 +82,7 @@ SuffixList = {
   <其他后缀...>
 };
 ```
-`SuffixList`是一个字符串组组，用于定义分类文件夹的名称。
+`SuffixList`是一个字符串组组，用于定义分类后缀的文件夹名称以及后缀。
 可以添加多个分类文件夹，例如`Apk`、`Document`、`Music`等。
 其对应值为分类文件的类型。
 
