@@ -7,7 +7,7 @@
   MultiUser = false;
   SubApp = true;
   SubTime = false;
-  DefaultType = "默认";
+  DefaultType = "其他";
   ListenList = {
     下载 = [
       "{storage}/Download",
