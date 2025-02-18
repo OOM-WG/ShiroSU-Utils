@@ -86,7 +86,7 @@
     音频 = ["mp3", "wav", "flac", "aac", "ogg", "wma", "m4a", "alac", "aiff", "amr", "ape", "au", "dts", "mka"];
     图片 = ["jpg", "jpeg", "png", "gif", "bmp", "tiff", "svg", "webp", "ico", "heic", "psd", "ai", "eps", "raw", "cr2", "nef", "orf", "sr2"];
     代码 = ["fvv", "fw", "rpp", "rxx", "r++", "c", "h", "cpp", "java", "py", "js", "html", "css", "json", "xml", "php", "rb", "go", "rs", "ts", "swift", "kt", "cs", "vb", "pl", "r", "m", "scala", "lua", "asm", "s", "vhdl", "verilog"];
-    其他 = ["null"];
+    其他 = [];
   };
   IgnoreList = ["bak"];
   NameList = {};
