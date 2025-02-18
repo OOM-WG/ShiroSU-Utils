@@ -1,11 +1,13 @@
 {
   Name = "苏柚默认配置";
   Author = "YumeYuka&咲汀";
-  Version = "25-02-11";
+  Version = "25-02-18";
   Classify = "/sdcard/文件分类";
   Delay = 60;
   MultiUser = false;
   SubApp = true;
+  SubTime = false;
+  DefaultType = "默认";
   ListenList = {
     下载 = [
       "{storage}/Download",
@@ -86,4 +88,7 @@
     代码 = ["fvv", "fw", "rpp", "rxx", "r++", "c", "h", "cpp", "java", "py", "js", "html", "css", "json", "xml", "php", "rb", "go", "rs", "ts", "swift", "kt", "cs", "vb", "pl", "r", "m", "scala", "lua", "asm", "s", "vhdl", "verilog"];
     其他 = ["null"];
   };
+  IgnoreList = ["bak"];
+  NameList = {};
+  IgnoreNameList = ["tmp"];
 }
