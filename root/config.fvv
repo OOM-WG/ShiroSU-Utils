@@ -1,7 +1,7 @@
 {
   Name = "苏柚默认配置";
   Author = "YumeYuka&咲汀";
-  Version = "25-02-18";
+  Version = "25-02-19";
   Classify = "/sdcard/文件分类";
   Delay = 60;
   MultiUser = false;
@@ -12,44 +12,25 @@
     下载 = [
       "{storage}/Download",
     ];
-    QQ = [
-      "{storage}/Android/data/com.tencent.mobileqq/Tencent/QQfile_recv",
-    ];
-    Tim = [
-      "{storage}/Android/data/com.tencent.tim/Tencent/TIMfile_recv",
+    QQ-Tim = [
+      "{androidData}/com.tencent.*/Tencent/*file_recv",
     ];
     Telegram = [
-      "{storage}/Android/data/org.telegram.messenger/files/Telegram/Telegram Audio",
-      "{storage}/Android/data/org.telegram.messenger/files/Telegram/Telegram Documents",
-      "{storage}/Android/data/org.telegram.messenger/files/Telegram/Telegram Files",
-      "{storage}/Android/data/org.telegram.messenger/files/Telegram/Telegram Images",
-      "{storage}/Android/data/org.telegram.messenger/files/Telegram/Telegram Stories",
-      "{storage}/Android/data/org.telegram.messenger/files/Telegram/Telegram Video",
-    ];
-    Nekogram = [
-      "{storage}/Android/data/tw.nekomimi.nekogram/files/Telegram/Telegram Audio",
-      "{storage}/Android/data/tw.nekomimi.nekogram/files/Telegram/Telegram Documents",
-      "{storage}/Android/data/tw.nekomimi.nekogram/files/Telegram/Telegram Files",
-      "{storage}/Android/data/tw.nekomimi.nekogram/files/Telegram/Telegram Images",
-      "{storage}/Android/data/tw.nekomimi.nekogram/files/Telegram/Telegram Stories",
-      "{storage}/Android/data/tw.nekomimi.nekogram/files/Telegram/Telegram Video",
-    ];
-    TelegramPlus = [
-      "{storage}/Android/data/org.telegram.plus/files/Telegram/Telegram Audio",
-      "{storage}/Android/data/org.telegram.plus/files/Telegram/Telegram Documents",
-      "{storage}/Android/data/org.telegram.plus/files/Telegram/Telegram Files",
-      "{storage}/Android/data/org.telegram.plus/files/Telegram/Telegram Images",
-      "{storage}/Android/data/org.telegram.plus/files/Telegram/Telegram Stories",
-      "{storage}/Android/data/org.telegram.plus/files/Telegram/Telegram Video",
+      "{androidData}/*gram*/files/Telegram/Telegram Audio",
+      "{androidData}/*gram*/files/Telegram/Telegram Documents",
+      "{androidData}/*gram*/files/Telegram/Telegram Files",
+      "{androidData}/*gram*/files/Telegram/Telegram Images",
+      "{androidData}/*gram*/files/Telegram/Telegram Stories",
+      "{androidData}/*gram*/files/Telegram/Telegram Video",
     ];
     酷安 = [
-      "{storage}/Android/data/com.coolapk.market/files/Download",
+      "{androidData}/com.coolapk.market/files/Download",
     ];
     百度 = [
-      "{storage}/Android/data/com.baidu.searchbox/files/downloads",
+      "{androidData}/com.baidu.searchbox/files/downloads",
     ];
     Chrome = [
-      "{storage}/Android/data/com.android.chrome/files/Download",
+      "{androidData}/com.android.chrome/files/Download",
     ];
     夸克 = [
       "{storage}/Quark",
@@ -90,5 +71,5 @@
   };
   IgnoreList = ["bak"];
   NameList = {};
-  IgnoreNameList = ["tmp"];
+  IgnoreNameList = ["tmp", "cache", "log"];
 }
