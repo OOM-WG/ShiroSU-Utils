@@ -1,6 +1,6 @@
 {
   Name = "苏柚默认配置";
-  Author = "YumeYuka&咲汀";
+  Author = "YumeYuka&Sakitin";
   Version = "25-02-19";
   Classify = "/sdcard/文件分类";
   Delay = 60;
