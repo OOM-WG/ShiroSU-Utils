@@ -1,7 +1,7 @@
 {
   Name = "苏柚默认配置";
   Author = "YumeYuka&Sakitin";
-  Version = "25-02-19";
+  Version = "25-02-21";
   Classify = "/sdcard/文件分类";
   Delay = 60;
   MultiUser = false;
@@ -61,11 +61,11 @@
   SuffixList = {
     压缩包 = ["rkc", "zip", "rar", "7z", "tar", "gz", "bz2", "xz", "z", "iso", "tgz", "tbz2", "cab", "arj", "lzh", "ace", "uue", "bz", "lz", "lzma", "lzo", "rz", "sfark"];
     程序 = ["exe", "msi", "bat", "sh", "cmd", "jar", "deb", "rpm", "app", "dmg", "pkg", "bin", "run"];
-    视频 = ["mp4", "mkv", "avi", "mov", "wmv", "flv", "webm", "mpeg", "mpg", "3gp", "m4v", "vob", "ogv", "mxf", "rm", "rmvb"];
+    [name]-视频 = ["mp4", "mkv", "avi", "mov", "wmv", "flv", "webm", "mpeg", "mpg", "3gp", "m4v", "vob", "ogv", "mxf", "rm", "rmvb"];
     文档 = ["doc", "docx", "pdf", "txt", "xls", "xlsx", "ppt", "pptx", "odt", "ods", "odp", "rtf", "md", "tex", "epub", "mobi", "azw", "azw3", "fb2", "djvu"];
     安装包 = ["apk", "apks", "xapk", "ipa", "hap"];
     音频 = ["mp3", "wav", "flac", "aac", "ogg", "wma", "m4a", "alac", "aiff", "amr", "ape", "au", "dts", "mka"];
-    图片 = ["jpg", "jpeg", "png", "gif", "bmp", "tiff", "svg", "webp", "ico", "heic", "psd", "ai", "eps", "raw", "cr2", "nef", "orf", "sr2"];
+    [name]-图片 = ["jpg", "jpeg", "png", "gif", "bmp", "tiff", "svg", "webp", "ico", "heic", "psd", "ai", "eps", "raw", "cr2", "nef", "orf", "sr2"];
     代码 = ["fvv", "fw", "rpp", "rxx", "r++", "c", "h", "cpp", "java", "py", "js", "html", "css", "json", "xml", "php", "rb", "go", "rs", "ts", "swift", "kt", "cs", "vb", "pl", "r", "m", "scala", "lua", "asm", "s", "vhdl", "verilog"];
     其他 = [];
   };
