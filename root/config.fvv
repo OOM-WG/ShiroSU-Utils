@@ -69,7 +69,7 @@
     代码 = ["fvv", "fw", "rpp", "rxx", "r++", "c", "h", "cpp", "java", "py", "js", "html", "css", "json", "xml", "php", "rb", "go", "rs", "ts", "swift", "kt", "cs", "vb", "pl", "r", "m", "scala", "lua", "asm", "s", "vhdl", "verilog"];
     其他 = [];
   };
-  IgnoreList = ["bak"];
+  IgnoreList = ["bak", "aria"];
   NameList = {};
   IgnoreNameList = ["tmp", "cache", "log"];
 }
