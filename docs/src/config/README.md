@@ -67,6 +67,12 @@ category:
 * 示例值: `其他`
 `DefaultType`是一个字符串，用于定义分类文件的默认类型。
 
+## IgnoreNoSuffix
+
+* 类型: `bool`
+* 示例值: `true`
+`IgnoreNoSuffix`是一个布尔值，用于定义是否启用忽略无后缀文件功能。
+
 ## ListenList
 
 * 类型: `string[]`
