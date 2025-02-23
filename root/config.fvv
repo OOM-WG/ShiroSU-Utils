@@ -1,7 +1,7 @@
 {
   Name = "苏柚默认配置";
   Author = "YumeYuka&Sakitin";
-  Version = "25-02-22";
+  Version = "25-02-23";
   Classify = "/sdcard/文件分类";
   Delay = 60;
   MultiUser = false;
@@ -59,6 +59,7 @@
       "{storage}/微云保存的文件",
     ];
   };
+  RecList = [];
   SuffixList = {
     压缩包 = ["rkc", "zip", "rar", "7z", "tar", "gz", "bz2", "xz", "z", "iso", "tgz", "tbz2", "cab", "arj", "lzh", "ace", "uue", "bz", "lz", "lzma", "lzo", "rz", "sfark"];
     程序 = ["exe", "msi", "bat", "sh", "cmd", "jar", "deb", "rpm", "app", "dmg", "pkg", "bin", "run"];
