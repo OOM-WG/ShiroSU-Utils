@@ -44,7 +44,7 @@ newline
   mkdir -p "$Config_DIR"
   cp -f "$Config" "$Config_DIR"
 }
-get_target_bin SUU-tidy
+get_target_bin Suu-Nyanya
 newline
 skt_print "配置路径在 /sdcard/Android/Suu-Nyanya/config.json"
 skt_print "Github: https://github.com/YumeYuka/Suu-Nyanya"
