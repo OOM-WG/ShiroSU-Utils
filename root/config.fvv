@@ -1,7 +1,7 @@
 {
   Name = "苏柚默认配置";
   Author = "YumeYuka&Sakitin";
-  Version = "25-02-23";
+  Version = "25-02-24";
   Classify = "/sdcard/文件分类";
   Delay = 60;
   MultiUser = false;
@@ -17,12 +17,12 @@
       "{androidData}/com.tencent.*/Tencent/*file_recv",
     ];
     Telegram = [
-      "{androidData}/*gram*/files/Telegram/Telegram Audio",
+      <"{androidData}/*gram*/files/Telegram/Telegram Audio",>
       "{androidData}/*gram*/files/Telegram/Telegram Documents",
       "{androidData}/*gram*/files/Telegram/Telegram Files",
-      "{androidData}/*gram*/files/Telegram/Telegram Images",
-      "{androidData}/*gram*/files/Telegram/Telegram Stories",
-      "{androidData}/*gram*/files/Telegram/Telegram Video",
+      <"{androidData}/*gram*/files/Telegram/Telegram Images",>
+      <"{androidData}/*gram*/files/Telegram/Telegram Stories",>
+      <"{androidData}/*gram*/files/Telegram/Telegram Video",>
     ];
     酷安 = [
       "{androidData}/com.coolapk.market/files/Download",
