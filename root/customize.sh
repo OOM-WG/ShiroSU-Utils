@@ -46,7 +46,7 @@ newline
 }
 get_target_bin Suu-Nyanya
 newline
-skt_print "配置路径在 /sdcard/Android/Suu-Nyanya/config.json"
+skt_print "配置路径在 /sdcard/Android/Suu-Nyanya/config.fvv"
 skt_print "Github: https://github.com/YumeYuka/Suu-Nyanya"
 skt_print "如果可以的话,请给我一个Star"
 newline
