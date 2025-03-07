@@ -54,6 +54,3 @@ footer: 使用 <a href="https://theme-hope.vuejs.press/zh/" target="_blank">VueP
 :::important
 版本迭代过快，请及时更新模块
 :::
-
-# 协议
-## [Apache License 2.0](https://github.com/YumeYuka/Suu-Nyanya/blob/master/LICENSE)
