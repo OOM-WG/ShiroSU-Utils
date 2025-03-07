@@ -24,7 +24,5 @@
 * @YumeYuka (发起者)
 * @GunRain(安音咲汀/芙洛洛/泠熙子) (修了很多bug加了很多新功能的人)
 
-## 开源许可证
-### [Apache License 2.0](LICENSE)
 
 [![Star History Chart](https://api.star-history.com/svg?repos=YumeYuka/Suu-Nyanya&type=Timeline)](https://star-history.com/#YumeYuka/Suu-Nyanya&Timeline)
