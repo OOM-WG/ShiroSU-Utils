@@ -11,7 +11,7 @@ category:
 
 ###### 注意
 
-苏柚Nyanya使用开源的[FVV文本格式](https://github.com/GunRain/FVV)，您应该先了解该文本格式后再配置配置文件。
+苏柚Nyanya使用开源的[FVV文本格式](https://gitcode.com/OutOfMemories-WorkGroup/FVV)，您应该先了解该文本格式后再配置配置文件。
 
 ## Name
 
