@@ -1,6 +1,6 @@
 Name = "苏柚默认配置"
 Author = "YumeYuka&Sakitin"
-Version = "25-02-24"
+Version = "25-03-12"
 Classify = "/sdcard/文件分类"
 Delay = 60
 MultiUser = false
@@ -10,52 +10,52 @@ DefaultType = "其他"
 IgnoreNoSuffix = true
 ListenList = {
   下载 = [
-    "{storage}/Download",
+    "{storage}/Download"
   ]
   QQ-Tim = [
-    "{androidData}/com.tencent.*/Tencent/*file_recv",
+    "{androidData}/com.tencent.*/Tencent/*file_recv"
   ]
   Telegram = [
-    <"{androidData}/*gram*/files/Telegram/Telegram Audio",>
-    "{androidData}/*gram*/files/Telegram/Telegram Documents",
-    "{androidData}/*gram*/files/Telegram/Telegram Files",
-    <"{androidData}/*gram*/files/Telegram/Telegram Images",>
-    <"{androidData}/*gram*/files/Telegram/Telegram Stories",>
-    <"{androidData}/*gram*/files/Telegram/Telegram Video",>
+    <"{androidData}/*gram*/files/Telegram/Telegram Audio">
+    "{androidData}/*gram*/files/Telegram/Telegram Documents"
+    "{androidData}/*gram*/files/Telegram/Telegram Files"
+    <"{androidData}/*gram*/files/Telegram/Telegram Images">
+    <"{androidData}/*gram*/files/Telegram/Telegram Stories">
+    <"{androidData}/*gram*/files/Telegram/Telegram Video">
   ]
   酷安 = [
-    "{androidData}/com.coolapk.market/files/Download",
+    "{androidData}/com.coolapk.market/files/Download"
   ]
   百度 = [
-    "{androidData}/com.baidu.searchbox/files/downloads",
+    "{androidData}/com.baidu.searchbox/files/downloads"
   ]
   Chrome = [
-    "{androidData}/com.android.chrome/files/Download",
+    "{androidData}/com.android.chrome/files/Download"
   ]
   夸克 = [
-    "{storage}/Quark",
+    "{storage}/Quark"
   ]
   QQ浏览器 = [
-    "{storage}/QQBrowser",
+    "{storage}/QQBrowser"
   ]
   UC浏览器 = [
-    "{storage}/UCDownloads",
-    "{storage}/UCTurbo/Download",
+    "{storage}/UCDownloads"
+    "{storage}/UCTurbo/Download"
   ]
   123云盘 = [
-    "{storage}/123云盘",
+    "{storage}/123云盘"
   ]
   阿里云盘 = [
-    "{storage}/AliYunPan",
+    "{storage}/AliYunPan"
   ]
   百度网盘 = [
-    "{storage}/BaiduNetdisk",
+    "{storage}/BaiduNetdisk"
   ]
   小飞机网盘 = [
-    "{storage}/xiaofeiji",
+    "{storage}/xiaofeiji"
   ]
   微云 = [
-    "{storage}/微云保存的文件",
+    "{storage}/微云保存的文件"
   ]
 }
 RecList = []
