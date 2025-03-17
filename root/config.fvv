@@ -1,6 +1,6 @@
 Name = "苏柚默认配置"
 Author = "YumeYuka&Sakitin"
-Version = "25-03-12"
+Version = "25-03-17"
 Classify = "/sdcard/文件分类"
 Delay = 60
 MultiUser = false
@@ -12,8 +12,11 @@ ListenList = {
   下载 = [
     "{storage}/Download"
   ]
-  QQ-Tim = [
-    "{androidData}/com.tencent.*/Tencent/*file_recv"
+  QQ = [
+    "{androidData}/com.tencent.mobileqq/Tencent/QQfile_recv"
+  ]
+  Tim = [
+    "{androidData}/com.tencent.tim/Tencent/TIMfile_recv"
   ]
   Telegram = [
     <"{androidData}/*gram*/files/Telegram/Telegram Audio">
