@@ -3,7 +3,7 @@
 <div align="center">
     <img src="https://suu.ad.200ok.work/刻晴.png" style="width: 96px;" alt="logo">
 
-[![Latest release](https://img.shields.io/github/v/release/TimeBreeze/Tritium?label=Release&logo=github)](https://github.com/TimeBreeze/Tritium/releases/latest) [![GitHub License](https://img.shields.io/github/license/TimeBreeze/Tritium?logo=gnu)](/LICENSE)  ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/YumeYuka/Suu-Nyanya/total)
+[![Latest release](https://img.shields.io/github/v/release/YumeYuka/Suu-Nyanya?label=Release&logo=github)](https://github.com/YumeYuka/Suu-Nyanya/releases/latest) [![GitHub License](https://img.shields.io/github/license/YumeYuka/Suu-Nyanya?logo=gnu)](/LICENSE)  ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/YumeYuka/Suu-Nyanya/total)
 
 </div>
 
