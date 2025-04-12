@@ -1,34 +1,36 @@
 # ✨ 什么是苏柚 Nyanya
 
 <div align="center">
-    <img src="https://suu.ad.200ok.work/刻晴.png" style="width: 96px;" alt="logo">      
-    
-[![Latest release](https://img.shields.io/github/v/release/YumeYuka/Suu-Nyanya?label=Release&logo=github)](https://github.com/YumeYuka/Suu-Nyanya/releases/latest) [![GitHub License](https://img.shields.io/github/license/YumeYuka/Suu-Nyanya?logo=gnu)](/LICENSE)  ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/YumeYuka/Suu-Nyanya/total)
+    <img src="https://suu.ad.200ok.work/刻晴.png" style="width: 96px;" alt="logo">
+
+[![Latest release](https://img.shields.io/github/v/release/TimeBreeze/Tritium?label=Release&logo=github)](https://github.com/TimeBreeze/Tritium/releases/latest) [![GitHub License](https://img.shields.io/github/license/TimeBreeze/Tritium?logo=gnu)](/LICENSE)  ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/YumeYuka/Suu-Nyanya/total)
 
 </div>
 
 ## 📚 文档
+
 - [文档地址](https://suu.ad.200ok.work)
 - [自定义配置文件](https://suu.ad.200ok.work/config/)
 
 苏柚 Nyanya，让杂乱无章的文件世界变得如同精美画卷般整洁可爱喵~ ✨
 
 ### 特性
+
 - 完美兼容 `Magisk`、`KernelSU` 或 `APatch`，支持 `Android 5.0` 及以上版本的设备
 - 允许自定义魔法配置文件，随心所欲地编排文件，尽显个性
 
 ### 安装
+
 1. 下载最新版本的 [Suu-Nyanya](https://github.com/YumeYuka/Suu-Nyanya/releases/latest)  
 2. 解压缩文件并将其放置在设备的合适位置置  
-3. 根据需要编辑配置文件   
+3. 根据需要编辑配置文件
 4. 选择Magisk/KernelSU/APatch输入模块安装
 5. 重启设备
 
-
 ## 👩‍💻 作者
+
 - **@YumeYuka** (发起者)
 - **~~@GunRain~~(正在打复活赛)** (芊莳草 / 安音咲汀 / 芙洛洛 / 泠熙子)  修了很多 bug，加了很多新功能的人  
-
 
 ## License
 
@@ -37,7 +39,8 @@
 **OFFICIAL WEBSITE:** [http://license.fileto.download](http://license.fileto.download)  
 *IN CASE OF DISCREPANCIES, THE OFFICIAL WEBSITE SHALL PREVAIL.*
 
-### Terms and conditions for use, reproduction and redistribution:
+### Terms and conditions for use, reproduction and redistribution
+
 1. Redistribution of the source code and built artifacts must retain this license and the original author's copyright notice.  
    - If built artifacts are distributed in a compressed format that supports multiple files, the license must be included within the archive.  
    - Otherwise, it must appear in the accompanying documentation or other materials distributed with the built artifacts.  
