@@ -4,7 +4,7 @@ import navbar from "./navbar.js";
 import sidebar from "./sidebar.js";
 
 export default hopeTheme({
-  hostname: "https://github.com/YumeYuka/Intelligent_docs",
+  hostname: "https://github.com/YumeYuka/SUU_docs",
 
   author: {
     name: "YumeYuka",

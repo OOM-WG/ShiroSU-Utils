@@ -4,11 +4,48 @@ export default sidebar({
   "/": [
     "",
     {
-      text: "自定义配置",
-      icon: "laptop-code",
-      prefix: "demo/",
-      link: "demo/",
-      children: "structure",
-    }
+      text: "Guide",
+      icon: "book",
+      prefix: "guide/",
+      children: [
+        {
+          text: "了解",
+          link: "README.md",
+          icon: "circle-info"
+        },
+        {
+          text: "开始",
+          link: "Use.md",
+          icon: "download"
+        }
+      ],
+    },
+    {
+      text: "Customize",
+      icon: "file",
+      prefix: "customize/",
+      children: [
+        {
+          text: "Nyanya整理",
+          link: "Nyanya.md",
+          icon: "edit"
+        },
+        {
+          text: "FVV配置模块",
+          link: "C&C.md",
+          icon: "cogs"
+        },
+        {
+          text: "GBB优质存储",
+          link: "GBB.md",
+          icon: "database"
+        },
+        {
+          text: "其他模块",
+          link: "Other.md",
+          icon: "puzzle-piece"
+        },
+      ],
+    },
   ],
 });

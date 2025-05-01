@@ -6,8 +6,8 @@ export default defineUserConfig({
   base: "/",
 
   lang: "zh-CN",
-  title: "苏柚Nyanya",
-  description: "苏柚Nyanya文档",
+  title: "苏柚 - SUU",
+  description: "苏柚 - SUU 文档",
 
   theme,
 
