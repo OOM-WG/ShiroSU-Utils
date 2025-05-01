@@ -34,3 +34,9 @@ tags:
 4. 配置完成，一切就绪，开始使用吧~ ヾ(≧▽≦*)o
 :::
 
+## 功能导航 
+* [Nyanya整理](../customize/Nyanya.md)
+* [C&C清理](../customize/C&C.md)
+* [GBB优质存储](../customize/GBB.md)
+* ~~[KFlash](../customize/KFlash.md)~~
+* [其他模块](../customize/Other.md)

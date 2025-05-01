@@ -31,7 +31,7 @@ export default sidebar({
           icon: "edit"
         },
         {
-          text: "FVV配置模块",
+          text: "C&C清理",
           link: "C&C.md",
           icon: "cogs"
         },
