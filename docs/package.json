@@ -1,20 +1,38 @@
 {
   "name": "SUU_docs",
-  "description": "A project of vuepress-theme-hope",
-  "version": "2.0.0",
+  "description": "SUU_docs",
+  "author": "SUU Developers(OOM.WG)",
   "license": "MIT",
+  "private": true,
   "type": "module",
   "scripts": {
-    "docs:build": "vuepress-vite build src",
-    "docs:clean-dev": "vuepress-vite dev src --clean-cache",
-    "docs:dev": "vuepress-vite dev src",
-    "docs:update-package": "pnpm dlx vp-update"
+    "dev": "vitepress dev",
+    "build": "vitepress build ",
+    "preview": "vitepress preview "
+  },
+  "dependencies": {
+    "@vue/repl": "^4.5.1",
+    "@vue/theme": "^2.3.0",
+    "dynamics.js": "^1.1.5",
+    "gsap": "^3.12.7",
+    "vitepress": "2.0.0-alpha.5",
+    "vitepress-auto-nav-sidebar": "^0.1.1",
+    "vue-amazing-ui": "^2.4.4"
   },
   "devDependencies": {
-    "@vuepress/bundler-vite": "2.0.0-rc.19",
-    "sass-embedded": "^1.83.0",
-    "vue": "^3.5.13",
-    "vuepress": "2.0.0-rc.19",
-    "vuepress-theme-hope": "2.0.0-rc.66"
+    "@w3ctech-editorial-department/vitepress-auto-configure-nav-sidebar": "^1.0.0",
+    "fast-glob": "^3.3.3",
+    "gray-matter": "^4.0.3",
+    "js-yaml": "^4.1.0",
+    "markdown-it": "^14.1.0",
+    "markdown-it-footnote": "^4.0.0",
+    "markdown-it-mathjax3": "^4.3.2",
+    "medium-zoom": "^1.1.0",
+    "sass": "^1.87.0",
+    "vitepress": "1.6.3p",
+    "vitepress-markdown-timeline": "^1.2.2",
+    "vitepress-plugin-comment-with-giscus": "^1.1.15",
+    "vitepress-plugin-google-analytics": "^1.0.2",
+    "vue": "^3.5.13"
   }
 }

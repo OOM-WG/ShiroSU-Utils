@@ -1,0 +1,42 @@
+/* Style to get the cheat sheet link in the home page */
+
+a.cta {
+  text-align: center;
+  border-radius: 8px;
+}
+
+a.cta:hover {
+  border-color: var(--vp-c-brand);
+  background-color: var(--c-bg-accent);
+}
+
+a.cta.video {
+  position: relative;
+  color: currentColor;
+  padding-left: 38px !important;
+}
+
+a.cta.video::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 20px;
+  top: calc(50% - 10px);
+  left: 12px;
+  border-radius: 50%;
+  border: 1px solid currentColor;
+}
+
+a.cta.video::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  top: calc(50% - 4px);
+  left: 20px;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-left: 7px solid currentColor;
+}
