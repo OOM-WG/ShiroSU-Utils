@@ -4,18 +4,7 @@ import { nav } from './nav';
 import { sidebar } from './sidebar';
 import { algoliaSearchOptions } from './search/algolia-search';
 import { localSearchOptions } from './search/local-search';
-// import AutoNavPlugin from 'vitepress-auto-nav-sidebar'
-// import AutoConfigureNavSidebar from '@w3ctech-editorial-department/vitepress-auto-configure-nav-sidebar'
 
-// const { nav, sidebar } = AutoConfigureNavSidebar({
-//   entry: 'src', // 入口目录
-//   collapsed: false, // 是否折叠侧边栏
-//   isCollapse: true,
-//   showNavIcon: false,
-//   singleLayerNav: true,
-//   showSidebarIcon: true,
-//   ignoreFolders: ['.vuepress' ,'team'],
-// })
 
 export const themeConfig: DefaultTheme.Config = {
   nav,

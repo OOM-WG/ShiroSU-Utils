@@ -13,7 +13,7 @@ default defineConfig({
     title: "SUU",
     description: "Super User Utils",
 
-    base: '',
+    base: '/',
     lastUpdated: true,
     ignoreDeadLinks: true,
     srcDir: 'src',
@@ -21,9 +21,9 @@ default defineConfig({
     srcExclude: [],
     scrollOffset: 'header',
     cleanUrls: true,
-    sitemap: {
-        hostname: 'https://SUU.YumeYuka.cn/',
-    },
+    // sitemap: {
+    //   hostname: 'https://example.com'
+    // },
     head, // <head>内标签配置
     markdown: markdown, // Markdown配置
     themeConfig,
