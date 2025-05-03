@@ -6,5 +6,5 @@ export const metaData = {
   title: 'SUU',
   description: 'Super User Utils，简称SUU，中文名称就是苏柚啦！',
   site,
-  image: `${site}/SUU.webp`,
+  image: `${site}/SUU_logo.webp`,
 };

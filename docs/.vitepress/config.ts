@@ -21,9 +21,9 @@ default defineConfig({
     srcExclude: [],
     scrollOffset: 'header',
     cleanUrls: true,
-    // sitemap: {
-    //   hostname: 'https://example.com'
-    // },
+    sitemap: {
+      hostname: 'https://example.com'
+    },
     head, // <head>内标签配置
     markdown: markdown, // Markdown配置
     themeConfig,
