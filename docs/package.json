@@ -7,8 +7,8 @@
   "type": "module",
   "scripts": {
     "dev": "vitepress dev",
-    "build": "vitepress build ",
-    "preview": "vitepress preview "
+    "build": "vitepress build",
+    "preview": "vitepress preview"
   },
   "dependencies": {
     "@vue/repl": "^4.5.1",
