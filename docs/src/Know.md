@@ -1,16 +1,3 @@
----
-title: 快速了解
-icon: circle-info
-index: true
-category:
-    - 入门基础
-tags:
-    - 基础
-    - 入门
-    - Android
-    - Windows
----
-
 ::: tip
 
  > 苏柚是一款闭源软件，其分发遵循 [F2DLPRL](https://gitcode.com/OutOfMemories-WorkGroup/F2DLPRL)，使用者需遵守相关规定。  
@@ -28,24 +15,26 @@ tags:
 - 系统为`Android 7.0+`
 - 架构为`arm64-v8a`、`x86_64`、`armeabi-v7a`之一
 
-#### Root实现
+#### root实现
 
-**如果你是`user`/`adb(shell)`用户，请忽略该内容**
+> **如果你是`user`/`adb(shell)`用户，请忽略该内容**
 
-常规的Root实现方式基本上都是支持的：
+常规的root实现方式基本上都是支持的：
 
 - `Magisk`及其修改版本
 - `KernelSU`及其修改版本
 - `APatch`及其修改版本
 
-但对其他Root实现的支持持保留态度（？）（例如`Mumu模拟器`的自带Root是不支持的！）
+> 其他root实现的支持持保留态度（例如`Mumu模拟器`的自带Root是不支持的！）
 
-但是以下Root实现不建议使用：
+但是以下root实现不建议使用：
 
 - `Kitsune Magisk` (原`Magisk Delta`)，原因：不再更新，不支持新特性
-- `SukiSU Ultra`，原因：**实现有问题，影响正常使用**，且开发者抵触此Root实现
+- `SukiSU Ultra`，原因：**实现有问题，影响正常使用**，且开发者抵触此root实现
 
-**强烈建议使用不建议的Root实现的用户尽快切换到其他Root实现！否则可能无法正常使用苏柚哦！**
+::: warning
+**强烈建议使用不建议的root实现的用户尽快切换到其他root实现！否则可能无法正常使用苏柚哦！**
+:::
 
 ### Windows
 
@@ -59,7 +48,5 @@ tags:
 - 支持传输数据的`USB-A`或`USB-C`的接口（用于与Android设备交互）
 
 ::: warning
-
-苏柚目前还在进行**非正式版**更新，功能可能出现**不稳定**、**不完整**情况，请见谅！
-
+苏柚目前还在进行**预览版**更新，功能可能出现**不稳定**、**不完整**等情况，请见谅！
 :::

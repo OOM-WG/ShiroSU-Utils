@@ -1,14 +1,12 @@
 ---
 layout: home
-title: 苏柚 - SUU
-titleTemplate: SUU
 
 hero:
   name: 苏柚 - SUU
   text: 憧憬是距离理解最遥远的感情
-  tagline: 他何尝不是我们心中神明呢，一切，终将得到救赎... ...
+  tagline: 祂何尝不是我们心中神明呢，一切，终将得到救赎...
   image:
-    src: ./SUU.webp
+    src: ./Logo.webp
   actions:
     - theme: brand
       text: 快速了解
@@ -18,7 +16,7 @@ hero:
       link: https://pd.qq.com/s/cq98l9kk7
     - theme: brand
       text: Discord频道
-      link: https://discord.gg/rak2W7xN
+      link: https://discord.gg/RQBBVhSCa5
 
 features:
   - title: 智能整理
@@ -32,10 +30,6 @@ features:
   - title: 优质储存
     icon: box
     details: 安全储存数据，便于后续检索与再利用。
-
-  - title: KFlash（开发中）
-    icon: lightning
-    details: 敬请期待未来的精彩表现。
 
   - title: 实验工具集合
     icon: tools
@@ -53,4 +47,10 @@ features:
     icon: chart-bar
     details: 集成多种第三方库。
 
+
 ---
+<div align="center">
+
+Super User Utils，简称SUU，中文名称就是苏柚啦！
+
+</div>

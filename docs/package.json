@@ -14,10 +14,10 @@
     "@vue/repl": "^4.5.1",
     "@vue/theme": "^2.3.0",
     "dynamics.js": "^1.1.5",
-    "gsap": "^3.12.7",
+    "gsap": "^3.13.0",
     "vitepress": "2.0.0-alpha.5",
     "vitepress-auto-nav-sidebar": "^0.1.1",
-    "vue-amazing-ui": "^2.4.4"
+    "vue-amazing-ui": "^2.4.5"
   },
   "devDependencies": {
     "@w3ctech-editorial-department/vitepress-auto-configure-nav-sidebar": "^1.0.0",

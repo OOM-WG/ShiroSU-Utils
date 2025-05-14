@@ -1,30 +1,25 @@
 import { defineConfig } from 'vitepress'
-import { metaData } from './config/constants';
-import { head } from './config/head';
-import { markdown } from './config/markdown';
-import { themeConfig } from './config/theme';
-import { createApp } from 'vue'
+import { head } from './head';
+import { markdown } from './markdown';
+import { themeConfig } from './theme';
 
+export default defineConfig({
 
+  title: "苏柚",
+  description: "正在为您着想的软件呢！",
 
-export
-default defineConfig({
-
-    title: "SUU",
-    description: "Super User Utils",
-
-    base: '/',
-    lastUpdated: true,
-    ignoreDeadLinks: true,
-    srcDir: 'src',
-    outDir: './dist',
-    srcExclude: [],
-    scrollOffset: 'header',
-    cleanUrls: true,
-    sitemap: {
-      hostname: 'https://example.com'
-    },
-    head, // <head>内标签配置
-    markdown: markdown, // Markdown配置
-    themeConfig,
+  base: '/',
+  lastUpdated: true,
+  ignoreDeadLinks: true,
+  srcDir: 'src',
+  outDir: './dist',
+  srcExclude: [],
+  scrollOffset: 'header',
+  cleanUrls: true,
+  sitemap: {
+    hostname: 'https://suu.yumeyuka.cn'
+  },
+  head, // <head>内标签配置
+  markdown: markdown, // Markdown配置
+  themeConfig,
 })
