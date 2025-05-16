@@ -1,3 +1,7 @@
+---
+layout: doc
+---
+
 ## 支持范围
 
 - LSPosed

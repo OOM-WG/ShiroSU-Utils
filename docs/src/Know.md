@@ -1,3 +1,7 @@
+---
+layout: doc
+---
+
 ::: tip
 
  > 苏柚是一款闭源软件，其分发遵循 [F2DLPRL](https://gitcode.com/OutOfMemories-WorkGroup/F2DLPRL)，使用者需遵守相关规定。  

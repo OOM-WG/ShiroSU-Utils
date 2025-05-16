@@ -51,6 +51,9 @@ html {
   transition:
     background-color 0.5s,
     top 0.35s ease-out !important;
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
 }
 
 #app a:focus-visible,
@@ -184,3 +187,59 @@ html {
     --enter-stage: 20;
   }
 }
+
+.VPNavBarTitle {
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+
+/* 确保About页面正确显示 */
+html.has-nav-fix .VPNav {
+  z-index: 100;
+}
+
+/* 修复右侧大纲区域背景色 */
+.VPDoc .aside {
+  background-color: transparent !important;
+}
+
+/* 确保右侧区域背景透明 */
+.VPDoc .aside-container,
+.VPDoc .aside-curtain,
+.VPDocAside {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* 修复可能影响右侧区域的页脚样式 */
+.VPDoc + .VPFooter,
+.VPContent + .VPFooter {
+  background-color: var(--vp-c-bg) !important;
+  border-top: 1px solid var(--vp-c-divider);
+}
+
+/* 确保内容区域与背景融合 */
+.VPContent {
+  background-color: var(--vp-c-bg) !important;
+}
+
+/* 修改指定元素的圆角 */
+div.VPLink.no-icon.VPFeature {
+  border-radius: 30px !important;
+  overflow: hidden;
+}
+
+/* 设置所有功能卡片的圆角 */
+.VPFeature {
+  border-radius: 30px !important;
+  overflow: hidden;
+}
+
+/* 确保卡片中的图标和内容也适应圆角 */
+.VPFeature .VPImage {
+  border-radius: 8px;
+}
+

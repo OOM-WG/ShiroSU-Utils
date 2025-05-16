@@ -1,3 +1,7 @@
+---
+layout: doc
+---
+
 ::: tip
 modify.my.id仅能在**欢愉模式**使用
 :::
