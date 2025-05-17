@@ -34,31 +34,39 @@
 
 ## License
 
-**File to Download Public Resources License (F2DLPRL or F2DLPR License)**  
+### File to Download Public Resources License (F2DLPRL or F2DLPR License)
 
-**OFFICIAL WEBSITE:** [http://license.fileto.download](http://license.fileto.download)  
-*IN CASE OF DISCREPANCIES, THE OFFICIAL WEBSITE SHALL PREVAIL.*
+> This license applies to source code, distributions, written works, and other original forms of work.
 
-### Terms and conditions for use, reproduction and redistribution
+__OFFICIAL WEBSITE: <http://license.fileto.download>__
 
-1. Redistribution of the source code and built artifacts must retain this license and the original author's copyright notice.  
-   - If built artifacts are distributed in a compressed format that supports multiple files, the license must be included within the archive.  
-   - Otherwise, it must appear in the accompanying documentation or other materials distributed with the built artifacts.  
-   - Additionally, the original author's copyright notice must be reproduced in the accompanying documentation or other materials distributed with the built artifacts.
-2. Any entity is permitted to use, copy, and redistribute the source code.  
-   - Built artifacts may only be used and copied, but not redistributed, even if modified.  
-   - The source code may be used for personal purposes but not for commercial use, even if modified.  
-   - Projects that use the source code, but are based on modifications or derivatives of non-source code, may be used for commercial purposes.  
-   - Built artifacts may only be used for personal purposes and may not be used for commercial purposes, even if modified.  
-   - Built artifacts used to display content on user interfaces may be used for commercial purposes.  
-   - Only the original author has the right to use the source code and built artifacts for commercial purposes.
-3. Both the source code and built artifacts may not be used for exploitative purposes or model training.
-4. Use of the source code or built artifacts is prohibited if it would cause harm to the original author's interests, except for normal wear and tear resulting from typical usage.
-5. No entity is granted the right to use any copyrights, patents, trade names, trademarks, service marks, or product licenses, except as reasonably and customarily required to describe the source or origin of the source code or built artifacts.
-6. If modified versions or derivative works of the source code or built artifacts are distributed, the changes made must be clearly indicated.
-7. The descriptions provided by the original author in the source code, accompanying documentation, or other materials distributed with the source code or built artifacts take precedence over the terms and conditions of this license.
+_IN CASE OF DISCREPANCIES, THE OFFICIAL WEBSITE SHALL PREVAIL._
+
+#### Terms and conditions for use, reproduction and redistribution
+
+- The descriptions provided by the copyright owner in the source code, accompanying documentation, or other materials redistributed with the originals take precedence over the terms and conditions of this license.
+
+- Use, reproduction, and redistribution of the original document constitutes acceptance of the opinions, values, or other content that may be contained in the original, including, but not limited to, political positions, cultural opinions, or other implied information, as well as additional or implicit content that may be involved.
+
+- Use of the original is prohibited if it would cause damage to the interests of the copyright owner, except for normal wear and tear caused by normal use.
+
+- Any entity is permitted to use, reproduction, and redistribute source code, textual works, or other forms of work.
+  - Distributions may only be used and copied, but may not be redistributed, even if modified.
+  - Source code, literary works, or other forms of work may be used for personal purposes, but not for commercial purposes, even if modified, but items that use it but are based on modifications or derivatives that are not based on it may be used for commercial purposes.
+  - Distributions may only be used for personal purposes and may not be used for commercial purposes, even if modified, however, distributions used to display content on user interface may be used for commercial purposes.
+  - Only the copyright owner has the right to use the original for commercial purposes.
+  - The original cannot be used for exploitative purposes or model training.
+
+- No entity is granted the right to use any copyright, patent, trade name, trademark, service mark, or product license derived from the original, except as reasonably and customarily required to describe the source of the original.
+
+- Redistribution of the original requires retaining this license and the copyright owner's copyright notice, or providing a link to the original source of the original and acknowledging the copyright owner.
+  - If the distributions are redistributed in a compressed format that supports multiple files, this license must be included in the archive, otherwise, this license will need to be incorporated into the accompanying documentation or other materials redistributed with the original.
+  - Additionally, the copyright owner's copyright notice must be reproduced in the accompanying documentation or other materials redistributed with the original.
+
+- If the modified version or derivative work of the original is redistributed, the changes must be clearly indicated.
 
 ---
 
-**THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES.**  
-**IN NO EVENT SHALL THE COPYRIGHT HOLDERS OR CONTRIBUTORS BE LIABLE FOR ANY NEGATIVE IMPACT, BUT ONLY FOR POSITIVE IMPACT, WHETHER OR NOT THEY HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.**
+__THIS ORIGINAL IS PROVIDED BY THE COPYRIGHT OWNER "AS IS" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED.__
+
+__IN NO EVENT SHALL THE COPYRIGHT OWNER BE LIABLE FOR ANY NEGATIVE IMPACT, BUT ONLY FOR THE POSITIVE IMPACT, WHETHER OR NOT THE USER, COPIER, OR REDISTRIBUTOR HAS BEEN INFORMED OF THE POSSIBILITY OF CAUSING DAMAGE.__
