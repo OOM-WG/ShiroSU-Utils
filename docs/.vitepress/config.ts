@@ -43,7 +43,7 @@ export default defineConfig({
   scrollOffset: "header",
   cleanUrls: true,
   sitemap: {
-    hostname: "https://suu.yumeyuka.cn",
+    hostname: "https://suu.yumeyuka.plus",
   },
   head: [...head, ["script", {}, fixNavigationScript]], // <head>内标签配置
   markdown: markdown, // Markdown配置

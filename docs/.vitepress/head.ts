@@ -14,13 +14,13 @@ export const head: HeadConfig[] = [
   ["meta", { property: "og:locale", content: "zh-CN" }],
   ["meta", { property: "og:title", content: "苏柚" }],
   ["meta", { property: "og:description", content: "正在为您着想的软件呢！" }],
-  ["meta", { property: "og:site", content: "https://suu.yumeyuka.cn" }],
+  ["meta", { property: "og:site", content: "https://suu.yumeyuka.plus" }],
   ["meta", { property: "og:site_name", content: "苏柚" }],
   [
     "meta",
     {
       property: "og:image",
-      content: "https://suu.yumeyuka.cn/Logo_Rounded.webp",
+      content: "https://suu.yumeyuka.plus/Logo_Rounded.webp",
     },
   ],
 
