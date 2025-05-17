@@ -1,7 +1,7 @@
 # ✨ 什么是苏柚 Nyanya
 
 <div align="center">
-    <img src="https://suu.ad.200ok.work/刻晴.png" style="width: 96px;" alt="logo">
+    <img src="https://suu.ad.200ok.work/Logo.webp" style="width: 96px;" alt="logo">
 
 [![Latest release](https://img.shields.io/github/v/release/YumeYuka/SUU-Nyanya?label=Release&logo=github)](https://github.com/YumeYuka/SUU-Nyanya/releases/latest) [![GitHub License](https://img.shields.io/github/license/YumeYuka/SUU-Nyanya?logo=gnu)](/LICENSE)  ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/YumeYuka/SUU-Nyanya/total)
 
