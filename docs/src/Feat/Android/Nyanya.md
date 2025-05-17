@@ -1,5 +1,6 @@
 ---
-layout: doc
+title: Nyanya整理
+titleTemplate: 苏柚 Android
 ---
 
 ::: tip `Nyanya整理`有一个[**模块独立版**](https://github.com/YumeYuka/SUU-Nyanya)！

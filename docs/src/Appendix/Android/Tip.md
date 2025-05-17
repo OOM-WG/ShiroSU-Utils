@@ -1,5 +1,6 @@
 ---
-layout: doc
+title: 小贴士
+titleTemplate: 苏柚 Android
 ---
 
 ::: tip 当苏柚在**欢愉模式**下运行时，主页显示的电量会是真实电量(如果设备支持的话)

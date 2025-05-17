@@ -1,5 +1,6 @@
 ---
-layout: doc
+title: GBB优质存储
+titleTemplate: 苏柚 Android
 ---
 
 ::: tip

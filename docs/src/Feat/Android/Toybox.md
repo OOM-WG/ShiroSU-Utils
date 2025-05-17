@@ -1,5 +1,6 @@
 ---
-layout: doc
+title: Toybox玩具箱
+titleTemplate: 苏柚 Android
 ---
 
 ## 震震震

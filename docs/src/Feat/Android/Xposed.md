@@ -1,5 +1,6 @@
 ---
-layout: doc
+title: Xposed功能
+titleTemplate: 苏柚 Android
 ---
 
 ## 支持范围

@@ -1,5 +1,6 @@
 ---
-layout: doc
+title: 路径对照
+titleTemplate: 苏柚 Android
 ---
 
 |变量|单用户|多用户|需要root|

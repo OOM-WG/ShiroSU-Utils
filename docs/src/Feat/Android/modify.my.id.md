@@ -1,5 +1,6 @@
 ---
-layout: doc
+title: modify.my.id
+titleTemplate: 苏柚 Android
 ---
 
 ::: tip

@@ -54,7 +54,7 @@ export const sidebar: DefaultTheme.Config["sidebar"] = [
         items: [
           { text: "模式对照", link: "/Appendix/Android/Mode" },
           { text: "路径对照", link: "/Appendix/Android/Path" },
-          { text: "小提示", link: "/Appendix/Android/Tip" },
+          { text: "小贴士", link: "/Appendix/Android/Tip" },
         ],
       },
       {

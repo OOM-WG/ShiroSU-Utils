@@ -1,3 +1,8 @@
+---
+title: 开始使用
+titleTemplate: 苏柚 Windows
+---
+
 ## 下载
 
 > **版本迭代过快，请及时更新**

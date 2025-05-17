@@ -1,5 +1,6 @@
 ---
-layout: doc
+title: 更新日志
+titleTemplate: 苏柚 Android
 ---
 
 <div align="center">

@@ -1,5 +1,5 @@
 ---
-layout: doc
+title: 快速了解
 ---
 
 ::: tip
