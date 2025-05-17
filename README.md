@@ -3,7 +3,7 @@
 <div align="center">
     <img src="https://suu.ad.200ok.work/刻晴.png" style="width: 96px;" alt="logo">
 
-[![Latest release](https://img.shields.io/github/v/release/YumeYuka/Suu-Nyanya?label=Release&logo=github)](https://github.com/YumeYuka/Suu-Nyanya/releases/latest) [![GitHub License](https://img.shields.io/github/license/YumeYuka/Suu-Nyanya?logo=gnu)](/LICENSE)  ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/YumeYuka/Suu-Nyanya/total)
+[![Latest release](https://img.shields.io/github/v/release/YumeYuka/SUU-Nyanya?label=Release&logo=github)](https://github.com/YumeYuka/SUU-Nyanya/releases/latest) [![GitHub License](https://img.shields.io/github/license/YumeYuka/SUU-Nyanya?logo=gnu)](/LICENSE)  ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/YumeYuka/SUU-Nyanya/total)
 
 </div>
 
@@ -21,7 +21,7 @@
 
 ### 安装
 
-1. 下载最新版本的 [Suu-Nyanya](https://github.com/YumeYuka/Suu-Nyanya/releases/latest)  
+1. 下载最新版本的 [SUU-Nyanya](https://github.com/YumeYuka/SUU-Nyanya/releases/latest)  
 2. 解压缩文件并将其放置在设备的合适位置置  
 3. 根据需要编辑配置文件
 4. 选择Magisk/KernelSU/APatch输入模块安装
