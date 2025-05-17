@@ -14,7 +14,7 @@ layout: doc
 
 ## 支持范围
 
-### Android
+### [Android](Start/Android)
 
 - 系统为`Android 7.0+`
 - 架构为`arm64-v8a`、`x86_64`、`armeabi-v7a`之一
@@ -40,7 +40,7 @@ layout: doc
 **强烈建议使用不建议的root实现的用户尽快切换到其他root实现！否则可能无法正常使用苏柚哦！**
 :::
 
-### Windows
+### [Windows](Start/Windows)
 
 - 系统为`Windows 10+`
 - 架构为`x86_64`

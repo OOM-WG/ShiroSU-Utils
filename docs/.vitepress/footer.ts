@@ -6,29 +6,16 @@ const footer: CustomConfig["footer"] = {
   qrcodeLink: "https://pd.qq.com/s/91t3v4mr3",
   navigation: [
     {
-      title: "产品",
-      items: [
-        {
-          text: "使用手册",
-          link: "/Start/Android",
-        },
-        {
-          text: "更新日志",
-          link: "./ChangeLog",
-        },
-      ],
-    },
-    {
       title: "关于",
       items: [
         {
-          text: "团队博客",
-          link: "/about",
+          text: "团队信息",
+          link: "/About",
         },
-        {
+        /*{
           text: "赞助鸣谢",
           link: "/support-us",
-        },
+        },*/
       ],
     },
     {
@@ -36,19 +23,19 @@ const footer: CustomConfig["footer"] = {
       items: [
         {
           text: "免责声明",
-          link: "/More/disclaimer",
+          link: "/More/Disclaimer",
         },
         {
           text: "隐私政策",
-          link: "/More/privacy",
+          link: "/More/Privacy",
         },
         {
           text: "用户协议",
-          link: "/More/agreement",
+          link: "/More/Agreement",
         },
         {
-          text: "开源协议",
-          link: "/More/licensed",
+          text: "分发协议",
+          link: "/More/License",
         },
       ],
     },
@@ -56,12 +43,16 @@ const footer: CustomConfig["footer"] = {
       title: "更多",
       items: [
         {
-          text: "问题反馈",
-          link: "https://gitcode.com/OutOfMemories-WorkGroup",
+          text: "QQ频道",
+          link: "https://pd.qq.com/s/91t3v4mr3",
         },
         {
-          text: "友情链接",
-          link: "https://pd.qq.com/s/91t3v4mr3",
+          text: "Discord频道",
+          link: "https://discord.gg/RQBBVhSCa5",
+        },
+        {
+          text: "Latest Module",
+          link: "https://www.mod.latestfile.zip",
         },
       ],
     },

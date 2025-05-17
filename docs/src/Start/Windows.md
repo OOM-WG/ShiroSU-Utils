@@ -8,7 +8,7 @@
 
 > 下载需要**登录账号**
 
-- [GitHub](https://github.com/YumeYuka/Suu-Nyanya)
+- [GitHub](https://github.com/YumeYuka/SUU-Nyanya)
 
 > 下载需要**注意网络环境**
 

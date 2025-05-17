@@ -2,6 +2,10 @@
 layout: doc
 ---
 
+::: tip `Nyanya整理`有一个[**模块独立版**](https://github.com/YumeYuka/SUU-Nyanya)！
+由[YumeYuka](/About)维护，更新版本较主线会落后几个版本
+:::
+
 ::: tip
 直接修改配置文件属于高阶玩法，请自行探索哦~
 :::

@@ -2,13 +2,13 @@
 import type { DefaultTheme } from "vitepress";
 
 export const sidebar: DefaultTheme.Config["sidebar"] = [
-  { text: "快速了解", link: "/Know.md" },
+  { text: "快速了解", link: "/Know" },
   {
     text: "开始使用",
     collapsed: false,
     items: [
-      { text: "Android", link: "/Start/Android.md" },
-      { text: "Windows", link: "/Start/Windows.md" },
+      { text: "Android", link: "/Start/Android" },
+      { text: "Windows", link: "/Start/Windows" },
     ],
   },
   {
@@ -19,12 +19,12 @@ export const sidebar: DefaultTheme.Config["sidebar"] = [
         text: "Android",
         collapsed: true,
         items: [
-          { text: "Nyanya整理", link: "/Feat/Android/Nyanya.md" },
-          { text: "C&C清理", link: "/Feat/Android/C&C.md" },
-          { text: "GBB优质存储", link: "/Feat/Android/GBB.md" },
-          { text: "modify.my.id", link: "/Feat/Android/modify.my.id.md" },
-          { text: "Xposed功能", link: "/Feat/Android/Xposed.md" },
-          { text: "Toybox玩具箱", link: "/Feat/Android/Toybox.md" },
+          { text: "Nyanya整理", link: "/Feat/Android/Nyanya" },
+          { text: "C&C清理", link: "/Feat/Android/C&C" },
+          { text: "GBB优质存储", link: "/Feat/Android/GBB" },
+          { text: "modify.my.id", link: "/Feat/Android/modify.my.id" },
+          { text: "Xposed功能", link: "/Feat/Android/Xposed" },
+          { text: "Toybox玩具箱", link: "/Feat/Android/Toybox" },
         ],
       },
       {
@@ -35,8 +35,15 @@ export const sidebar: DefaultTheme.Config["sidebar"] = [
       },
     ],
   },
-  { text: "关于苏柚", link: "/About.md" },
-  { text: "更新日志", link: "/ChangeLog.md" },
+  { text: "关于苏柚", link: "/About" },
+  {
+    text: "更新日志",
+    collapsed: false,
+    items: [
+      { text: "Android", link: "/ChangeLog/Android" },
+      { text: "Windows", link: "/ChangeLog/Windows" },
+    ],
+  },
   {
     text: "附录",
     collapsed: false,
@@ -45,9 +52,9 @@ export const sidebar: DefaultTheme.Config["sidebar"] = [
         text: "Android",
         collapsed: true,
         items: [
-          { text: "模式对照", link: "/Appendix/Android/Mode.md" },
-          { text: "路径对照", link: "/Appendix/Android/Path.md" },
-          { text: "小提示", link: "/Appendix/Android/Tip.md" },
+          { text: "模式对照", link: "/Appendix/Android/Mode" },
+          { text: "路径对照", link: "/Appendix/Android/Path" },
+          { text: "小提示", link: "/Appendix/Android/Tip" },
         ],
       },
       {
