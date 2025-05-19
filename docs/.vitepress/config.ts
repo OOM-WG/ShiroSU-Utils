@@ -3,6 +3,8 @@ import { head } from "./local/head";
 import { markdown } from "./local/markdown";
 import { themeConfig } from "./local/theme";
 import { fileURLToPath, URL } from "node:url";
+import vitepressProtectPlugin from "vitepress-protect-plugin";
+
 // 导航修复函数
 const fixNavigationScript = `
 if (typeof window !== 'undefined') {
@@ -58,5 +60,12 @@ export default defineConfig({
         },
       ],
     },
+    // plugins: [
+    //   vitepressProtectPlugin({
+    //     disableF12: true, // 禁用F12开发者模式
+    //     disableCopy: true, // 禁用文本复制
+    //     disableSelect: true, // 禁用文本选择
+    //   }),
+    // ],
   },
 });

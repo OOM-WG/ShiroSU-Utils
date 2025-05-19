@@ -13,6 +13,7 @@
   "dependencies": {
     "@vue/repl": "^4.5.1",
     "@vue/theme": "^2.3.0",
+    "@vueuse/core": "^13.2.0",
     "@vueuse/integrations": "^13.2.0",
     "dynamics.js": "^1.1.5",
     "gsap": "^3.13.0",
@@ -21,21 +22,31 @@
     "vue-amazing-ui": "^2.4.5"
   },
   "devDependencies": {
+    "@braintree/sanitize-url": "^7.1.1",
+    "@types/animejs": "^3.1.13",
     "@types/node": "^22.15.19",
     "@w3ctech-editorial-department/vitepress-auto-configure-nav-sidebar": "^1.0.0",
+    "animejs": "3.2.2",
+    "cytoscape": "^3.32.0",
+    "cytoscape-cose-bilkent": "^4.1.0",
+    "dayjs": "^1.11.13",
+    "debug": "^4.4.1",
     "fast-glob": "^3.3.3",
     "gray-matter": "^4.0.3",
     "js-yaml": "^4.1.0",
     "markdown-it": "^14.1.0",
     "markdown-it-footnote": "^4.0.0",
     "markdown-it-mathjax3": "^4.3.2",
+    "markdown-it-task-checkbox": "^1.0.6",
     "medium-zoom": "^1.1.0",
+    "nprogress-v2": "^1.1.10",
     "sass": "^1.89.0",
     "vite": "^6.3.5",
     "vitepress": "1.6.3p",
     "vitepress-markdown-timeline": "^1.2.2",
     "vitepress-plugin-comment-with-giscus": "^1.1.15",
     "vitepress-plugin-google-analytics": "^1.0.2",
+    "vitepress-protect-plugin": "^1.0.6",
     "vue": "^3.5.14"
   }
 }

@@ -1,15 +1,8 @@
-:root{
+@import './custom-block.css';
+@import './vars.css';
+@import './rainbow.css';
 
-  --vp-c-brand-1: #ff758c;
-  --vp-c-brand-2: #ff758c;
 
-  --vp-home-hero-image-background-image: linear-gradient(
-    -45deg,
-    #ff758c 50%,
-    #ff7eb3 50%
-  );
-  --vp-home-hero-image-filter: blur(50px);
-}
 
 html.dark {
   color-scheme: dark;
