@@ -21,7 +21,7 @@
     "vue-amazing-ui": "^2.4.5"
   },
   "devDependencies": {
-    "@types/node": "^22.15.18",
+    "@types/node": "^22.15.19",
     "@w3ctech-editorial-department/vitepress-auto-configure-nav-sidebar": "^1.0.0",
     "fast-glob": "^3.3.3",
     "gray-matter": "^4.0.3",

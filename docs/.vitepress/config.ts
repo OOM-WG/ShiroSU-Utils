@@ -1,9 +1,8 @@
 import { defineConfig } from "vitepress";
-import { head } from "./head";
-import { markdown } from "./markdown";
-import { themeConfig } from "./theme";
+import { head } from "./local/head";
+import { markdown } from "./local/markdown";
+import { themeConfig } from "./local/theme";
 import { fileURLToPath, URL } from "node:url";
-
 // 导航修复函数
 const fixNavigationScript = `
 if (typeof window !== 'undefined') {
