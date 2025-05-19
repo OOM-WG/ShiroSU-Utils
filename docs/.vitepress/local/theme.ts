@@ -3,7 +3,6 @@ import { nav } from "./nav";
 import { sidebar } from "./sidebar";
 import { localSearchOptions } from "./search";
 import footer from "./footer";
-import type { CustomConfig } from "./types";
 
 export const themeConfig: DefaultTheme.Config = {
   nav,
