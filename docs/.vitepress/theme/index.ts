@@ -34,8 +34,8 @@ export default {
   extends: DefaultTheme,
   enhanceApp({ app, router }) {
     app.component("RainbowAnimationSwitcher", RainbowAnimationSwitcher);
-    app.component("MouseClick", MouseClick); //鼠标跟随组件
-    app.component("MouseFollower", MouseFollower); //鼠标跟随组件
+    // app.component("MouseClick", MouseClick); //鼠标跟随组件
+    // app.component("MouseFollower", MouseFollower); //鼠标跟随组件
     app.component("HomeUnderline", HomeUnderline);
     app.component("Linkcard", Linkcard);
     app.component("VPCard", Card);
@@ -49,27 +49,27 @@ export default {
       );
     }
   },
-  //导航
-  Layout: () => {
-    const props: Record<string, any> = {};
-    // 获取 frontmatter
-    const { frontmatter } = useData();
+  // //导航
+  // Layout: () => {
+  //   const props: Record<string, any> = {};
+  //   // 获取 frontmatter
+  //   const { frontmatter } = useData();
 
-    /* 添加自定义 class */
-    if (frontmatter.value?.layoutClass) {
-      props.class = frontmatter.value.layoutClass;
-    }
+  //   /* 添加自定义 class */
+  //   if (frontmatter.value?.layoutClass) {
+  //     props.class = frontmatter.value.layoutClass;
+  //   }
 
-    // return h(DefaultTheme.Layout, props, {
-    //   'layout-bottom': () => h(bsz), //不蒜子layout-bottom插槽
-    //   'doc-footer-before': () => h(backtotop), // 返回顶部doc-footer-before插槽
-    //   'layout-top': () => h(notice), // 公告layout-top插槽
-    // })
+  //   // return h(DefaultTheme.Layout, props, {
+  //   //   'layout-bottom': () => h(bsz), //不蒜子layout-bottom插槽
+  //   //   'doc-footer-before': () => h(backtotop), // 返回顶部doc-footer-before插槽
+  //   //   'layout-top': () => h(notice), // 公告layout-top插槽
+  //   // })
 
-    return h(MyLayout, props);
-    // If you want to use the local function instead, use:
-    // return createLayout(MyLayout, props);
-  },
+  //   return h(MyLayout, props);
+  //   // If you want to use the local function instead, use:
+  //   // return createLayout(MyLayout, props);
+  // },
 
   setup() {
     const route = useRoute();
