@@ -38,24 +38,24 @@ withDefaults(defineProps<Props>(), {
   display: none;
 }
 
-.vp-doc h1 > .VPBadge {
+.vp-doc h1>.VPBadge {
   margin-top: 4px;
   vertical-align: top;
 }
 
-.vp-doc h2 > .VPBadge {
+.vp-doc h2>.VPBadge {
   margin-top: 3px;
   padding: 0 8px;
   vertical-align: top;
 }
 
-.vp-doc h3 > .VPBadge {
+.vp-doc h3>.VPBadge {
   vertical-align: middle;
 }
 
-.vp-doc h4 > .VPBadge,
-.vp-doc h5 > .VPBadge,
-.vp-doc h6 > .VPBadge {
+.vp-doc h4>.VPBadge,
+.vp-doc h5>.VPBadge,
+.vp-doc h6>.VPBadge {
   vertical-align: middle;
   line-height: 18px;
 }

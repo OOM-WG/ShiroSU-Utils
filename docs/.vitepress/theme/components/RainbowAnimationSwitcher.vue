@@ -34,12 +34,8 @@ const switchTitle = computed(() => {
         <p class="text">
           {{ text ?? 'Rainbow Animation' }}
         </p>
-        <RainbowSwitcher
-          :title="switchTitle"
-          class="RainbowAnimationSwitcher"
-          :aria-checked="animated ? 'true' : 'false'"
-          @click="toggleRainbow"
-        >
+        <RainbowSwitcher :title="switchTitle" class="RainbowAnimationSwitcher"
+          :aria-checked="animated ? 'true' : 'false'" @click="toggleRainbow">
           <span class="i-tabler:rainbow animated" />
           <span class="i-tabler:rainbow-off non-animated" />
         </RainbowSwitcher>
@@ -87,6 +83,7 @@ const switchTitle = computed(() => {
   background-color: var(--vp-c-bg-elv);
   max-width: 220px;
 }
+
 .group.mobile .NavScreenRainbowAnimation {
   max-width: unset;
 }

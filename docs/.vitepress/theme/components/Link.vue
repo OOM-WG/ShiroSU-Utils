@@ -11,20 +11,10 @@ const isExternal = computed(() => props.href && /^[a-z]+:/i.test(props.href))
 </script>
 
 <template>
-  <component
-    :is="href ? 'a' : 'span'"
-    :class="{ link: href }"
-    :href="href"
-    :target="isExternal ? '_blank' : 'self'"
-    :rel="isExternal ? 'noopener noreferrer' : undefined"
-    :title="title ? title : href"
-  >
+  <component :is="href ? 'a' : 'span'" :class="{ link: href }" :href="href" :target="isExternal ? '_blank' : 'self'"
+    :rel="isExternal ? 'noopener noreferrer' : undefined" :title="title ? title : href">
     <slot />
-    <label
-      v-if="isExternal && !noIcon"
-      i-ic-round-arrow-outward
-      :class="$style.icon"
-    />
+    <label v-if="isExternal && !noIcon" i-ic-round-arrow-outward :class="$style.icon" />
   </component>
 </template>
 
