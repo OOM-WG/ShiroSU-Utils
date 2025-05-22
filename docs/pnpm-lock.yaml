@@ -13,7 +13,7 @@ importers:
         version: 4.5.1
       '@vue/theme':
         specifier: ^2.3.0
-        version: 2.3.0(@algolia/client-search@5.25.0)(search-insights@2.13.0)(vitepress@2.0.0-alpha.5(@algolia/client-search@5.25.0)(@types/node@22.15.19)(async-validator@4.2.5)(markdown-it-mathjax3@4.3.2)(postcss@8.5.3)(qrcode@1.5.4)(sass@1.89.0)(search-insights@2.13.0)(terser@5.39.0))(vue@3.5.14)
+        version: 2.3.0(@algolia/client-search@5.25.0)(search-insights@2.13.0)(vitepress@2.0.0-alpha.5(@algolia/client-search@5.25.0)(@types/node@22.15.21)(async-validator@4.2.5)(markdown-it-mathjax3@4.3.2)(postcss@8.5.3)(qrcode@1.5.4)(sass@1.89.0)(search-insights@2.13.0)(terser@5.39.0))(vue@3.5.14)
       '@vueuse/core':
         specifier: ^13.2.0
         version: 13.2.0(vue@3.5.14)
@@ -28,13 +28,10 @@ importers:
         version: 3.13.0
       vitepress:
         specifier: 2.0.0-alpha.5
-        version: 2.0.0-alpha.5(@algolia/client-search@5.25.0)(@types/node@22.15.19)(async-validator@4.2.5)(markdown-it-mathjax3@4.3.2)(postcss@8.5.3)(qrcode@1.5.4)(sass@1.89.0)(search-insights@2.13.0)(terser@5.39.0)
-      vitepress-auto-nav-sidebar:
-        specifier: ^0.1.1
-        version: 0.1.1
+        version: 2.0.0-alpha.5(@algolia/client-search@5.25.0)(@types/node@22.15.21)(async-validator@4.2.5)(markdown-it-mathjax3@4.3.2)(postcss@8.5.3)(qrcode@1.5.4)(sass@1.89.0)(search-insights@2.13.0)(terser@5.39.0)
       vue-amazing-ui:
-        specifier: ^2.4.5
-        version: 2.4.5(vue@3.5.14)
+        specifier: ^2.4.6
+        version: 2.4.6(vue@3.5.14)
     devDependencies:
       '@braintree/sanitize-url':
         specifier: ^7.1.1
@@ -43,14 +40,11 @@ importers:
         specifier: ^3.1.13
         version: 3.1.13
       '@types/node':
-        specifier: ^22.15.19
-        version: 22.15.19
-      '@w3ctech-editorial-department/vitepress-auto-configure-nav-sidebar':
-        specifier: ^1.0.0
-        version: 1.0.0(vitepress@2.0.0-alpha.5(@algolia/client-search@5.25.0)(@types/node@22.15.19)(async-validator@4.2.5)(markdown-it-mathjax3@4.3.2)(postcss@8.5.3)(qrcode@1.5.4)(sass@1.89.0)(search-insights@2.13.0)(terser@5.39.0))
+        specifier: ^22.15.21
+        version: 22.15.21
       animejs:
-        specifier: 3.2.2
-        version: 3.2.2
+        specifier: 4.0.2
+        version: 4.0.2
       cytoscape:
         specifier: ^3.32.0
         version: 3.32.0
@@ -95,19 +89,16 @@ importers:
         version: 1.89.0
       vite:
         specifier: ^6.3.5
-        version: 6.3.5(@types/node@22.15.19)(sass@1.89.0)(terser@5.39.0)
+        version: 6.3.5(@types/node@22.15.21)(sass@1.89.0)(terser@5.39.0)
       vitepress-markdown-timeline:
         specifier: ^1.2.2
         version: 1.2.2
       vitepress-plugin-comment-with-giscus:
         specifier: ^1.1.15
         version: 1.1.15(vue@3.5.14)
-      vitepress-plugin-google-analytics:
-        specifier: ^1.0.2
-        version: 1.0.2
       vitepress-protect-plugin:
         specifier: ^1.0.6
-        version: 1.0.6(vite@6.3.5(@types/node@22.15.19)(sass@1.89.0)(terser@5.39.0))
+        version: 1.0.6(vite@6.3.5(@types/node@22.15.21)(sass@1.89.0)(terser@5.39.0))
       vue:
         specifier: ^3.5.14
         version: 3.5.14
@@ -205,10 +196,6 @@ packages:
     resolution: {integrity: sha512-QYLs8299NA7WM/bZAdp+CviYYkVoYXlDW2rzliy3chxd1PQjej7JORuMJDJXJUb9g0TT+B99EwaVLKmX+sPXWw==}
     engines: {node: '>=6.0.0'}
     hasBin: true
-
-  '@babel/runtime@7.27.1':
-    resolution: {integrity: sha512-1x3D2xEk2fRo3PAhwQwu5UubzgiVWSXTBfWpVd2Mx2AzRqJuDJCsgaDVZ7HB5iGzDW1Hl1sWN2mFyKjmR9uAog==}
-    engines: {node: '>=6.9.0'}
 
   '@babel/types@7.27.1':
     resolution: {integrity: sha512-+EzkxvLNfiUeKMgy/3luqfsCWFRXLb7U6wNQTk60tovuckwB15B191tJWvpp4HjiQWdJkCxO3Wbvc6jlk3Xb2Q==}
@@ -662,8 +649,8 @@ packages:
   '@types/mdast@4.0.4':
     resolution: {integrity: sha512-kGaNbPh1k7AFzgpud/gMdvIm5xuECykRR+JnWKQno9TAXVa6WIVCGTPvYGekIDL4uwCZQSYbUxNBSb1aUo79oA==}
 
-  '@types/node@22.15.19':
-    resolution: {integrity: sha512-3vMNr4TzNQyjHcRZadojpRaD9Ofr6LsonZAoQ+HMUa/9ORTPoxVIw0e0mpqWpdjj8xybyCM+oKOUH2vwFu/oEw==}
+  '@types/node@22.15.21':
+    resolution: {integrity: sha512-EV/37Td6c+MgKAbkcLG6vqZ2zEYHD7bvSrzqqs2RIhbA6w3x+Dqz8MZM3sP6kGTeLrdoOgKZe+Xja7tUB2DNkQ==}
 
   '@types/trusted-types@2.0.7':
     resolution: {integrity: sha512-ScaPdn1dQczgbl0QFTeTOmVHFULt394XJgOQNoyVhZ6r2vLnMLJfBPd53SB52T/3G36VI1/g2MZaX0cwDuXsfw==}
@@ -803,12 +790,6 @@ packages:
     peerDependencies:
       vue: ^3.5.0
 
-  '@w3ctech-editorial-department/vitepress-auto-configure-nav-sidebar@1.0.0':
-    resolution: {integrity: sha512-qvYQHEYAl4nowXHzlnH0k4tZowSVWRVWU4/K838OMuXsv1riSWNl7fBE/vEOiZb4t0UiJ7JQnJjTxpf6AQBDdA==}
-    engines: {node: '>=14.6.0'}
-    peerDependencies:
-      vitepress: ^1.0.0-alpha.29
-
   '@xmldom/xmldom@0.9.8':
     resolution: {integrity: sha512-p96FSY54r+WJ50FIOsCOjyj/wavs8921hG5+kVMmZgKcvIKxMXHTrjNJvRgWa/zuX3B6t2lijLNFaOyuxUH+2A==}
     engines: {node: '>=14.6'}
@@ -822,8 +803,8 @@ packages:
     resolution: {integrity: sha512-n73BVorL4HIwKlfJKb4SEzAYkR3Buwfwbh+MYxg2mloFph2fFGV58E90QTzdbfzWrLn4HE5Czx/WTjI8fcHaMg==}
     engines: {node: '>= 14.0.0'}
 
-  animejs@3.2.2:
-    resolution: {integrity: sha512-Ao95qWLpDPXXM+WrmwcKbl6uNlC5tjnowlaRYtuVDHHoygjtIPfDUoK9NthrlZsQSKjZXlmji2TrBUAVbiH0LQ==}
+  animejs@4.0.2:
+    resolution: {integrity: sha512-f0L/kSya2RF23iMSF/VO01pMmLwlAFoiQeNAvBXhEyLzIPd2/QTBRatwGUqkVCC6seaAJYzAkGir55N4SL+h3A==}
 
   ansi-colors@4.1.3:
     resolution: {integrity: sha512-/6w/C21Pm1A7aZitlI5Ni/2J6FFQN8i1Cvz3kHABAAbw93v/NlvKdVOqz7CCWz/3iv/JplRSEEZ83XION15ovw==}
@@ -1429,8 +1410,8 @@ packages:
     resolution: {integrity: sha512-5JRxVqC8I8NuOUjzBbvVJAKNM8qoVuH0O77h4WInc/qC2q5IreqKxYwgkga3PfA22OayK2ikceb/B26dztPl+Q==}
     engines: {node: '>=16'}
 
-  swiper@11.2.6:
-    resolution: {integrity: sha512-8aXpYKtjy3DjcbzZfz+/OX/GhcU5h+looA6PbAzHMZT6ESSycSp9nAjPCenczgJyslV+rUGse64LMGpWE3PX9Q==}
+  swiper@11.2.7:
+    resolution: {integrity: sha512-oPJCwdcjFMw3SoBM7AdB1RJzjT7JaE4Mg7TWceTmJ/i2OtF8L01Ct+5eOf48nG3trgR0wXFekWdfnTdl0eg6Pg==}
     engines: {node: '>= 4.7.0'}
 
   tabbable@6.2.0:
@@ -1532,17 +1513,11 @@ packages:
       yaml:
         optional: true
 
-  vitepress-auto-nav-sidebar@0.1.1:
-    resolution: {integrity: sha512-T5dmzi1UG3gaJOPAZxXVbzr6p6iPw2wuuvEX/WWqSWp1bciOj+IPL4jgQen9LtXxKknqNdEe+tmxkKswx0Dm2w==}
-
   vitepress-markdown-timeline@1.2.2:
     resolution: {integrity: sha512-eDFcvudmTW33pI7XdT+ZeUPvpc4CPXI0LZbsZZ54j36G56AN6qYEBiwZpDHl77E4QvqAIJMc8phXXvm7P/Lc+Q==}
 
   vitepress-plugin-comment-with-giscus@1.1.15:
     resolution: {integrity: sha512-1DJjgN+7SYvn5ZkjuSXPmz7nlqfcrh4qCGGviiZghA2ELXnaO2m9WY7m+RisPSaqCn90xqe0JbO2T4NMq8iUBg==}
-
-  vitepress-plugin-google-analytics@1.0.2:
-    resolution: {integrity: sha512-ri8bFUAmt3c/DtPrALauGBIUr2gIJ11c1qNRhwd3/+aiuYZBfQpOosSxcO1AswgwRxP9FwBS6Z7jgdDVyXb2hA==}
 
   vitepress-protect-plugin@1.0.6:
     resolution: {integrity: sha512-4gO5NYNrAaD99+/5Qp/QPURTZC2MZ6UMl/gnxfBAIRasxw6r/mdjcluUNLxEFT8WUMX19KgGu4SSLFcKwfeBtQ==}
@@ -1561,8 +1536,8 @@ packages:
       postcss:
         optional: true
 
-  vue-amazing-ui@2.4.5:
-    resolution: {integrity: sha512-vRWC8piFStkNlFf5kqbakLXeC6Bi0m/H0NpxJzVGx9KqNgFxsIRQJHhLaie4P75oAow104zwOYJ/5WvGhAIXGw==}
+  vue-amazing-ui@2.4.6:
+    resolution: {integrity: sha512-EtbwW2FEdIgXTFPrftIu+asM/UWmgOlaqRGrOHxL7To/KEdur6UYSlwwy7dlKRXgqyY0Z13UJrmxHOxOPl1b+w==}
 
   vue-demi@0.14.10:
     resolution: {integrity: sha512-nMZBOwuzabUO0nLgIcc6rycZEebF6eeUfaiQx9+WSk8e29IbLvPU9feI6tqW4kTo3hvoYAJkMh8n8D0fuISphg==}
@@ -1737,8 +1712,6 @@ snapshots:
   '@babel/parser@7.27.2':
     dependencies:
       '@babel/types': 7.27.1
-
-  '@babel/runtime@7.27.1': {}
 
   '@babel/types@7.27.1':
     dependencies:
@@ -2075,7 +2048,7 @@ snapshots:
     dependencies:
       '@types/unist': 3.0.3
 
-  '@types/node@22.15.19':
+  '@types/node@22.15.21':
     dependencies:
       undici-types: 6.21.0
 
@@ -2089,9 +2062,9 @@ snapshots:
 
   '@ungap/structured-clone@1.3.0': {}
 
-  '@vitejs/plugin-vue@5.2.4(vite@6.3.5(@types/node@22.15.19)(sass@1.89.0)(terser@5.39.0))(vue@3.5.14)':
+  '@vitejs/plugin-vue@5.2.4(vite@6.3.5(@types/node@22.15.21)(sass@1.89.0)(terser@5.39.0))(vue@3.5.14)':
     dependencies:
-      vite: 6.3.5(@types/node@22.15.19)(sass@1.89.0)(terser@5.39.0)
+      vite: 6.3.5(@types/node@22.15.21)(sass@1.89.0)(terser@5.39.0)
       vue: 3.5.14
 
   '@vue/compiler-core@3.5.14':
@@ -2168,7 +2141,7 @@ snapshots:
 
   '@vue/shared@3.5.14': {}
 
-  '@vue/theme@2.3.0(@algolia/client-search@5.25.0)(search-insights@2.13.0)(vitepress@2.0.0-alpha.5(@algolia/client-search@5.25.0)(@types/node@22.15.19)(async-validator@4.2.5)(markdown-it-mathjax3@4.3.2)(postcss@8.5.3)(qrcode@1.5.4)(sass@1.89.0)(search-insights@2.13.0)(terser@5.39.0))(vue@3.5.14)':
+  '@vue/theme@2.3.0(@algolia/client-search@5.25.0)(search-insights@2.13.0)(vitepress@2.0.0-alpha.5(@algolia/client-search@5.25.0)(@types/node@22.15.21)(async-validator@4.2.5)(markdown-it-mathjax3@4.3.2)(postcss@8.5.3)(qrcode@1.5.4)(sass@1.89.0)(search-insights@2.13.0)(terser@5.39.0))(vue@3.5.14)':
     dependencies:
       '@docsearch/css': 3.9.0
       '@docsearch/js': 3.9.0(@algolia/client-search@5.25.0)(search-insights@2.13.0)
@@ -2176,7 +2149,7 @@ snapshots:
       body-scroll-lock: 4.0.0-beta.0
       normalize.css: 8.0.1
       tiny-decode: 0.1.3
-      vitepress: 2.0.0-alpha.5(@algolia/client-search@5.25.0)(@types/node@22.15.19)(async-validator@4.2.5)(markdown-it-mathjax3@4.3.2)(postcss@8.5.3)(qrcode@1.5.4)(sass@1.89.0)(search-insights@2.13.0)(terser@5.39.0)
+      vitepress: 2.0.0-alpha.5(@algolia/client-search@5.25.0)(@types/node@22.15.21)(async-validator@4.2.5)(markdown-it-mathjax3@4.3.2)(postcss@8.5.3)(qrcode@1.5.4)(sass@1.89.0)(search-insights@2.13.0)(terser@5.39.0)
     transitivePeerDependencies:
       - '@algolia/client-search'
       - '@types/react'
@@ -2233,10 +2206,6 @@ snapshots:
     dependencies:
       vue: 3.5.14
 
-  '@w3ctech-editorial-department/vitepress-auto-configure-nav-sidebar@1.0.0(vitepress@2.0.0-alpha.5(@algolia/client-search@5.25.0)(@types/node@22.15.19)(async-validator@4.2.5)(markdown-it-mathjax3@4.3.2)(postcss@8.5.3)(qrcode@1.5.4)(sass@1.89.0)(search-insights@2.13.0)(terser@5.39.0))':
-    dependencies:
-      vitepress: 2.0.0-alpha.5(@algolia/client-search@5.25.0)(@types/node@22.15.19)(async-validator@4.2.5)(markdown-it-mathjax3@4.3.2)(postcss@8.5.3)(qrcode@1.5.4)(sass@1.89.0)(search-insights@2.13.0)(terser@5.39.0)
-
   '@xmldom/xmldom@0.9.8': {}
 
   acorn@8.14.1:
@@ -2258,7 +2227,7 @@ snapshots:
       '@algolia/requester-fetch': 5.25.0
       '@algolia/requester-node-http': 5.25.0
 
-  animejs@3.2.2: {}
+  animejs@4.0.2: {}
 
   ansi-colors@4.1.3: {}
 
@@ -2895,7 +2864,7 @@ snapshots:
     dependencies:
       copy-anything: 3.0.5
 
-  swiper@11.2.6: {}
+  swiper@11.2.7: {}
 
   tabbable@6.2.0: {}
 
@@ -2965,7 +2934,7 @@ snapshots:
       '@types/unist': 3.0.3
       vfile-message: 4.0.2
 
-  vite@6.3.5(@types/node@22.15.19)(sass@1.89.0)(terser@5.39.0):
+  vite@6.3.5(@types/node@22.15.21)(sass@1.89.0)(terser@5.39.0):
     dependencies:
       esbuild: 0.25.4
       fdir: 6.4.4(picomatch@4.0.2)
@@ -2974,14 +2943,10 @@ snapshots:
       rollup: 4.40.2
       tinyglobby: 0.2.13
     optionalDependencies:
-      '@types/node': 22.15.19
+      '@types/node': 22.15.21
       fsevents: 2.3.3
       sass: 1.89.0
       terser: 5.39.0
-
-  vitepress-auto-nav-sidebar@0.1.1:
-    dependencies:
-      '@babel/runtime': 7.27.1
 
   vitepress-markdown-timeline@1.2.2:
     dependencies:
@@ -2993,13 +2958,11 @@ snapshots:
     transitivePeerDependencies:
       - vue
 
-  vitepress-plugin-google-analytics@1.0.2: {}
-
-  vitepress-protect-plugin@1.0.6(vite@6.3.5(@types/node@22.15.19)(sass@1.89.0)(terser@5.39.0)):
+  vitepress-protect-plugin@1.0.6(vite@6.3.5(@types/node@22.15.21)(sass@1.89.0)(terser@5.39.0)):
     dependencies:
-      vite: 6.3.5(@types/node@22.15.19)(sass@1.89.0)(terser@5.39.0)
+      vite: 6.3.5(@types/node@22.15.21)(sass@1.89.0)(terser@5.39.0)
 
-  vitepress@2.0.0-alpha.5(@algolia/client-search@5.25.0)(@types/node@22.15.19)(async-validator@4.2.5)(markdown-it-mathjax3@4.3.2)(postcss@8.5.3)(qrcode@1.5.4)(sass@1.89.0)(search-insights@2.13.0)(terser@5.39.0):
+  vitepress@2.0.0-alpha.5(@algolia/client-search@5.25.0)(@types/node@22.15.21)(async-validator@4.2.5)(markdown-it-mathjax3@4.3.2)(postcss@8.5.3)(qrcode@1.5.4)(sass@1.89.0)(search-insights@2.13.0)(terser@5.39.0):
     dependencies:
       '@docsearch/css': 3.9.0
       '@docsearch/js': 3.9.0(@algolia/client-search@5.25.0)(search-insights@2.13.0)
@@ -3007,7 +2970,7 @@ snapshots:
       '@shikijs/core': 3.4.2
       '@shikijs/transformers': 3.4.2
       '@shikijs/types': 3.4.2
-      '@vitejs/plugin-vue': 5.2.4(vite@6.3.5(@types/node@22.15.19)(sass@1.89.0)(terser@5.39.0))(vue@3.5.14)
+      '@vitejs/plugin-vue': 5.2.4(vite@6.3.5(@types/node@22.15.21)(sass@1.89.0)(terser@5.39.0))(vue@3.5.14)
       '@vue/devtools-api': 7.7.6
       '@vue/shared': 3.5.14
       '@vueuse/core': 13.2.0(vue@3.5.14)
@@ -3016,7 +2979,7 @@ snapshots:
       mark.js: 8.11.1
       minisearch: 7.1.2
       shiki: 3.4.2
-      vite: 6.3.5(@types/node@22.15.19)(sass@1.89.0)(terser@5.39.0)
+      vite: 6.3.5(@types/node@22.15.21)(sass@1.89.0)(terser@5.39.0)
       vue: 3.5.14
     optionalDependencies:
       markdown-it-mathjax3: 4.3.2
@@ -3051,7 +3014,7 @@ snapshots:
       - universal-cookie
       - yaml
 
-  vue-amazing-ui@2.4.5(vue@3.5.14):
+  vue-amazing-ui@2.4.6(vue@3.5.14):
     dependencies:
       '@ant-design/colors': 8.0.0
       '@ctrl/tinycolor': 4.1.0
@@ -3060,7 +3023,7 @@ snapshots:
       date-fns: 4.1.0
       qrcode: 1.5.4
       seemly: 0.3.10
-      swiper: 11.2.6
+      swiper: 11.2.7
     transitivePeerDependencies:
       - vue
 

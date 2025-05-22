@@ -1,9 +1,8 @@
-import { defineConfig } from "vitepress";
-import { head } from "./local/head";
-import { markdown } from "./local/markdown";
-import { themeConfig } from "./local/theme";
-import { fileURLToPath, URL } from "node:url";
-import vitepressProtectPlugin from "vitepress-protect-plugin";
+import {defineConfig} from "vitepress";
+import {head} from "./local/head";
+import {markdown} from "./local/markdown";
+import {themeConfig} from "./local/theme";
+import {fileURLToPath, URL} from "node:url";
 
 // 导航修复函数
 const fixNavigationScript = `
@@ -31,41 +30,41 @@ if (typeof window !== 'undefined') {
 `;
 
 export default defineConfig({
-  title: "苏柚",
-  description: "正在为您着想的软件呢！",
+    title: "苏柚",
+    description: "正在为您着想的软件呢！",
 
-  // base: "/",
-  lastUpdated: true,
-  ignoreDeadLinks: true,
+    // base: "/",
+    lastUpdated: true,
+    ignoreDeadLinks: true,
 
-  srcDir: "src",
-  outDir: "./dist",
-  srcExclude: [],
-  scrollOffset: "header",
-  cleanUrls: true,
-  sitemap: {
-    hostname: "https://suu.yumeyuka.plus",
-  },
-  head: [...head, ["script", {}, fixNavigationScript]], // <head>内标签配置
-  markdown: markdown, // Markdown配置
-  themeConfig,
-  vite: {
-    resolve: {
-      alias: [
-        {
-          find: /^.*\/VPFooter\.vue$/,
-          replacement: fileURLToPath(
-            new URL("./theme/components/Footer.vue", import.meta.url)
-          ),
-        },
-      ],
+    srcDir: "src",
+    outDir: "./dist",
+    srcExclude: [],
+    scrollOffset: "header",
+    cleanUrls: true,
+    sitemap: {
+        hostname: "https://suu.yumeyuka.plus",
     },
-    // plugins: [
-    //   vitepressProtectPlugin({
-    //     disableF12: true, // 禁用F12开发者模式
-    //     disableCopy: true, // 禁用文本复制
-    //     disableSelect: true, // 禁用文本选择
-    //   }),
-    // ],
-  },
+    head: [...head, ["script", {}, fixNavigationScript]], // <head>内标签配置
+    markdown: markdown, // Markdown配置
+    themeConfig,
+    vite: {
+        resolve: {
+            alias: [
+                {
+                    find: /^.*\/VPFooter\.vue$/,
+                    replacement: fileURLToPath(
+                        new URL("./theme/components/Footer.vue", import.meta.url)
+                    ),
+                },
+            ],
+        },
+        // plugins: [
+        //   vitepressProtectPlugin({
+        //     disableF12: true, // 禁用F12开发者模式
+        //     disableCopy: true, // 禁用文本复制
+        //     disableSelect: true, // 禁用文本选择
+        //   }),
+        // ],
+    },
 });

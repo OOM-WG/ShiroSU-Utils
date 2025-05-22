@@ -21,27 +21,27 @@ hero:
 features:
   - title: 智能整理
     icon:
-      src: /home/智能整理.svg
+      src: /home/cloud-storage.svg
     details: 系统性归类与整理，适用于初步汇总或长期归档。
 
   - title: 精致清理
     icon:
-      src: /home/清空.svg
+      src: /home/clear.svg
     details: 深度清洁与优化，移除无效元素和重复内容。
 
   - title: 优质储存
     icon:
-      src: /home/文件库.svg
+      src: /home/cloud-storage.svg
     details: 安全储存数据，便于后续检索与再利用。
 
   - title: 实验工具集合
     icon:
-      src: /home/实验.svg
+      src: /home/experiment-one.svg
     details: 各种实验性工具，欢迎尝试！
 
   - title: 高效编程
     icon:
-      src: /home/menu-development.svg
+      src: /home/computer-programming-01.svg
     details: C++ Go 等多种语言编写。
 
   - title: 跨平台开发
