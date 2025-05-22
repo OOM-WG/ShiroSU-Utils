@@ -1,7 +1,7 @@
 import type { MarkdownOptions } from 'vitepress';
 import mathjax3 from 'markdown-it-mathjax3';
 import footnote from 'markdown-it-footnote';
-import timeline from "vitepress-markdown-timeline"; 
+import timeline from "vitepress-markdown-timeline";
 import taskLists from "markdown-it-task-checkbox";
 
 export const markdown: MarkdownOptions = {

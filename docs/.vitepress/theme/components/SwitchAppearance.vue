@@ -8,7 +8,7 @@ import VPIconMoon from 'vitepress/dist/client/theme-default/components/icons/VPI
 
 const { site, isDark } = useData()
 const checked = ref(false)
-const toggle = inBrowser ? useAppearance() : () => {}
+const toggle = inBrowser ? useAppearance() : () => { }
 
 onMounted(() => {
   checked.value = document.documentElement.classList.contains('dark')
@@ -129,12 +129,8 @@ watch(checked, (newIsDark) => {
 
 <template>
   <label title="toggle dark mode">
-    <VPSwitch
-      class="VPSwitchAppearance"
-      :class="{ VPSwitchAppearanceTransition: isAppearanceTransition }"
-      :aria-checked="checked"
-      @click="toggle"
-    >
+    <VPSwitch class="VPSwitchAppearance" :class="{ VPSwitchAppearanceTransition: isAppearanceTransition }"
+      :aria-checked="checked" @click="toggle">
       <VPIconSun class="sun" />
       <VPIconMoon class="moon" />
     </VPSwitch>

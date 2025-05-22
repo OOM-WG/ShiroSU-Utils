@@ -3,38 +3,27 @@
     <div class="one-time-donations">
       <div class="links">
         <a href="#wechatpay" title="WeChat Pay">
-          <span class="i-custom-wechatpay"></span
-          >{{ theme.payment.wechatpay.name }}
+          <span class="i-custom-wechatpay"></span>{{ theme.payment.wechatpay.name }}
         </a>
-        <a href="#alipay" title="AliPay"
-          ><span class="i-custom-alipay"></span>
-          {{ theme.payment.alipay.name }}</a
-        >
+        <a href="#alipay" title="AliPay"><span class="i-custom-alipay"></span>
+          {{ theme.payment.alipay.name }}</a>
         <a href="#qqpay" title="QQ Pay">
           <span class="i-custom-qqpay"></span>
-          {{ theme.payment.qqpay.name }}</a
-        >
+          {{ theme.payment.qqpay.name }}</a>
         <a href="#paypal" title="Paypal">
           <span class="i-custom-paypal"></span>
-          {{ theme.payment.paypal.name }}</a
-        >
+          {{ theme.payment.paypal.name }}</a>
         <a href="#bilibili" title="bilibili">
           <span class="i-custom-bilibili"></span>
-          {{ theme.payment.bilibili.name }}</a
-        >
+          {{ theme.payment.bilibili.name }}</a>
       </div>
     </div>
 
     <div v-if="type && coins[type]" class="coin-details slide-enter">
       <p>
         <span ref="icon"></span>
-        {{ coins[type].name }} Address:<br /><a
-          :href="coins[type].address"
-          :title="coins[type].name"
-          target="_blank"
-          rel="noopener noreferrer"
-          >{{ coins[type].address }}</a
-        >
+        {{ coins[type].name }} Address:<br /><a :href="coins[type].address" :title="coins[type].name" target="_blank"
+          rel="noopener noreferrer">{{ coins[type].address }}</a>
       </p>
       <img :src="qrcode" alt="QR Code" />
     </div>
@@ -98,13 +87,14 @@ onBeforeUnmount(() => {
     align-items: center;
     color: var(--vp-c-text-1);
 
-    & > span {
+    &>span {
       display: inline-block;
       height: 2em;
       width: 2em;
     }
 
     @media (any-hover: hover) {
+
       &:hover,
       &:active {
         transform: translateY(-3px);
@@ -124,7 +114,7 @@ onBeforeUnmount(() => {
 }
 
 @media (max-width: 788px) {
-  .coin-details > p {
+  .coin-details>p {
     display: none !important;
   }
 }

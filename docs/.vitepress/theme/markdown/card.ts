@@ -73,8 +73,7 @@ const cardRender = (
     }
   else
     console.error(
-      `Can not parse card config ${language}${
-        relativePath ? `, found in ${relativePath}` : ''
+      `Can not parse card config ${language}${relativePath ? `, found in ${relativePath}` : ''
       }.`,
     )
 

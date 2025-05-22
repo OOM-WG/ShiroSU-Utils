@@ -99,12 +99,12 @@ const Card: FunctionalComponent<CardProps> = ({
   const children = [
     icon === ''
       ? h('img', {
-          class: 'vp-card-logo no-zoomable',
-          src: withBase(logo || '/阿库娅.png'),
-        })
+        class: 'vp-card-logo no-zoomable',
+        src: withBase(logo || '/阿库娅.png'),
+      })
       : h('label', {
-          class: `vp-card-icon ${icon}`,
-        }),
+        class: `vp-card-icon ${icon}`,
+      }),
     h('div', { class: 'vp-card-content' }, [
       h('div', { class: 'vp-card-title', innerHTML: title }),
       h('hr'),
@@ -113,19 +113,17 @@ const Card: FunctionalComponent<CardProps> = ({
         innerHTML: desc
           ? desc
           : isRelativeLink(link)
-            ? `https://oldmemorie.github.io/Tritium_docs/${
-                link.substring(0, 3).replace(/(\.\/|\/)/g, '') +
-                link.substring(3)
-              }`
+            ? `https://oldmemorie.github.io/Tritium_docs/${link.substring(0, 3).replace(/(\.\/|\/)/g, '') +
+            link.substring(3)
+            }`
             : link,
       }),
     ]),
   ]
 
   const props: Record<string, unknown> = {
-    class: `vp-card vp-card-theme-${theme} ${
-      hoverShadow ? 'vp-card-hover' : ''
-    }`,
+    class: `vp-card vp-card-theme-${theme} ${hoverShadow ? 'vp-card-hover' : ''
+      }`,
     title: title,
   }
 
@@ -134,23 +132,23 @@ const Card: FunctionalComponent<CardProps> = ({
 
   return isLinkExternal(link)
     ? h(
-        'a',
-        {
-          href: link,
-          target: '_blank',
-          ...props,
-        },
-        children,
-      )
+      'a',
+      {
+        href: link,
+        target: '_blank',
+        ...props,
+      },
+      children,
+    )
     : h(
-        'a',
-        {
-          href: withBase(link),
-          target: '_self',
-          ...props,
-        },
-        children,
-      )
+      'a',
+      {
+        href: withBase(link),
+        target: '_self',
+        ...props,
+      },
+      children,
+    )
 }
 
 Card.displayName = 'Card'

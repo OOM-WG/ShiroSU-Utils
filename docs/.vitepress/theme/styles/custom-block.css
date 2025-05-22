@@ -74,7 +74,7 @@
 
 /* 提示容器:边框色、背景色、左侧 */
 .custom-block.tip {
-    /* border-color: var(--custom-block-tip); */ 
+    /* border-color: var(--custom-block-tip); */
     border-left: 5px solid var(--custom-block-tip-left);
     background-color: var(--custom-block-tip-bg);
 }

@@ -36,7 +36,7 @@ html {
   top: var(--vp-layout-top-height) !important;
 }
 
-.banner ~ .reached-top {
+.banner~.reached-top {
   top: 0px !important;
 }
 
@@ -64,7 +64,7 @@ html {
 }
 
 
-#app > div > div.VPLocalNav > div > div > div.outline {
+#app>div>div.VPLocalNav>div>div>div.outline {
   outline-style: none !important;
 }
 
@@ -104,79 +104,97 @@ html {
 }
 
 @media (prefers-reduced-motion: no-preference) {
+
   html:not(.no-sliding) [slide-enter],
   html:not(.no-sliding) .slide-enter,
-  html:not(.no-sliding) .main > div > *,
-  html:not(.no-sliding) #VPContent > div > div.VPFeatures.VPHomeFeatures > *,
-  html:not(.no-sliding) .TeamPage > *,
-  html:not(.no-sliding) .VPHomeHero > * {
+  html:not(.no-sliding) .main>div>*,
+  html:not(.no-sliding) #VPContent>div>div.VPFeatures.VPHomeFeatures>*,
+  html:not(.no-sliding) .TeamPage>*,
+  html:not(.no-sliding) .VPHomeHero>* {
     --enter-stage: 0;
     --enter-step: 90ms;
     --enter-initial: 0ms;
     animation: slide-enter 1s both 1;
-    animation-delay: calc(
-      var(--enter-initial) + var(--enter-stage) * var(--enter-step)
-    );
+    animation-delay: calc(var(--enter-initial) + var(--enter-stage) * var(--enter-step));
   }
 
-  .main > div > *:nth-child(1) {
+  .main>div>*:nth-child(1) {
     --enter-stage: 1;
   }
-  .main > div > *:nth-child(2) {
+
+  .main>div>*:nth-child(2) {
     --enter-stage: 2;
   }
-  .main > div > *:nth-child(3) {
+
+  .main>div>*:nth-child(3) {
     --enter-stage: 3;
   }
-  .main > div > *:nth-child(4) {
+
+  .main>div>*:nth-child(4) {
     --enter-stage: 4;
   }
-  .main > div > *:nth-child(5) {
+
+  .main>div>*:nth-child(5) {
     --enter-stage: 5;
   }
-  .main > div > *:nth-child(6) {
+
+  .main>div>*:nth-child(6) {
     --enter-stage: 6;
   }
-  .main > div > *:nth-child(7) {
+
+  .main>div>*:nth-child(7) {
     --enter-stage: 7;
   }
-  .main > div > *:nth-child(8) {
+
+  .main>div>*:nth-child(8) {
     --enter-stage: 8;
   }
-  .main > div > *:nth-child(9) {
+
+  .main>div>*:nth-child(9) {
     --enter-stage: 9;
   }
-  .main > div > *:nth-child(10) {
+
+  .main>div>*:nth-child(10) {
     --enter-stage: 10;
   }
-  .main > div > *:nth-child(11) {
+
+  .main>div>*:nth-child(11) {
     --enter-stage: 11;
   }
-  .main > div > *:nth-child(12) {
+
+  .main>div>*:nth-child(12) {
     --enter-stage: 12;
   }
-  .main > div > *:nth-child(13) {
+
+  .main>div>*:nth-child(13) {
     --enter-stage: 13;
   }
-  .main > div > *:nth-child(14) {
+
+  .main>div>*:nth-child(14) {
     --enter-stage: 14;
   }
-  .main > div > *:nth-child(15) {
+
+  .main>div>*:nth-child(15) {
     --enter-stage: 15;
   }
-  .main > div > *:nth-child(16) {
+
+  .main>div>*:nth-child(16) {
     --enter-stage: 16;
   }
-  .main > div > *:nth-child(17) {
+
+  .main>div>*:nth-child(17) {
     --enter-stage: 17;
   }
-  .main > div > *:nth-child(18) {
+
+  .main>div>*:nth-child(18) {
     --enter-stage: 18;
   }
-  .main > div > *:nth-child(19) {
+
+  .main>div>*:nth-child(19) {
     --enter-stage: 19;
   }
-  .main > div > *:nth-child(20) {
+
+  .main>div>*:nth-child(20) {
     --enter-stage: 20;
   }
 }
@@ -208,8 +226,8 @@ html.has-nav-fix .VPNav {
 }
 
 /* 修复可能影响右侧区域的页脚样式 */
-.VPDoc + .VPFooter,
-.VPContent + .VPFooter {
+.VPDoc+.VPFooter,
+.VPContent+.VPFooter {
   background-color: var(--vp-c-bg) !important;
   border-top: 1px solid var(--vp-c-divider);
 }
@@ -235,4 +253,3 @@ div.VPLink.no-icon.VPFeature {
 .VPFeature .VPImage {
   border-radius: 8px;
 }
-
