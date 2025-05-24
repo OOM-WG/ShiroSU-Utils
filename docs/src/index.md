@@ -21,7 +21,7 @@ hero:
 features:
   - title: 智能整理
     icon:
-      src: /home/cloud-storage.svg
+      src: /home/智能整理.svg
     details: 系统性归类与整理，适用于初步汇总或长期归档。
 
   - title: 精致清理
