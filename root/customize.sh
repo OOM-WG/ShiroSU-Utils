@@ -1,24 +1,24 @@
-#=================================================================================================================
-# Copyright (c) 2023-present Anne Sakitin (Tianwan Ayana) & YumeYuka.                                            =
-#                                                                                                                =
-# Part of the SUU project.                                                                                       =
-# Part of the NGA project.                                                                                       =
-# Licensed under the F2DLPR License.                                                                             =
-#                                                                                                                =
-# YOU MAY NOT USE THIS FILE EXCEPT IN COMPLIANCE WITH THE LICENSE.                                               =
-# Provided "AS IS", WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,                                                =
-# unless required by applicable law or agreed to in writing.                                                     =
-#                                                                                                                =
-# For details about the SUU project, visit: https://www.mod.latestfile.zip.                                      =
-# For details about the NGA project, visit: http://app.niggergo.work.                                            =
-# For details about the F2DLPR License terms and conditions, visit: http://license.fileto.download.              =
-#=================================================================================================================
+#====================================================================================================
+# Copyright (C) 2016-present Anne Sakitin (Tianwan Ayana) & YumeYuka.                               =
+#                                                                                                   =
+# Part of the SUU project.                                                                          =
+# Part of the NGA project.                                                                          =
+# Licensed under the F2DLPR License.                                                                =
+#                                                                                                   =
+# YOU MAY NOT USE THIS FILE EXCEPT IN COMPLIANCE WITH THE LICENSE.                                  =
+# Provided "AS IS", WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,                                   =
+# unless required by applicable law or agreed to in writing.                                        =
+#                                                                                                   =
+# For details about the SUU project, visit: http://suu.yumeyuka.plus.                     =
+# For details about the NGA project, visit: http://app.niggergo.work.                               =
+# For details about the F2DLPR License terms and conditions, visit: http://license.fileto.download. =
+#====================================================================================================
 
 [ -f "$MODPATH/nga-utils.sh" ] && . "$MODPATH/nga-utils.sh" || abort '! File "nga-utils.sh" does not exist!'
 nga_install_init "config.fvv" # Don't write code before this line!
 
 Config="$MODPATH/config.fvv"
-Config_DIR="/sdcard/Android/Suu-Nyanya/"
+Config_DIR="/sdcard/Android/SUU-Nyanya/"
 
 not_magisk && {
   is_ksu && {
@@ -60,10 +60,10 @@ newline
   mkdir -p "$Config_DIR"
   cp -f "$Config" "$Config_DIR"
 }
-get_target_bin Suu-Nyanya
+get_target_bin SUU-Nyanya
 newline
-nga_print "配置路径在 /sdcard/Android/Suu-Nyanya/config.fvv"
-nga_print "Github: https://github.com/YumeYuka/Suu-Nyanya"
+nga_print "配置路径在 /sdcard/Android/SUU-Nyanya/config.fvv"
+nga_print "Github: https://github.com/YumeYuka/SUU-Nyanya"
 nga_print "如果可以的话,请给我一个Star"
 newline
 nga_print "按下音量下键跳转浏览器进入Github地址(其他任意键取消)"
@@ -71,7 +71,7 @@ newline
 
 [ $(until_key) = down ] && {
   nga_print "已跳转"
-  goto_url 'https://github.com/YumeYuka/Suu-Nyanya'
+  goto_url 'https://github.com/YumeYuka/SUU-Nyanya'
   true
 } || nga_print "已取消跳转"
 
