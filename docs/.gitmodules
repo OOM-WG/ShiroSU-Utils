@@ -1,0 +1,3 @@
+[submodule ".vitepress"]
+	path = .vitepress
+	url = https://github.com/YumeYuka/SUU_Docs_Config.git
