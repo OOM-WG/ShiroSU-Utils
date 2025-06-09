@@ -1,0 +1,152 @@
+@use './config.scss';
+
+.vp-card {
+  display: inline-flex;
+
+  align-items: center;
+  border-radius: 0.5rem;
+
+  background-color: var(--vp-c-bg-alt);
+  color: inherit;
+
+  transition:
+    all 0.5s,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease !important;
+
+  text-decoration: none !important;
+}
+
+.vp-card-hover:hover {
+  transform: translate3d(0, -4px, 0);
+  box-shadow: var(--vp-shadow-2);
+}
+
+.vp-card-theme-normal {
+  max-width: 360px;
+  margin: 1rem 0.5rem;
+  padding: 1rem;
+
+  hr {
+    margin: 0.25em 0;
+  }
+}
+
+@media (max-width: config.$mobile) {
+  .vp-card-theme-normal {
+    max-width: 95%;
+  }
+}
+
+.vp-card-icon {
+  width: 2em !important;
+  height: 2em !important;
+  background-color: var(--vp-c-bg-soft);
+  margin-right: 1em;
+  padding: 1em;
+}
+
+.vp-card-logo {
+  width: 3em;
+  height: 3em;
+  margin-right: 1em;
+  border-radius: 50%;
+}
+
+.vp-card-content {
+  flex: 1;
+  width: calc(100% - 6em);
+}
+
+.vp-card-title {
+  font-weight: 500;
+  font-size: 1.1em;
+  width: 95%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.vp-card-desc {
+  color: #888;
+  font-size: 0.9em;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.vp-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  align-items: stretch;
+  justify-content: center;
+
+  .vp-card {
+    flex-basis: calc(50% - 3rem);
+    max-width: unset;
+    margin: 0.5rem;
+
+    @media (max-width: config.$pad) {
+      flex-basis: 100%;
+    }
+
+    @media (max-width: config.$tablet) {
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: config.$mobile) {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+.vp-card-theme-medium {
+  width: 100%;
+  margin: 1rem 0.5rem;
+  padding: 0.38rem;
+
+  .vp-card-logo {
+    width: 2.5em;
+    height: 2.5em;
+  }
+
+  .vp-card-icon {
+    margin-left: 0.5em;
+  }
+
+  .vp-card-title {
+    font-size: 1em;
+  }
+
+  .vp-card-desc {
+    width: 95%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  &::after {
+    content: '';
+    --card-icon: url("data:image/svg+xml;utf8,%3Csvg viewBox='0 0 24 24' width='1.2em' height='1.2em' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath fill='currentColor' d='M6 7c0 .55.45 1 1 1h7.59l-8.88 8.88a.996.996 0 1 0 1.41 1.41L16 9.41V17c0 .55.45 1 1 1s1-.45 1-1V7c0-.55-.45-1-1-1H7c-.55 0-1 .45-1 1z'/%3E%3C/svg%3E");
+    mask: var(--card-icon) no-repeat !important;
+    -webkit-mask: var(--card-icon) no-repeat !important;
+    mask-position: center;
+    -webkit-mask-position: center;
+    mask-size: 100% 100%;
+    background-color: currentColor;
+    width: 28px !important;
+    height: 28px !important;
+    margin-top: 8px !important;
+    color: currentColor !important;
+  }
+
+  hr {
+    display: none;
+  }
+}
+
+.i-custom-txc {
+  background: url('https://yuanshen.site/docs/svg/txc.svg') no-repeat;
+  background-size: 100% 100%;
+  background-color: transparent;
+}
