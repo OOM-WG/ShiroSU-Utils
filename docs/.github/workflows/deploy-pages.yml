@@ -29,10 +29,12 @@ jobs:
     steps:
       # 1、检出源码
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           # 默认只拉取分支最近一次的 commit，可能会导致一些文章的 GitInfo 变量无法获取，设为 0 代表拉取所有分支所有提交
           fetch-depth: 0
+          submodules: recursive
+          token: ${{ secrets.YumeYuka_TOKEN }}
       # 2、配置 Git
       # 主要是 quotePath，默认情况下，文件名包含中文时，git 会使用引号把文件名括起来，这会导致 action 中无法读取 :GitInfo 变量
       - name: Git Configuration
