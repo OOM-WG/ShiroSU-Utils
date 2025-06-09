@@ -132,6 +132,6 @@ dist
 .Trashes
 ehthumbs.db
 Thumbs.db
-
+./cache/*
 # Local env files
 .env*.local
