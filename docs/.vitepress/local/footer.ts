@@ -43,6 +43,10 @@ const footer: CustomConfig["footer"] = {
       title: "更多",
       items: [
         {
+          text: "QQ群聊",
+          link: "https://qq.yumeyuka.plus",
+        },
+        {
           text: "QQ频道",
           link: "https://pd.qq.com/s/91t3v4mr3",
         },

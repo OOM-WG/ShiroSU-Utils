@@ -43,7 +43,7 @@ const qrcode = useQRCode(customFooter.qrcodeLink)
           <p class="text-left m-0">Licensed under the F2DLPR License.</p>
           <p class="text-left m-0">
             Copyright © 2023-present
-            <a href="https://gitcode.com/OutOfMemories-WorkGroup"
+            <a href="https://github.com/OOM-WG"
               style="color: var(--vp-c-brand); text-decoration: none;">
               SUU Developers (OOM. WG.)
             </a>

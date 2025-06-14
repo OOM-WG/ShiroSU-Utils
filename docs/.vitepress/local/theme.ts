@@ -32,7 +32,7 @@ export const themeConfig: DefaultTheme.Config = {
   socialLinks: [
     {
       icon: "github",
-      link: "https://gitcode.com/OutOfMemories-WorkGroup/SuperUserUtils",
+      link: "https://github.com/OOM-WG",
     },
   ],
   // 自定义页脚配置
