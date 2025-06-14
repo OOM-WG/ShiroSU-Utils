@@ -12,9 +12,12 @@ hero:
       text: 快速了解
       link: ./Know
     - theme: alt
+      text: QQ群聊
+      link: https://qq.yumeyuka.plus
+    - theme: alt
       text: QQ频道
       link: https://pd.qq.com/s/cq98l9kk7
-    - theme: brand
+    - theme: alt
       text: Discord频道
       link: https://discord.gg/RQBBVhSCa5
 
