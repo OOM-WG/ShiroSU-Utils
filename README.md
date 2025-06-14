@@ -34,7 +34,7 @@
 ## 👩‍💻 作者
 
 - **@YumeYuka** (发起者)
-- **~~@GunRain~~(正在打复活赛)** (芊莳草 / 安音咲汀 / 芙洛洛 / 泠熙子)  修了很多 bug，加了很多新功能的人
+- **@TianwanTW** (安音咲汀 / 天绾绮奈 / 芊莳草 / 芙洛洛 / 泠熙子) 修了很多 bug，加了很多新功能的人
 
 [![Powered by DartNode](https://dartnode.com/branding/DN-Open-Source-sm.png)](https://dartnode.com "Powered by DartNode - Free VPS for Open Source")
 
