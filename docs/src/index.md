@@ -6,7 +6,7 @@ hero:
   text: 做最棒的超级用户工具
   tagline: Super User Utils，简称SUU，中文名称就是苏柚啦！
   image:
-    src: ./Logo.webp
+    src: ./logo.webp
   actions:
     - theme: brand
       text: 快速了解
