@@ -1,7 +1,7 @@
 import type { HeadConfig } from "vitepress";
 
 export const head: HeadConfig[] = [
-	["link", { rel: "icon", href: "/logo-rounded.webp" }],
+	["link", { rel: "icon", href: "/logo-round.webp" }],
 	["meta", { name: "author", content: "安音咲汀, YumeYuka, Linso, 悠栾, 希镰" }],
 	["meta", { name: "keywords", content: "Super User Utils, SUU, 苏柚" }],
 	["meta", { name: "description", content: "正在为您着想的软件呢！" }],
@@ -20,7 +20,7 @@ export const head: HeadConfig[] = [
 		"meta",
 		{
 			property: "og:image",
-			content: "https://suu.oom-wg.dev/logo-rounded.webp",
+			content: "https://suu.oom-wg.dev/logo-round.webp",
 		},
 	],
 

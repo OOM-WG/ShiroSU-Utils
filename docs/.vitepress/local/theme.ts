@@ -8,7 +8,7 @@ export const themeConfig: DefaultTheme.Config = {
   nav,
   sidebar,
 
-  logo: "/logo-rounded.webp",
+  logo: "/logo-round.webp",
   siteTitle: '苏柚',
   outline: {
     level: "deep", // 右侧大纲标题层级
