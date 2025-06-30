@@ -61,7 +61,6 @@ features:
     icon:
       src: /home/更新.svg
     details: 持续更新，保持最新状态。
-
 ---
 
 <HomeUnderline />
