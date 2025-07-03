@@ -34,7 +34,7 @@ title: 快速了解
 但是以下root实现不建议使用：
 
 - `Kitsune Magisk` (原`Magisk Delta`)，原因：不再更新，不支持新特性
-- `SukiSU Ultra`，原因：**实现有问题，影响正常使用**，且开发者抵触此root实现
+<!-- - `SukiSU Ultra`，原因：**实现有问题，影响正常使用**，且开发者抵触此root实现 -->
 
 ::: warning
 **强烈建议使用不建议的root实现的用户尽快切换到其他root实现！否则可能无法正常使用苏柚哦！**
