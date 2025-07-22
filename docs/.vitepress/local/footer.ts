@@ -55,8 +55,8 @@ const footer: CustomConfig["footer"] = {
           link: "https://discord.gg/RQBBVhSCa5",
         },
         {
-          text: "Latest Module",
-          link: "https://www.mod.latestfile.zip",
+          text: "Latest File",
+          link: "https://latestfile.zip",
         },
       ],
     },
