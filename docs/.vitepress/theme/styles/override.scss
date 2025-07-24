@@ -1,0 +1,106 @@
+/* 保证顶部栏始终在 sidebar 之上，仅限桌面端 */
+@media (min-width: 768px) {
+  .VPNav,
+  .VPNavBar,
+  .VPNavBar .VPNavBarTitle,
+  .VPNavBar .VPNavBarMenu {
+    z-index: 1002 !important;
+    position: relative;
+  }
+
+  /* 可选：如果你的 logo 是单独的元素，也可单独提升 */
+  .VPNavBar .VPNavBarTitle {
+    z-index: 1003 !important;
+    position: relative;
+  }
+}
+
+/* --- 页面切换动画 (View Transitions API) -- */
+
+/* 定义动画帧 */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-out {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes slide-from-bottom {
+  from {
+    transform: translateY(30px);
+  }
+}
+
+@keyframes slide-to-top {
+  to {
+    transform: translateY(-30px);
+  }
+}
+
+/* 页面离开时：旧内容动画 */
+::view-transition-old(root) {
+  animation:
+    180ms cubic-bezier(0.4, 0, 1, 1) both fade-out,
+    220ms cubic-bezier(0.4, 0, 0.2, 1) both slide-to-top;
+}
+
+/* 页面进入时：新内容动画 */
+::view-transition-new(root) {
+  animation:
+    220ms cubic-bezier(0, 0, 0.2, 1) 90ms both fade-in,
+    220ms cubic-bezier(0.4, 0, 0.2, 1) 90ms both slide-from-bottom;
+}
+
+/* 暗色模式下，为过渡提供一个稳定的背景色，避免闪烁 */
+.dark::view-transition-old(root),
+.dark::view-transition-new(root) {
+  background-color: #1a1a1a; /* VitePress 默认暗色背景 */
+}
+
+/* 将 sidebar 单独标记，使其在页面切换中保持独立过渡，而不是和页面内容一起淡入淡出 */
+.VPSidebar {
+  view-transition-name: sidebar;
+}
+
+/* --- 移除侧边栏分组分割线 --- */
+
+/* 移除 div.group 的分割线 */
+.VPSidebarItem.level-0,
+.VPSidebarGroup {
+  border-bottom: none !important;
+  border-top: none !important;
+}
+
+/* 移除分组标题的装饰线 */
+.VPSidebarItem.level-0 > .item > .text::before,
+.VPSidebarItem.level-0 > .item > .text::after {
+  display: none !important;
+}
+
+/* 移除分组容器的分割线 */
+.VPSidebarItem.level-0::before,
+.VPSidebarItem.level-0::after {
+  display: none !important;
+}
+
+/* 移除相邻分组之间的分割线 */
+.VPSidebarItem.level-0 + .VPSidebarItem.level-0 {
+  border-top: none !important;
+  margin-top: 0 !important;
+}
+
+/* 确保分组标题没有下边框 */
+.VPSidebarItem.level-0 > .item {
+  border-bottom: none !important;
+}
+
+/* 移除可能的分组分隔符 */
+.VPSidebarGroup::after,
+.VPSidebarGroup + .VPSidebarGroup::before {
+  display: none !important;
+}

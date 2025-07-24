@@ -1,110 +1,183 @@
-<script setup lang="ts">
-import { useElementSize } from '@vueuse/core'
-import { ref, onMounted, watchEffect } from 'vue'
-import { useData } from 'vitepress'
-const el = ref<HTMLElement>()
-const { height } = useElementSize(el)
-const { frontmatter, page } = useData()
-const isShow = ref(typeof frontmatter.value.banner === 'string')
-const deal = () => (Date.now() + 8.64e7 * 1).toString() // current time + 1 day
+<script setup>
+/**
+ * Adding a new banner:
+ * 1. uncomment the banner slot in ../index.ts
+ * 2. uncomment and update BANNER_ID in ../../inlined-scripts/restorePreferences.ts
+ * 3. update --vt-banner-height if necessary
+ */
+import { ref, onMounted, watch } from "vue"
+import { VTIconPlus } from "@vue/theme"
+import { useRoute } from "vitepress/client"
 
-watchEffect(() => {
-  if (height.value) {
-    document.documentElement.style.setProperty(
-      '--vp-layout-top-height',
-      `${height.value + 16}px`,
-    )
+const open = ref(true)
+const isHomePage = ref(false)
+const route = useRoute()
+
+// Function to update banner visibility class
+const updateBannerVisibility = () => {
+  if (route.path === "/" && open.value) {
+    document.documentElement.classList.add("banner-visible")
+  } else {
+    document.documentElement.classList.remove("banner-visible")
   }
+}
+
+// Check if current page is homepage
+onMounted(() => {
+  isHomePage.value = route.path === "/"
+  updateBannerVisibility()
 })
 
-const restore = (key, def = false) => {
-  const saved = localStorage.getItem(key)
-  console.log(typeof frontmatter.value.banner !== 'string')
-  if (typeof frontmatter.value.banner !== 'string') hideBanner()
-  if (saved ? saved !== 'false' && deal() > saved : def) hideBanner()
-}
+// Watch for route changes to update banner visibility
+watch(
+  () => route.path,
+  (newPath) => {
+    isHomePage.value = newPath === "/"
+    updateBannerVisibility()
+  },
+)
 
-onMounted(() => restore(`banner-${page.value.relativePath}`))
-
-const dismiss = () => {
-  localStorage.setItem(`banner-${page.value.relativePath}`, deal())
-  hideBanner()
-}
-
-const hideBanner = () => {
-  isShow.value = false
-  document.documentElement.style.setProperty('--vp-layout-top-height', '0.1px')
+/**
+ * Call this if the banner is dismissible
+ */
+function dismiss() {
+  open.value = false
+  document.documentElement.classList.add("banner-dismissed")
+  updateBannerVisibility()
+  localStorage.setItem(`vue-docs-banner-${__VUE_BANNER_ID__}`, "true")
 }
 </script>
 
 <template>
-  <ClientOnly>
-    <div v-show="isShow" ref="el" class="banner">
-      <div class="text" v-html="frontmatter.banner"></div>
-
-      <button type="button" @click="dismiss">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-          <path
-            d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
-        </svg>
-      </button>
-    </div>
-  </ClientOnly>
+  <div class="banner" v-if="open && isHomePage">
+    <p class="vt-banner-text">
+      <span class="vt-tagline"> 针对 </span>
+      <span class="vt-text-primary"> SakitinSU </span>
+      <span class="vt-place"> 负面声音</span>
+      <span class="vt-date"> · 详见</span>
+      <a target="_blank" class="vt-primary-action" href="/ssu/defense">
+        解释与说明
+      </a>
+    </p>
+    <button @click="dismiss">
+      <VTIconPlus class="close" />
+    </button>
+  </div>
 </template>
+
+<style>
+html:not(.banner-dismissed) {
+  --vt-banner-height: 60px;
+}
+
+html.banner-visible .VPNav {
+  top: var(--vt-banner-height);
+}
+
+html.banner-visible {
+  --vp-nav-height-desktop: calc(
+    var(--vp-nav-height-desktop, 72px) + var(--vt-banner-height)
+  );
+  --vp-nav-height-mobile: calc(
+    var(--vp-nav-height-mobile, 56px) + var(--vt-banner-height)
+  );
+}
+</style>
 
 <style scoped>
 .banner {
   position: fixed;
+  z-index: var(--vp-z-index-banner);
+  box-sizing: border-box;
   top: 0;
-  right: 0;
   left: 0;
-  z-index: var(--vp-z-index-layout-top);
-  padding: 8px;
+  right: 0;
+  height: var(--vt-banner-height);
+  line-height: var(--vt-banner-height);
   text-align: center;
-  background: #383636;
+  font-size: 13px;
+  font-weight: 600;
   color: #fff;
+  background-color: var(--vt-c-green);
+  background: #0f172a;
   display: flex;
-  justify-content: space-between;
-  animation: slide-enter-inverse 1s both 1;
-  animation-delay: 0.3s;
+  justify-content: center;
+  align-items: center;
 }
 
-.text {
-  flex: 1;
+.banner-dismissed .banner {
+  display: none;
 }
 
-.banner-dismissed {
-  --vp-layout-top-height: 0px !important;
-}
-
-.banner>button {
-  opacity: 0.7;
-  transition: opacity cubic-bezier(0.39, 0.575, 0.565, 1) 0.3s;
-}
-
-.banner>button:hover {
-  opacity: 1;
-}
-
-a {
+a:hover {
   text-decoration: underline;
 }
 
-svg {
-  width: 20px;
-  height: 20px;
-  margin-left: 8px;
+button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 10px 10px;
 }
 
-@keyframes slide-enter-inverse {
-  0% {
-    transform: translateY(-10px);
-    opacity: 0;
+.close {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+  transform: rotate(45deg);
+}
+
+.vt-banner-text {
+  color: #fff;
+  font-size: 16px;
+}
+
+.vt-text-primary {
+  color: var(--rainbow-prev);
+}
+
+.vt-primary-action {
+  background: var(--rainbow-prev);
+  color: #121c1a;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+.vt-primary-action:hover {
+  text-decoration: none;
+  background: var(--rainbow-prev);
+}
+
+@media (max-width: 1280px) {
+  .banner .vt-banner-text {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 780px) {
+  .vt-tagline {
+    display: none;
+  }
+  .vt-primary-action {
+    margin: 0 10px;
+    padding: 5px 5px;
   }
 
-  to {
-    transform: translateY(0px);
-    opacity: 100;
+  .vt-time-now {
+    display: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .vt-place {
+    display: none;
+  }
+  .vt-date {
+    display: none;
   }
 }
 </style>

@@ -1,4 +1,4 @@
-/* Style to get the cheat sheet link in the home page */
+// Style to get the cheat sheet link in the home page
 
 a.cta {
   text-align: center;
@@ -17,7 +17,7 @@ a.cta.video {
 }
 
 a.cta.video::before {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   width: 20px;
@@ -29,7 +29,7 @@ a.cta.video::before {
 }
 
 a.cta.video::after {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   width: 0;

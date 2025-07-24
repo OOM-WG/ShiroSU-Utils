@@ -1,41 +1,51 @@
 <script lang="ts" setup>
-import { useLocalStorage, useMediaQuery } from '@vueuse/core'
-import { inBrowser } from 'vitepress'
-import { computed, watch } from 'vue'
+import { useLocalStorage, useMediaQuery } from "@vueuse/core"
+import { inBrowser } from "vitepress"
+import { computed, watch } from "vue"
 
-defineProps<{ text?: string, screenMenu?: boolean }>()
+defineProps<{ text?: string; screenMenu?: boolean }>()
 
-const reduceMotion = useMediaQuery('(prefers-reduced-motion: reduce)').value
+const reduceMotion = useMediaQuery("(prefers-reduced-motion: reduce)").value
 
-const animated = useLocalStorage('animate-rainbow', inBrowser ? !reduceMotion : true)
+const animated = useLocalStorage(
+  "animate-rainbow",
+  inBrowser ? !reduceMotion : true,
+)
 
 function toggleRainbow() {
   animated.value = !animated.value
 }
 
-watch(animated, (anim) => {
-  document.documentElement.classList.remove('rainbow')
-  if (anim) {
-    document.documentElement.classList.add('rainbow')
-  }
-}, { immediate: inBrowser, flush: 'post' })
+watch(
+  animated,
+  (anim) => {
+    document.documentElement.classList.remove("rainbow")
+    if (anim) {
+      document.documentElement.classList.add("rainbow")
+    }
+  },
+  { immediate: inBrowser, flush: "post" },
+)
 
 const switchTitle = computed(() => {
   return animated.value
-    ? 'Disable rainbow animation'
-    : 'Enable rainbow animation'
+    ? "Disable rainbow animation"
+    : "Enable rainbow animation"
 })
 </script>
 
 <template>
   <ClientOnly>
-    <div class="group" :class="{ mobile: screenMenu }">
+    <div :class="{ mobile: screenMenu }" class="group">
       <div class="NavScreenRainbowAnimation">
         <p class="text">
-          {{ text ?? 'Rainbow Animation' }}
+          {{ text ?? "Rainbow Animation" }}
         </p>
-        <RainbowSwitcher :title="switchTitle" class="RainbowAnimationSwitcher"
-          :aria-checked="animated ? 'true' : 'false'" @click="toggleRainbow">
+        <RainbowSwitcher
+          :aria-checked="animated ? 'true' : 'false'"
+          :title="switchTitle"
+          class="RainbowAnimationSwitcher"
+          @click="toggleRainbow">
           <span class="i-tabler:rainbow animated" />
           <span class="i-tabler:rainbow-off non-animated" />
         </RainbowSwitcher>
@@ -103,15 +113,15 @@ const switchTitle = computed(() => {
   opacity: 0;
 }
 
-.RainbowAnimationSwitcher[aria-checked='false'] .non-animated {
+.RainbowAnimationSwitcher[aria-checked="false"] .non-animated {
   opacity: 1;
 }
 
-.RainbowAnimationSwitcher[aria-checked='true'] .animated {
+.RainbowAnimationSwitcher[aria-checked="true"] .animated {
   opacity: 1;
 }
 
-.RainbowAnimationSwitcher[aria-checked='false'] :deep(.check) {
+.RainbowAnimationSwitcher[aria-checked="false"] :deep(.check) {
   /*rtl:ignore*/
   transform: translateX(18px);
 }

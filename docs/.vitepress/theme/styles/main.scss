@@ -1,0 +1,337 @@
+@use "./custom-block.scss";
+@use "./vars.scss";
+@use "./rainbow.scss";
+@use "./override.scss";
+@use "./sidebar.scss";
+@use './hidden.scss';
+@use './font.scss';
+@use "./doc-fade-in.scss";
+@use "./vp-code.css";
+@use "./vp-code-group.css";
+
+
+html.dark {
+  color-scheme: dark;
+}
+
+html.light {
+  color-scheme: light;
+}
+
+/*html {*/
+/*  scroll-behavior: smooth;*/
+/*}*/
+
+.vp-doc h2 {
+  border: none;
+  margin-top: 10px;
+}
+
+.vp-doc h2:first-child {
+  border-top: 1px;
+}
+
+
+.banner ~ .reached-top {
+  top: 0px !important;
+}
+
+/* .vitepress\theme\style\blur.css */
+:root {
+  /* 首页下滑后导航透明 */
+  .VPNavBar:not(.has-sidebar):not(.home.top) {
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(10px);
+  }
+
+  /* 搜索框透明 */
+  .DocSearch-Button {
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(10px);
+  }
+
+  /* Feature透明 */
+  .VPFeature {
+    border: 1px solid transparent;
+    box-shadow: 0 10px 30px 0 rgb(0 0 0 / 15%);
+    background-color: transparent;
+  }
+
+  /* 文档页侧边栏顶部透明 */
+  .curtain {
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(10px);
+  }
+
+  @media (min-width: 960px) {
+    /* 文档页导航中间透明 */
+    .VPNavBar:not(.home.top) .content-body {
+      background-color: rgba(255, 255, 255, 0);
+      backdrop-filter: blur(10px);
+    }
+  }
+
+  /* 移动端大纲栏透明 */
+  .VPLocalNav {
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(10px);
+  }
+}
+
+#app a:focus-visible,
+#app button:focus-visible,
+#app input[type="checkbox"]:focus-visible {
+  --at-apply: outline-1 outline-primary ring-2 ring-primary;
+}
+
+.VPSidebar::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+  background: transparent;
+}
+
+#app > div > div.VPLocalNav > div > div > div.outline {
+  outline-style: none !important;
+}
+
+.vp-doc .color-swatch {
+  display: inline-block;
+  width: 0.85em;
+  height: 0.85em;
+  min-width: 12px;
+  min-height: 12px;
+  font-size: inherit;
+  border: 0;
+  border-radius: 2px;
+  margin: 0 3px 0 6px;
+  cursor: pointer;
+}
+
+.medium-zoom-overlay {
+  z-index: 20;
+}
+
+.medium-zoom-image {
+  z-index: 21;
+}
+
+.VPNavBarTitle {
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* 确保About页面正确显示 */
+html.has-nav-fix .VPNav {
+  z-index: 100;
+}
+
+/* 修复右侧大纲区域背景色 */
+.VPDoc .aside {
+  background-color: transparent !important;
+}
+
+/* 确保右侧区域背景透明 */
+.VPDoc .aside-container,
+.VPDoc .aside-curtain,
+.VPDocAside {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* 修复可能影响右侧区域的页脚样式 */
+.VPDoc + .VPFooter,
+.VPContent + .VPFooter {
+  background-color: var(--vp-c-bg) !important;
+  border-top: 1px solid var(--vp-c-divider);
+}
+
+/* 确保内容区域与背景融合 */
+.VPContent {
+  background-color: var(--vp-c-bg) !important;
+}
+
+/* 修改指定元素的圆角 */
+div.VPLink.no-icon.VPFeature {
+  border-radius: 30px !important;
+  overflow: hidden;
+}
+
+/* 设置所有功能卡片的圆角 */
+.VPFeature {
+  border-radius: 30px !important;
+  overflow: hidden;
+}
+
+/* 确保卡片中的图标和内容也适应圆角 */
+.VPFeature .VPImage {
+  border-radius: 8px;
+}
+
+/* ===== 双向链接样式 ===== */
+/* 无效链接的样式 */
+a.nolebase-route-link-invalid {
+  color: #ef4444;
+  opacity: 0.7;
+  text-decoration: line-through;
+  position: relative;
+}
+
+a.nolebase-route-link-invalid:hover {
+  opacity: 1;
+}
+
+/* 为无效链接添加提示图标 */
+a.nolebase-route-link-invalid::after {
+  content: "⚠️";
+  font-size: 0.8em;
+  margin-left: 4px;
+}
+
+/* 暗色主题下的无效链接样式 */
+html.dark a.nolebase-route-link-invalid {
+  color: #f87171;
+}
+
+/* ===== 目标标题高亮组件自定义颜色 ===== */
+:root {
+  /* 明亮主题下的高亮颜色 - 使用彩虹渐变 */
+  --vp-nolebase-highlight-targeted-heading-color: var(--rainbow-prev);
+  --vp-nolebase-highlight-targeted-heading-bg: color-mix(
+                  in srgb,
+                  var(--rainbow-prev),
+                  transparent 85%
+  );
+}
+
+html.dark {
+  /* 暗色主题下的高亮颜色 - 使用彩虹渐变 */
+  --vp-nolebase-highlight-targeted-heading-color: var(--rainbow-next);
+  --vp-nolebase-highlight-targeted-heading-bg: color-mix(
+                  in srgb,
+                  var(--rainbow-next),
+                  transparent 80%
+  );
+}
+
+/* 重写彩虹高亮动画 - 保持原有的动画逻辑 */
+@keyframes vp-nolebase-highlight-targeted-heading-rainbow-animation {
+  0% {
+    background: transparent;
+    box-shadow: 0px 0px 0px 8px transparent;
+    color: inherit;
+    opacity: 1;
+  }
+  10% {
+    color: var(--vp-nolebase-highlight-targeted-heading-color);
+    border-color: transparent;
+    border-radius: 8px;
+    background: linear-gradient(
+                    120deg,
+                    color-mix(in srgb, var(--rainbow-prev), transparent 90%),
+                    color-mix(in srgb, var(--rainbow-next), transparent 90%)
+    );
+    box-shadow: 0px 0px 0px 8px color-mix(in srgb, var(--rainbow-prev), transparent 95%);
+    opacity: 1;
+  }
+  20% {
+    color: var(--vp-nolebase-highlight-targeted-heading-color);
+    border-radius: 8px;
+    background: linear-gradient(
+                    120deg,
+                    color-mix(in srgb, var(--rainbow-prev), transparent 85%),
+                    color-mix(in srgb, var(--rainbow-next), transparent 85%)
+    );
+    box-shadow: 0px 0px 0px 8px color-mix(in srgb, var(--rainbow-prev), transparent 90%);
+    opacity: 1;
+  }
+  30% {
+    color: var(--vp-nolebase-highlight-targeted-heading-color);
+    border-radius: 8px;
+    background: linear-gradient(
+                    120deg,
+                    color-mix(in srgb, var(--rainbow-prev), transparent 80%),
+                    color-mix(in srgb, var(--rainbow-next), transparent 80%)
+    );
+    box-shadow: 0px 0px 0px 8px color-mix(in srgb, var(--rainbow-prev), transparent 85%);
+    opacity: 1;
+  }
+  70% {
+    background: linear-gradient(
+                    120deg,
+                    color-mix(in srgb, var(--rainbow-prev), transparent 92%),
+                    color-mix(in srgb, var(--rainbow-next), transparent 92%)
+    );
+    border-radius: 8px;
+    box-shadow: 0px 0px 0px 8px color-mix(in srgb, var(--rainbow-prev), transparent 97%);
+    color: var(--vp-nolebase-highlight-targeted-heading-color);
+    opacity: 1;
+  }
+  85% {
+    background: linear-gradient(
+                    120deg,
+                    color-mix(in srgb, var(--rainbow-prev), transparent 98%),
+                    color-mix(in srgb, var(--rainbow-next), transparent 98%)
+    );
+    border-radius: 8px;
+    box-shadow: 0px 0px 8px 0px color-mix(in srgb, var(--rainbow-prev), transparent 98%);
+    color: color-mix(
+                    in srgb,
+                    var(--vp-nolebase-highlight-targeted-heading-color),
+                    #222 60%
+    );
+    opacity: 1;
+  }
+  95% {
+    background: transparent;
+    border-radius: 4px;
+    box-shadow: 0px 0px 0px 0px transparent;
+    color: #222;
+    opacity: 1;
+  }
+  100% {
+    border-radius: 0px;
+    background: transparent;
+    box-shadow: none;
+    color: #222;
+    opacity: 1;
+  }
+}
+
+/* 应用新的彩虹动画 */
+.VPNolebaseHighlightTargetedHeadingAnimated {
+  animation: vp-nolebase-highlight-targeted-heading-rainbow-animation 1.5s ease-in-out !important;
+}
+
+/* 默认隐藏聚光灯 */
+.VPNolebaseEnhancedReadabilitiesSpotlightHoverBlock {
+  opacity: 0 !important;
+  transition: opacity 0.25s ease;
+}
+
+/* 当 .content:hover 时显示聚光灯 */
+body:has(.VPDoc .content:hover)
+.VPNolebaseEnhancedReadabilitiesSpotlightHoverBlock {
+  opacity: 1 !important;
+}
+
+/* ===== 鼠标特效开关组件位置调整 ===== */
+.mouse-effects-switch {
+  margin-left: -10px;
+}
+
+/* 在较小屏幕上调整左边距 */
+@media (max-width: 768px) {
+  .mouse-effects-switch {
+    margin-left: -8px;
+  }
+}
+
+/* 在更大屏幕上进一步左移 */
+@media (min-width: 1200px) {
+  .mouse-effects-switch {
+    margin-left: -15px;
+  }
+}

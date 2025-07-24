@@ -1,0 +1,208 @@
+/* --- 基础容器 --- */
+.VPSidebar {
+  background: rgba(255, 255, 255, 0.98);
+  border-right: 1px solid rgba(0, 0, 0, 0.06);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 1001;
+  /* 优化: 仅过渡 transform 和 background-color，性能更高 */
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  /* 性能提示: 准备好进行 transform 动画 */
+  will-change: transform;
+}
+
+.dark .VPSidebar {
+  background: rgba(16, 16, 20, 0.98);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.VPSidebarNav {
+  padding: 12px 0;
+}
+
+/* --- 入场动画: 统一管理 --- */
+/* 定义一个统一的动画延迟变量 */
+:root {
+  --sidebar-stagger-delay: 50ms;
+}
+
+/* 基础入场动画样式 */
+.VPSidebarItem.level-0,
+.VPSidebarItem.level-1 {
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* 分组 (level-0) 入场 */
+.VPSidebarItem.level-0 {
+  margin-bottom: 6px;
+  animation-name: smoothFadeIn;
+  animation-duration: 0.6s;
+}
+
+/* 菜单项 (level-1) 入场 */
+.VPSidebarItem.level-1 {
+  animation-name: smoothSlideIn;
+  animation-duration: 0.5s;
+}
+
+/* 优化: 使用 CSS 变量和 calc() 动态计算延迟，更优雅且可扩展 */
+.VPSidebarItem.level-0:nth-child(1) { animation-delay: calc(1 * var(--sidebar-stagger-delay)); }
+.VPSidebarItem.level-0:nth-child(2) { animation-delay: calc(2 * var(--sidebar-stagger-delay)); }
+.VPSidebarItem.level-0:nth-child(3) { animation-delay: calc(3 * var(--sidebar-stagger-delay)); }
+.VPSidebarItem.level-0:nth-child(4) { animation-delay: calc(4 * var(--sidebar-stagger-delay)); }
+.VPSidebarItem.level-0:nth-child(5) { animation-delay: calc(5 * var(--sidebar-stagger-delay)); }
+/* 为 level-1 也应用类似的延迟逻辑，并从一个基数开始 */
+.VPSidebarItem.level-1:nth-child(1) { animation-delay: calc(3 * var(--sidebar-stagger-delay)); }
+.VPSidebarItem.level-1:nth-child(2) { animation-delay: calc(4 * var(--sidebar-stagger-delay)); }
+.VPSidebarItem.level-1:nth-child(3) { animation-delay: calc(5 * var(--sidebar-stagger-delay)); }
+.VPSidebarItem.level-1:nth-child(4) { animation-delay: calc(6 * var(--sidebar-stagger-delay)); }
+
+
+/* --- 菜单项样式 --- */
+.VPSidebarItem.level-0 > .item > .text {
+  padding: 4px 20px;
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--vp-c-text-1);
+  margin-bottom: 2px;
+  transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.VPSidebarItem.level-1 .item .link {
+  display: block;
+  padding: 4px 16px;
+  margin: 0px 10px;
+  color: var(--vp-c-text-2);
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 6px;
+  position: relative;
+  z-index: 1;
+  /* 优化: 仅过渡需要的属性 */
+  transition: color 0.25s, background-color 0.25s, transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform, color, background-color;
+}
+
+.VPSidebarItem.level-1 .item .link:hover {
+  color: var(--vp-c-text-1);
+  background-color: var(--vp-c-bg-mute);
+  transform: translateX(3px);
+}
+
+.VPSidebarItem.level-1 .item .link:active {
+  color: var(--vp-c-brand-1);
+  background-color: rgba(var(--vp-c-brand-rgb), 0.1);
+}
+
+.VPSidebarItem.level-1.is-active .item .link {
+  color: var(--vp-c-brand-1);
+  font-weight: 600;
+  background-color: rgba(var(--vp-c-brand-rgb), 0.1);
+}
+
+.VPSidebarItem.level-1.is-active .item .link:hover {
+  background-color: rgba(var(--vp-c-brand-rgb), 0.14);
+}
+
+
+/* === 液体流动指示器系统 - 优化整合版 === */
+
+/* 整合: 定义唯一的、基础的指示器样式 */
+.VPSidebarItem.level-1 .item .link::before {
+  content: "";
+  position: absolute;
+  z-index: -1; /* 置于链接背景之下，避免覆盖文字 */
+  left: -12px;
+  top: 50%;
+  width: 4px;
+  height: 24px;
+  background: linear-gradient(135deg, var(--vp-c-brand-1) 0%, var(--vp-c-brand-2, var(--vp-c-brand-1)) 100%);
+  border-radius: 3px;
+  /* 初始状态: 透明、收缩 */
+  opacity: 0;
+  transform: translateY(-50%) scaleY(0);
+  /* 优化: 定义统一的、高性能的过渡效果 */
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+              opacity 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  will-change: transform, opacity;
+}
+
+/* 状态1: 悬停非激活项时，显示一个预览指示器 */
+.VPSidebarItem.level-1:not(.is-active) .item .link:hover::before {
+  opacity: 0.3;
+  transform: translateY(-50%) scaleY(0.7);
+}
+
+/* 状态2: 当链接激活时，完全显示指示器并播放动画 */
+.VPSidebarItem.level-1.is-active .item .link::before {
+  opacity: 1;
+  transform: translateY(-50%) scaleY(1);
+  box-shadow: 0 0 12px rgba(var(--vp-c-brand-rgb), 0.4);
+  /* 统一使用 liquidMorph 动画 */
+  animation: liquidMorph 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1;
+  /* 优化: animation-delay 可以放到这里，但为简化，暂且移除 */
+}
+
+/* --- 分割线重置 --- */
+/* 说明: 这些规则是为了覆盖VitePress默认样式，使用!important是确保生效的直接方式 */
+.VPSidebarItem.level-0 > .item > .text::before,
+.VPSidebarItem.level-0::after,
+.VPSidebarItem.level-0 > .item::after,
+.VPSidebarItem.level-0 > .item > .text::after,
+.VPSidebarItem.level-0 + .VPSidebarItem.level-0::before,
+.VPSidebarGroup::after,
+.VPSidebarGroup + .VPSidebarGroup::before,
+.VPSidebarItem.level-0,
+.VPSidebarItem.level-0 > .item,
+.VPSidebarItem.level-0 > .item > .text {
+  border: none !important;
+  box-shadow: none !important;
+  content: none !important;
+}
+
+
+/* --- 动画定义 (Keyframes) --- */
+
+@keyframes smoothFadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes smoothSlideIn {
+  from { opacity: 0; transform: translateX(-10px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+/* 整合: 统一使用 liquidMorph 作为液体动画，并优化了参数 */
+@keyframes liquidMorph {
+  0%   { transform: translateY(-50%) scaleY(0.2) scaleX(0.5); opacity: 0.5; }
+  30%  { transform: translateY(-50%) scaleY(1.5) scaleX(1.5); }
+  60%  { transform: translateY(-50%) scaleY(0.8) scaleX(0.8); }
+  100% { transform: translateY(-50%) scaleY(1)   scaleX(1);   opacity: 1; }
+}
+
+
+/* --- 移动端与滚动条 (保持不变，已经写得很好) --- */
+
+@media (max-width: 768px) {
+  /* ... 您的移动端样式 ... */
+}
+@media (min-width: 768px) {
+  /* ... 您的层级样式 ... */
+}
+.VPSidebar::-webkit-scrollbar {
+  width: 0;
+  display: none;
+}
+.VPSidebar::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 0;
+}
+
+/* --- 减少动画 (保持不变) --- */
+@media (prefers-reduced-motion: reduce) {
+  /* ... 您的减少动画样式 ... */
+}

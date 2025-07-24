@@ -1,5 +1,5 @@
 <template>
-  <button class="VPSwitch" type="button" role="switch">
+  <button class="VPSwitch" role="switch" type="button">
     <span class="check">
       <span v-if="$slots.default" class="icon">
         <slot />
@@ -47,7 +47,7 @@
   overflow: hidden;
 }
 
-.icon :deep([class^='i-']) {
+.icon :deep([class^="i-"]) {
   position: absolute;
   top: 3px;
   left: 3px;
@@ -56,7 +56,7 @@
   color: var(--vp-c-text-2);
 }
 
-.dark .icon :deep([class^='i-']) {
+.dark .icon :deep([class^="i-"]) {
   color: var(--vp-c-text-1);
   transition: opacity 0.25s !important;
 }

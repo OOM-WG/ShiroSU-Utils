@@ -1,38 +1,37 @@
 <script lang="ts" setup>
-import { ref, onMounted, watch } from 'vue'
-import { useData } from 'vitepress/dist/client/theme-default/composables/data'
-import { APPEARANCE_KEY, inBrowser } from 'vitepress/dist/client/shared'
-import VPSwitch from 'vitepress/dist/client/theme-default/components/VPSwitch.vue'
-import VPIconSun from 'vitepress/dist/client/theme-default/components/icons/VPIconSun.vue'
-import VPIconMoon from 'vitepress/dist/client/theme-default/components/icons/VPIconMoon.vue'
+import { onMounted, ref, watch } from "vue"
+import { useData } from "vitepress/client"
+import { APPEARANCE_KEY, inBrowser } from "vitepress/dist/client/shared.js"
+import VPSwitch from "vitepress/dist/client/theme-default/components/VPSwitch.vue"
+import VPIconSun from "vitepress/dist/client/theme-default/components/icons/VPIconSun.vue"
+import VPIconMoon from "vitepress/dist/client/theme-default/components/icons/VPIconMoon.vue"
 
 const { site, isDark } = useData()
 const checked = ref(false)
-const toggle = inBrowser ? useAppearance() : () => { }
+const toggle = inBrowser ? useAppearance() : () => {}
 
 onMounted(() => {
-  checked.value = document.documentElement.classList.contains('dark')
+  checked.value = document.documentElement.classList.contains("dark")
 })
 
 const isAppearanceTransition =
-  // @ts-expect-error: Transition API
   document.startViewTransition &&
   !window.matchMedia(`(prefers-reduced-motion: reduce)`).matches
 
 function useAppearance() {
-  const query = window.matchMedia('(prefers-color-scheme: dark)')
+  const query = window.matchMedia("(prefers-color-scheme: dark)")
   const classList = document.documentElement.classList
 
   let userPreference = localStorage.getItem(APPEARANCE_KEY)
 
   let isDark =
-    (site.value.appearance === 'dark' && userPreference == null) ||
-    (userPreference === 'auto' || userPreference == null
+    (site.value.appearance === "dark" && userPreference == null) ||
+    (userPreference === "auto" || userPreference == null
       ? query.matches
-      : userPreference === 'dark')
+      : userPreference === "dark")
 
   query.onchange = (e) => {
-    if (userPreference === 'auto') {
+    if (userPreference === "auto") {
       setClass((isDark = e.matches))
     }
   }
@@ -43,11 +42,11 @@ function useAppearance() {
 
       userPreference = isDark
         ? query.matches
-          ? 'auto'
-          : 'dark'
+          ? "auto"
+          : "dark"
         : query.matches
-          ? 'light'
-          : 'auto'
+          ? "light"
+          : "auto"
 
       localStorage.setItem(APPEARANCE_KEY, userPreference)
 
@@ -61,17 +60,16 @@ function useAppearance() {
       Math.max(y, innerHeight - y),
     )
 
-    // @ts-expect-error: Transition API
     const transition = document.startViewTransition(() => {
       setClass((isDark = !isDark))
 
       userPreference = isDark
         ? query.matches
-          ? 'auto'
-          : 'dark'
+          ? "auto"
+          : "dark"
         : query.matches
-          ? 'light'
-          : 'auto'
+          ? "light"
+          : "auto"
 
       localStorage.setItem(APPEARANCE_KEY, userPreference)
     })
@@ -88,18 +86,18 @@ function useAppearance() {
         },
         {
           duration: 300,
-          easing: 'ease-in',
+          easing: "ease-in",
           pseudoElement: isDark
-            ? '::view-transition-new(root)'
-            : '::view-transition-old(root)',
+            ? "::view-transition-new(root)"
+            : "::view-transition-old(root)",
         },
       )
     })
   }
 
   function setClass(dark: boolean): void {
-    const css = document.createElement('style')
-    css.type = 'text/css'
+    const css = document.createElement("style")
+    css.type = "text/css"
     css.appendChild(
       document.createTextNode(
         `:not(.VPSwitchAppearance):not(.VPSwitchAppearance *) {
@@ -114,7 +112,7 @@ function useAppearance() {
     document.head.appendChild(css)
 
     checked.value = dark
-    classList[dark ? 'add' : 'remove']('dark')
+    classList[dark ? "add" : "remove"]("dark")
     const _ = window.getComputedStyle(css).opacity
     document.head.removeChild(css)
   }
@@ -129,8 +127,11 @@ watch(checked, (newIsDark) => {
 
 <template>
   <label title="toggle dark mode">
-    <VPSwitch class="VPSwitchAppearance" :class="{ VPSwitchAppearanceTransition: isAppearanceTransition }"
-      :aria-checked="checked" @click="toggle">
+    <VPSwitch
+      :aria-checked="checked"
+      :class="{ VPSwitchAppearanceTransition: isAppearanceTransition }"
+      class="VPSwitchAppearance"
+      @click="toggle">
       <VPIconSun class="sun" />
       <VPIconMoon class="moon" />
     </VPSwitch>

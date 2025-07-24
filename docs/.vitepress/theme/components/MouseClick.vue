@@ -1,191 +1,183 @@
 <template>
-  <canvas ref="canvas" style="position: fixed; left: 0; top: 0; pointer-events: none; z-index: 999999"></canvas>
+  <canvas
+    ref="canvas"
+    style="position: fixed; left: 0; top: 0; pointer-events: none; z-index: 999999"
+  ></canvas>
 </template>
 
 <script setup>
 import { ref, onMounted, onUnmounted } from "vue";
-import anime from "animejs";
+
 const canvas = ref(null);
+let animationFrameId = null;
+let particles = [];
+let circles = [];
+const colors = ["#FF1461", "#18FF92", "#5A87FF", "#FBF38C"];
 
-onMounted(() => {
+// 设置画布大小
+function setCanvasSize() {
   const canvasEl = canvas.value;
-  const ctx = canvasEl.getContext("2d");
-  let numberOfParticules = 20;
-  let pointerX = 0;
-  let pointerY = 0;
-  const tap =
-    "ontouchstart" in globalThis || navigator.msMaxTouchPoints
-      ? "touchstart"
-      : "mousedown";
-  const colors = ["#FF1461", "#18FF92", "#5A87FF", "#FBF38C"];
+  canvasEl.width = window.innerWidth * 2;
+  canvasEl.height = window.innerHeight * 2;
+  canvasEl.style.width = window.innerWidth + "px";
+  canvasEl.style.height = window.innerHeight + "px";
+  canvasEl.getContext("2d").scale(2, 2);
+}
 
-  // 设置画布大小以适应窗口
-  function setCanvasSize() {
-    canvasEl.width = globalThis.innerWidth * 2;
-    canvasEl.height = globalThis.innerHeight * 2;
-    canvasEl.style.width = globalThis.innerWidth + "px";
-    canvasEl.style.height = globalThis.innerHeight + "px";
-    canvasEl.getContext("2d").scale(2, 2);
-  }
+// 创建粒子
+function createParticle(x, y) {
+  const angle = Math.random() * Math.PI * 2;
+  const speed = 2 + Math.random() * 3;
+  const radius = 4 + Math.random() * 8;
+  const color = colors[Math.floor(Math.random() * colors.length)];
 
-  // 更新鼠标或触摸点的坐标
-  function updateCoords(e) {
-    pointerX = e.clientX || e.touches[0].clientX;
-    pointerY = e.clientY || e.touches[0].clientY;
-  }
-
-  // 设置粒子的运动方向
-  function setParticuleDirection(p) {
-    const angle = (anime.random(0, 360) * Math.PI) / 180;
-    const value = anime.random(20, 90);
-    const radius = [-1, 1][anime.random(0, 1)] * value;
-    return {
-      x: p.x + radius * Math.cos(angle),
-      y: p.y + radius * Math.sin(angle),
-    };
-  }
-
-  // 创建粒子对象
-  function createParticule(x, y) {
-    const p = {};
-    p.x = x;
-    p.y = y;
-    p.color = colors[anime.random(0, colors.length - 1)];
-    p.radius = anime.random(8, 16);
-    p.endPos = setParticuleDirection(p);
-    p.draw = function () {
+  return {
+    x,
+    y,
+    radius,
+    color,
+    speedX: Math.cos(angle) * speed,
+    speedY: Math.sin(angle) * speed,
+    life: 100 + Math.random() * 100, // 生命周期
+    currentLife: 0,
+    draw(ctx) {
       ctx.beginPath();
-      ctx.arc(p.x, p.y, p.radius, 0, 2 * Math.PI, true);
-      ctx.fillStyle = p.color;
+      ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+      ctx.fillStyle = this.color;
       ctx.fill();
-    };
-    return p;
-  }
+    },
+    update() {
+      this.x += this.speedX;
+      this.y += this.speedY;
+      this.currentLife++;
+      this.radius *= 0.98; // 逐渐缩小
 
-  // 创建圆形对象
-  function createCircle(x, y) {
-    const p = {};
-    p.x = x;
-    p.y = y;
-    p.color = "#FFF";
-    p.radius = 0.1;
-    p.alpha = 0.5;
-    p.lineWidth = 6;
-    p.draw = function () {
-      ctx.globalAlpha = p.alpha;
+      // 根据生命周期调整透明度
+      const progress = this.currentLife / this.life;
+      if (progress > 0.5) {
+        this.radius *= 0.95;
+      }
+
+      return this.currentLife < this.life;
+    }
+  };
+}
+
+// 创建圆形扩散效果
+function createCircle(x, y) {
+  const radius = 5 + Math.random() * 10;
+  const color = "#FFF";
+
+  return {
+    x,
+    y,
+    radius,
+    color,
+    maxRadius: 80 + Math.random() * 80,
+    lineWidth: 6,
+    alpha: 0.5,
+    speed: 1 + Math.random(),
+    draw(ctx) {
+      ctx.globalAlpha = this.alpha;
       ctx.beginPath();
-      ctx.arc(p.x, p.y, p.radius, 0, 2 * Math.PI, true);
-      ctx.lineWidth = p.lineWidth;
-      ctx.strokeStyle = p.color;
+      ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+      ctx.lineWidth = this.lineWidth;
+      ctx.strokeStyle = this.color;
       ctx.stroke();
       ctx.globalAlpha = 1;
-    };
-    return p;
-  }
-
-  // 渲染粒子
-  function renderParticule(anim) {
-    for (let i = 0; i < anim.animatables.length; i++) {
-      anim.animatables[i].target.draw();
-    }
-  }
-
-  // 动画粒子
-  function animateParticules(x, y) {
-    const circle = createCircle(x, y);
-    const particules = [];
-    for (let i = 0; i < numberOfParticules; i++) {
-      particules.push(createParticule(x, y));
-    }
-    anime
-      .timeline()
-      .add({
-        targets: particules,
-        x: function (p) {
-          return p.endPos.x;
-        },
-        y: function (p) {
-          return p.endPos.y;
-        },
-        radius: 0.1,
-        duration: anime.random(1200, 1800),
-        easing: "easeOutExpo",
-        update: renderParticule,
-      })
-      .add({
-        targets: circle,
-        radius: anime.random(80, 160),
-        lineWidth: 0,
-        alpha: {
-          value: 0,
-          easing: "linear",
-          duration: anime.random(600, 800),
-        },
-        duration: anime.random(1200, 1800),
-        easing: "easeOutExpo",
-        update: renderParticule,
-        offset: 0,
-      });
-  }
-
-  // 创建随机圆形动画
-  function createRandomCircleAnimation(x, y) {
-    const randomSize = anime.random(50, 90);
-    const randomColor = colors[anime.random(0, colors.length - 1)];
-
-    const circle = {
-      x: x,
-      y: y,
-      radius: 0,
-      color: randomColor,
-      alpha: 1,
-      draw: function () {
-        ctx.globalAlpha = this.alpha;
-        ctx.beginPath();
-        ctx.arc(this.x, this.y, this.radius, 0, 2 * Math.PI, true);
-        ctx.fillStyle = this.color;
-        ctx.fill();
-        ctx.globalAlpha = 1;
-      },
-    };
-
-    anime({
-      targets: circle,
-      radius: randomSize,
-      alpha: 0,
-      duration: 1000,
-      easing: "easeOutExpo",
-      update: function () {
-        circle.draw();
-      },
-    });
-  }
-
-  // 渲染动画
-  const render = anime({
-    duration: Infinity,
-    update: function () {
-      ctx.clearRect(0, 0, canvasEl.width, canvasEl.height);
     },
+    update() {
+      this.radius += this.speed * 2;
+      this.alpha *= 0.97;
+      this.lineWidth *= 0.98;
+      return this.radius < this.maxRadius && this.alpha > 0.01;
+    }
+  };
+}
+
+// 创建随机圆形
+function createRandomCircle(x, y) {
+  const radius = 1;
+  const color = colors[Math.floor(Math.random() * colors.length)];
+  const maxRadius = 50 + Math.random() * 40;
+
+  return {
+    x,
+    y,
+    radius,
+    color,
+    maxRadius,
+    alpha: 1,
+    speed: 1 + Math.random(),
+    draw(ctx) {
+      ctx.globalAlpha = this.alpha;
+      ctx.beginPath();
+      ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+      ctx.fillStyle = this.color;
+      ctx.fill();
+      ctx.globalAlpha = 1;
+    },
+    update() {
+      this.radius += this.speed * 3;
+      this.alpha *= 0.96;
+      return this.radius < this.maxRadius && this.alpha > 0.01;
+    }
+  };
+}
+
+// 动画循环
+function animate() {
+  const ctx = canvas.value.getContext("2d");
+  ctx.clearRect(0, 0, canvas.value.width, canvas.value.height);
+
+  // 更新并绘制粒子
+  particles = particles.filter(particle => {
+    particle.update();
+    particle.draw(ctx);
+    return particle.currentLife < particle.life;
   });
 
-  document.addEventListener(
-    tap,
-    function (e) {
-      render.play();
-      updateCoords(e);
-      animateParticules(pointerX, pointerY);
-      createRandomCircleAnimation(pointerX, pointerY); // 添加随机圆形动画
-    },
-    false
-  );
+  // 更新并绘制圆形
+  circles = circles.filter(circle => {
+    const shouldKeep = circle.update();
+    circle.draw(ctx);
+    return shouldKeep;
+  });
 
+  animationFrameId = requestAnimationFrame(animate);
+}
+
+// 处理点击事件
+function handleClick(e) {
+  const x = e.clientX || e.touches[0].clientX;
+  const y = e.clientY || e.touches[0].clientY;
+
+  // 创建粒子
+  for (let i = 0; i < 20; i++) {
+    particles.push(createParticle(x, y));
+  }
+
+  // 创建圆形扩散效果
+  circles.push(createCircle(x, y));
+
+  // 创建随机圆形
+  circles.push(createRandomCircle(x, y));
+}
+
+onMounted(() => {
   setCanvasSize();
-  globalThis.addEventListener("resize", setCanvasSize, false);
+  const tapEvent = "ontouchstart" in window ? "touchstart" : "mousedown";
+  window.addEventListener(tapEvent, handleClick);
+  window.addEventListener("resize", setCanvasSize);
+  animate();
 });
 
 onUnmounted(() => {
-  globalThis.removeEventListener("resize", setCanvasSize);
-  document.removeEventListener(tap, handleTap);
+  const tapEvent = "ontouchstart" in window ? "touchstart" : "mousedown";
+  window.removeEventListener(tapEvent, handleClick);
+  window.removeEventListener("resize", setCanvasSize);
+  if (animationFrameId) {
+    cancelAnimationFrame(animationFrameId);
+  }
 });
 </script>
