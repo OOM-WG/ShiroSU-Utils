@@ -85,7 +85,7 @@ const isExpanded = (title: string) => {
             <a
               href="https://github.com/OOM-WG"
               style="color: var(--vp-c-brand); text-decoration: none">
-              SSU Developers (OOM. WG.)
+              SSU Developers (O.O.M. W.G.)
             </a>
           </p>
         </div>
