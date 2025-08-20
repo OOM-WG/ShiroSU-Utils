@@ -64,7 +64,7 @@
     "markdown-it-mathjax3": "^4.3.2",
     "markdown-it-task-checkbox": "^1.0.6",
     "medium-zoom": "^1.1.0",
-    "mermaid": "^11.9.0",
+    "mermaid": "^11.10.0",
     "naive-ui": "^2.42.0",
     "nprogress-v2": "^1.1.10",
     "prettier": "^3.6.2",

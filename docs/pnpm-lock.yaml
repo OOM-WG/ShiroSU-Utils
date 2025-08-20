@@ -163,8 +163,8 @@ importers:
         specifier: ^1.1.0
         version: 1.1.0
       mermaid:
-        specifier: ^11.9.0
-        version: 11.9.0
+        specifier: ^11.10.0
+        version: 11.10.0
       naive-ui:
         specifier: ^2.42.0
         version: 2.42.0(vue@3.5.18(typescript@5.9.2))
@@ -203,7 +203,7 @@ importers:
         version: 1.6.2(markdown-it@14.1.0)(vite@7.1.1(@types/node@24.2.1)(less@4.4.0)(sass@1.90.0)(terser@5.39.0))
       vitepress-plugin-mermaid:
         specifier: ^2.0.17
-        version: 2.0.17(mermaid@11.9.0)(vitepress@2.0.0-alpha.8(@algolia/client-search@5.25.0)(@types/node@24.2.1)(async-validator@4.2.5)(axios@1.11.0(debug@4.4.1))(less@4.4.0)(markdown-it-mathjax3@4.3.2)(postcss@8.5.6)(qrcode@1.5.4)(sass@1.90.0)(search-insights@2.13.0)(terser@5.39.0)(typescript@5.9.2))
+        version: 2.0.17(mermaid@11.10.0)(vitepress@2.0.0-alpha.8(@algolia/client-search@5.25.0)(@types/node@24.2.1)(async-validator@4.2.5)(axios@1.11.0(debug@4.4.1))(less@4.4.0)(markdown-it-mathjax3@4.3.2)(postcss@8.5.6)(qrcode@1.5.4)(sass@1.90.0)(search-insights@2.13.0)(terser@5.39.0)(typescript@5.9.2))
       vitepress-theme-teek:
         specifier: ^1.3.5
         version: 1.3.5(vitepress@2.0.0-alpha.8(@algolia/client-search@5.25.0)(@types/node@24.2.1)(async-validator@4.2.5)(axios@1.11.0(debug@4.4.1))(less@4.4.0)(markdown-it-mathjax3@4.3.2)(postcss@8.5.6)(qrcode@1.5.4)(sass@1.90.0)(search-insights@2.13.0)(terser@5.39.0)(typescript@5.9.2))(vue@3.5.18(typescript@5.9.2))
@@ -1486,8 +1486,8 @@ packages:
   '@types/d3-delaunay@6.0.4':
     resolution: {integrity: sha512-ZMaSKu4THYCU6sV64Lhg6qjf1orxBthaC161plr5KuPHo3CNm8DTHiLw/5Eq2b6TsNP0W0iJrUOFscY6Q450Hw==}
 
-  '@types/d3-dispatch@3.0.6':
-    resolution: {integrity: sha512-4fvZhzMeeuBJYZXRXrRIQnvUYfyXwYmLsdiN7XXmVNQKKw1cM8a5WdID0g1hVFZDqT9ZqZEY5pD44p24VS7iZQ==}
+  '@types/d3-dispatch@3.0.7':
+    resolution: {integrity: sha512-5o9OIAdKkhN1QItV2oqaE5KMIiXAvDWBDPrD85e58Qlz1c1kI/J0NcqbEG88CoTwJrYe7ntUCVfeUl2UJKbWgA==}
 
   '@types/d3-drag@3.0.7':
     resolution: {integrity: sha512-HE3jVKlzU9AaMazNufooRJ5ZpWmLIoc90A37WU2JMmeq28w1FQqCZswHZ3xR+SuxYftzHq6WU6KJHvqxKzTxxQ==}
@@ -1813,6 +1813,11 @@ packages:
 
   acorn@8.14.1:
     resolution: {integrity: sha512-OvQ/2pUDKmgfCg++xsTX1wGxfTaszcHVcTctW4UJB4hibJx2HXxxO5UmVgyjMa+ZDsiaf5wWLXYpRWMmBI0QHg==}
+    engines: {node: '>=0.4.0'}
+    hasBin: true
+
+  acorn@8.15.0:
+    resolution: {integrity: sha512-NZyJarBfL7nWwIq+FDL6Zp/yHEhePMNnnJ0y3qfieCrmNvYct8uvtiV41UvlSe6apAfk0fY1FbWx+NwfmpvtTg==}
     engines: {node: '>=0.4.0'}
     hasBin: true
 
@@ -3046,8 +3051,8 @@ packages:
     peerDependencies:
       marked: '>=4 <17'
 
-  marked@16.1.1:
-    resolution: {integrity: sha512-ij/2lXfCRT71L6u0M29tJPhP0bM5shLL3u5BePhFwPELj2blMJ6GDtD7PfJhRLhJ/c2UwrK17ySVcDzy2YHjHQ==}
+  marked@16.2.0:
+    resolution: {integrity: sha512-LbbTuye+0dWRz2TS9KJ7wsnD4KAtpj0MVkWc90XvBa6AslXsT0hTBVH5k32pcSyHH1fst9XEFJunXHktVy0zlg==}
     engines: {node: '>= 20'}
     hasBin: true
 
@@ -3123,8 +3128,8 @@ packages:
     resolution: {integrity: sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==}
     engines: {node: '>= 8'}
 
-  mermaid@11.9.0:
-    resolution: {integrity: sha512-YdPXn9slEwO0omQfQIsW6vS84weVQftIyyTGAZCwM//MGhPzL1+l6vO6bkf0wnP4tHigH1alZ5Ooy3HXI2gOag==}
+  mermaid@11.10.0:
+    resolution: {integrity: sha512-oQsFzPBy9xlpnGxUqLbVY8pvknLlsNIJ0NWwi8SUJjhbP1IT0E0o1lfhU4iYV3ubpy+xkzkaOyDUQMn06vQElQ==}
 
   mhchemparser@4.2.1:
     resolution: {integrity: sha512-kYmyrCirqJf3zZ9t/0wGgRZ4/ZJw//VwaRVGA75C4nhE60vtnIzhl9J9ndkX/h6hxSN7pjg/cE0VxbnNM+bnDQ==}
@@ -3564,8 +3569,8 @@ packages:
     engines: {node: '>=10.13.0'}
     hasBin: true
 
-  quansync@0.2.10:
-    resolution: {integrity: sha512-t41VRkMYbkHyCYmOvx/6URnN80H7k4X0lLdBMGsz+maAwrJQYB1djpV6vHrQIBE0WBSGqhtEHrK9U3DWWH8v7A==}
+  quansync@0.2.11:
+    resolution: {integrity: sha512-AifT7QEbW9Nri4tAwR5M/uzpBuqfZf+zwaEM/QkzEjj7NBuFD2rBuy0K3dE+8wltbezDV7JMA0WfnCPYRSYbXA==}
 
   queue-microtask@1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
@@ -5761,7 +5766,7 @@ snapshots:
 
   '@types/d3-delaunay@6.0.4': {}
 
-  '@types/d3-dispatch@3.0.6': {}
+  '@types/d3-dispatch@3.0.7': {}
 
   '@types/d3-drag@3.0.7':
     dependencies:
@@ -5833,7 +5838,7 @@ snapshots:
       '@types/d3-color': 3.1.3
       '@types/d3-contour': 3.0.6
       '@types/d3-delaunay': 6.0.4
-      '@types/d3-dispatch': 3.0.6
+      '@types/d3-dispatch': 3.0.7
       '@types/d3-drag': 3.0.7
       '@types/d3-dsv': 3.0.7
       '@types/d3-ease': 3.0.2
@@ -6153,8 +6158,8 @@ snapshots:
       '@vueuse/core': 13.6.0(vue@3.5.18(typescript@5.9.2))
       '@waline/api': 1.0.0
       autosize: 6.0.1
-      marked: 16.1.1
-      marked-highlight: 2.2.2(marked@16.1.1)
+      marked: 16.2.0
+      marked-highlight: 2.2.2(marked@16.2.0)
       recaptcha-v3: 1.11.3
       vue: 3.5.18(typescript@5.9.2)
     transitivePeerDependencies:
@@ -6171,6 +6176,8 @@ snapshots:
   '@xmldom/xmldom@0.9.8': {}
 
   acorn@8.14.1: {}
+
+  acorn@8.15.0: {}
 
   algoliasearch@5.25.0:
     dependencies:
@@ -7440,7 +7447,7 @@ snapshots:
     dependencies:
       mlly: 1.7.4
       pkg-types: 2.2.0
-      quansync: 0.2.10
+      quansync: 0.2.11
 
   locate-path@5.0.0:
     dependencies:
@@ -7515,11 +7522,11 @@ snapshots:
 
   markdown-table@3.0.4: {}
 
-  marked-highlight@2.2.2(marked@16.1.1):
+  marked-highlight@2.2.2(marked@16.2.0):
     dependencies:
-      marked: 16.1.1
+      marked: 16.2.0
 
-  marked@16.1.1: {}
+  marked@16.2.0: {}
 
   math-intrinsics@1.1.0: {}
 
@@ -7666,7 +7673,7 @@ snapshots:
 
   merge2@1.4.1: {}
 
-  mermaid@11.9.0:
+  mermaid@11.10.0:
     dependencies:
       '@braintree/sanitize-url': 7.1.1
       '@iconify/utils': 2.3.0
@@ -7683,7 +7690,7 @@ snapshots:
       katex: 0.16.22
       khroma: 2.1.0
       lodash-es: 4.17.21
-      marked: 16.1.1
+      marked: 16.2.0
       roughjs: 4.6.6
       stylis: 4.3.6
       ts-dedent: 2.2.0
@@ -7968,7 +7975,7 @@ snapshots:
 
   mlly@1.7.4:
     dependencies:
-      acorn: 8.14.1
+      acorn: 8.15.0
       pathe: 2.0.3
       pkg-types: 1.3.1
       ufo: 1.6.1
@@ -8259,7 +8266,7 @@ snapshots:
       pngjs: 5.0.0
       yargs: 15.4.1
 
-  quansync@0.2.10: {}
+  quansync@0.2.11: {}
 
   queue-microtask@1.2.3: {}
 
@@ -8873,9 +8880,9 @@ snapshots:
     dependencies:
       gray-matter: 4.0.3
 
-  vitepress-plugin-mermaid@2.0.17(mermaid@11.9.0)(vitepress@2.0.0-alpha.8(@algolia/client-search@5.25.0)(@types/node@24.2.1)(async-validator@4.2.5)(axios@1.11.0(debug@4.4.1))(less@4.4.0)(markdown-it-mathjax3@4.3.2)(postcss@8.5.6)(qrcode@1.5.4)(sass@1.90.0)(search-insights@2.13.0)(terser@5.39.0)(typescript@5.9.2)):
+  vitepress-plugin-mermaid@2.0.17(mermaid@11.10.0)(vitepress@2.0.0-alpha.8(@algolia/client-search@5.25.0)(@types/node@24.2.1)(async-validator@4.2.5)(axios@1.11.0(debug@4.4.1))(less@4.4.0)(markdown-it-mathjax3@4.3.2)(postcss@8.5.6)(qrcode@1.5.4)(sass@1.90.0)(search-insights@2.13.0)(terser@5.39.0)(typescript@5.9.2)):
     dependencies:
-      mermaid: 11.9.0
+      mermaid: 11.10.0
       vitepress: 2.0.0-alpha.8(@algolia/client-search@5.25.0)(@types/node@24.2.1)(async-validator@4.2.5)(axios@1.11.0(debug@4.4.1))(less@4.4.0)(markdown-it-mathjax3@4.3.2)(postcss@8.5.6)(qrcode@1.5.4)(sass@1.90.0)(search-insights@2.13.0)(terser@5.39.0)(typescript@5.9.2)
     optionalDependencies:
       '@mermaid-js/mermaid-mindmap': 9.3.0
