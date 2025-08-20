@@ -3,10 +3,10 @@ name: Deploy Pages
 on:
   # 推送时执行
   push:
-    branches: [ oom ]
+    branches: [main, master]
   # pr 时执行
   pull_request:
-    branches: [ oom ]
+    branches: [main, master]
   # 定时执行，字段含义：分钟 小时 日 月 星期
   # 注意：
   # 1.采用的是 UTC 时间
