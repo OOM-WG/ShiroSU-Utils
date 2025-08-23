@@ -1,0 +1,14 @@
+Global = {
+    NA = "不适用"
+}
+
+UI = {
+    CommonPages = "基本"
+    Settings = "设置"
+    About = "关于"
+}
+
+App = {
+    AuthTtl = "启动验证"
+    AuthCnt = "已开启启动验证，请在验证后使用"
+}

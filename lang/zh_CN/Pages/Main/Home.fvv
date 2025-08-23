@@ -1,0 +1,17 @@
+Home = {
+    PreDl = "已开始下载"
+    DlOk = "下载完成"
+    DlErr = "下载失败: %s"
+
+    InstTtl = "安装 %s 版本"
+    InstCnt = "安装包已下载完成，点击即可安装"
+    InstPmErr = "权限获取失败"
+
+    UpdateTtl = "更新 %s 版本"
+    UpdateCnt = "- 安装包大小: %s\n%s"
+
+    NewVerTtl = "新的%s版本现已推出！"
+    NewVerCnt = "新版本 %s 已可使用，点击即可更新"
+
+    JoinUs = "加入我们"
+}

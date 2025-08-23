@@ -1,0 +1,8 @@
+Settings = {
+    Custom = "客制化"
+    HDRMode = "HDR模式"
+    AppTheme = "软件主题"
+
+    Common = "基本"
+    Auth = "启动验证"
+}

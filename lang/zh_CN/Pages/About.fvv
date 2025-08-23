@@ -1,0 +1,8 @@
+About = {
+    Version = "版本: %s"
+    Copyright = "©️ 2023-至今 O.O.M. W.G. 版权所有 保留一切权利"
+    OOM_WG = "回忆溢出工作组"
+    Docs = "SUU文档"
+    DepsList = "依赖清单"
+    DepsList3Q = "感谢以下项目"
+}
