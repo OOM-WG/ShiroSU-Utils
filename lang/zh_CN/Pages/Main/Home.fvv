@@ -10,7 +10,7 @@ Home = {
     UpdateTtl = "更新 %s 版本"
     UpdateCnt = "- 安装包大小: %s\n%s"
 
-    NewVerTtl = "新的%s版本现已推出！"
+    NewVerTtl = "新的版本现已推出！"
     NewVerCnt = "新版本 %s 已可使用，点击即可更新"
 
     JoinUs = "加入我们"
