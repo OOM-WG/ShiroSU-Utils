@@ -10,7 +10,7 @@ import {
     isPlainObject,
     isString,
     stringifyProp,
-} from "../untils/utils.js";
+} from "../utils/utils.js";
 
 export interface CardOptions {
     title: string;
