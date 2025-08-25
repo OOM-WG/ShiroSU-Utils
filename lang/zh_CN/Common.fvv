@@ -3,6 +3,9 @@ Global = {
 }
 
 UI = {
+    Home = "主页"
+    More = "更多"
+
     CommonPages = "基本"
     Settings = "设置"
     About = "关于"
