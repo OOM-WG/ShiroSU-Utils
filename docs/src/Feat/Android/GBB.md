@@ -4,7 +4,7 @@ titleTemplate: 苏柚 Android
 ---
 
 ::: tip
-GBB优质存储仅能在**欢愉模式**使用
+GBB 优质存储仅能在**欢愉模式**使用
 :::
 
 ::: tip
@@ -13,7 +13,7 @@ GBB优质存储仅能在**欢愉模式**使用
 
 ## 原理
 
-> 通过root权限与Zygisk API重定向目录
+> 通过 root 权限与 Zygisk API 重定向目录
 
 ## 使用
 

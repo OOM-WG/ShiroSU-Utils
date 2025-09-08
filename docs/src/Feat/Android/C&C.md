@@ -9,7 +9,7 @@ titleTemplate: 苏柚 Android
 
 ## 原理
 
-> 通过存储权限或root权限清理文件或目录
+> 通过存储权限或 root 权限清理文件或目录
 
 ## 使用
 

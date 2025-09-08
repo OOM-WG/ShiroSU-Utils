@@ -4,15 +4,15 @@ titleTemplate: 苏柚 Android
 ---
 
 ::: tip
-modify.my.id仅能在**欢愉模式**使用
+modify.my.id 仅能在**欢愉模式**使用
 :::
 
-## 支持的ID
+## 支持的 ID
 
 ### Android (AOSP & Google)
 
 - SSAID (Android ID)
-- AAID (广告ID)
+- AAID (广告 ID)
 
 ### 小米 (小米 & 红米 & POCO)
 
@@ -27,7 +27,7 @@ modify.my.id仅能在**欢愉模式**使用
 - Security ID
 - OUID (开放匿名设备标识符)
 - GUID (设备唯一标识符)
-- 百度ID
+- 百度 ID
 
 ### 华为 (华为 & 荣耀(旧))
 

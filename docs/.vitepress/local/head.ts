@@ -1,32 +1,32 @@
-import type { HeadConfig } from "vitepress";
+import type {HeadConfig} from 'vitepress'
 
 export const head: HeadConfig[] = [
-	["link", { rel: "icon", href: "/logo-round.webp" }],
-	["meta", { name: "author", content: "安音咲汀, YumeYuka, Linso, 悠栾, 希镰" }],
-	["meta", { name: "keywords", content: "Super User Utils, SUU, 苏柚" }],
-	["meta", { name: "description", content: "正在为您着想的软件呢！" }],
+	['link', {rel: 'icon', href: '/logo-round.webp'}],
+	['meta', {name: 'author', content: '白彩恋, YumeYuka, Linso, 悠栾, 希镰'}],
+	['meta', {name: 'keywords', content: 'Super User Utils, SUU, 苏柚'}],
+	['meta', {name: 'description', content: '正在为您着想的软件呢！'}],
 
-	["meta", { name: "HandheldFriendly", content: "True" }],
-	["meta", { name: "MobileOptimized", content: "320" }],
-	["meta", { name: "theme-color", content: "#3c8772" }],
+	['meta', {name: 'HandheldFriendly', content: 'True'}],
+	['meta', {name: 'MobileOptimized', content: '320'}],
+	['meta', {name: 'theme-color', content: '#3c8772'}],
 
-	["meta", { property: "og:type", content: "website" }],
-	["meta", { property: "og:locale", content: "zh-CN" }],
-	["meta", { property: "og:title", content: "苏柚" }],
-	["meta", { property: "og:description", content: "正在为您着想的软件呢！" }],
-	["meta", { property: "og:site", content: "https://suu.oom-wg.dev" }],
-	["meta", { property: "og:site_name", content: "苏柚" }],
+	['meta', {property: 'og:type', content: 'website'}],
+	['meta', {property: 'og:locale', content: 'zh-CN'}],
+	['meta', {property: 'og:title', content: '苏柚'}],
+	['meta', {property: 'og:description', content: '正在为您着想的软件呢！'}],
+	['meta', {property: 'og:site', content: 'https://suu.oom-wg.dev'}],
+	['meta', {property: 'og:site_name', content: '苏柚'}],
 	[
-		"meta",
+		'meta',
 		{
-			property: "og:image",
-			content: "https://suu.oom-wg.dev/logo-round.webp",
-		},
+			property: 'og:image',
+			content: 'https://suu.oom-wg.dev/logo-round.webp'
+		}
 	],
 
 	// 友盟：https://mp.umeng.com/
 	[
-		"script",
+		'script',
 		{},
 		`(function (w, d, s, q, i) {
       w[q] = w[q] || [];
@@ -39,7 +39,7 @@ export const head: HeadConfig[] = [
     aplus_queue.push({
       action: 'aplus.setMetaInfo',
       arguments: ['appKey', '68234476bc47b67d8364a026']
-    });`,
+    });`
 	],
 
 	/* 
@@ -48,7 +48,7 @@ export const head: HeadConfig[] = [
     确实是修复了导航栏的问题
    */
 	[
-		"script",
+		'script',
 		{},
 		`
     if (typeof window !== 'undefined') {
@@ -114,6 +114,6 @@ export const head: HeadConfig[] = [
       
       window.addEventListener('load', initNavFix);
     }
-  `,
-	],
-];
+  `
+	]
+]
