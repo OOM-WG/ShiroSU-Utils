@@ -24,7 +24,7 @@
 		"axios": "^1.11.0",
 		"canvas-confetti": "^1.9.3",
 		"dynamics.js": "^1.1.5",
-		"element-plus": "^2.10.6",
+		"element-plus": "^2.11.0",
 		"gsap": "^3.13.0",
 		"html-minifier-terser": "^7.2.0",
 		"node-fetch": "^3.3.2",
