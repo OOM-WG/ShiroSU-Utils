@@ -18,12 +18,12 @@ on:
 
 # 确保同时只有一个部署在运行
 concurrency:
-  group: docs-builder
+  group: docs-deployer
   cancel-in-progress: true
 
 jobs:
   # 任务: 部署 Pages
-  build-docs:
+  deploy-docs:
     runs-on: ubuntu-latest
     steps:
       # 1、检出源码
