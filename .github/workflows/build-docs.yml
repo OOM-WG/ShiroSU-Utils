@@ -6,11 +6,13 @@ on:
     branches: [nga]
     paths:
       - "docs/**"
+      - ".github/**"
   # 文档 PR 时执行
   pull_request:
     branches: [nga]
     paths:
       - "docs/**"
+      - ".github/**"
   # 可手动执行
   workflow_dispatch:
 
@@ -61,3 +63,5 @@ jobs:
         with:
           branch: docs-dist
           folder: docs/dist
+          clean: true
+          single-commit: true
