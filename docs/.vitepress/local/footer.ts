@@ -49,6 +49,10 @@ const footer: CustomConfig['footer'] = {
 				{
 					text: 'Latest Module',
 					link: 'https://www.mod.latestfile.zip'
+				},
+				{
+					text: 'YumeYuka++',
+					link: 'https://yumeyuka.plus'
 				}
 			]
 		}
