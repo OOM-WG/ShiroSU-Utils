@@ -1,21 +1,21 @@
 import type {CustomConfig} from './types'
 
 const footer: CustomConfig['footer'] = {
-	qrcodeTitle: '开发反馈频道',
-	qrcodeMessage: '欢迎QQ扫码联系我们(欢律遗愉)',
-	qrcodeLink: 'https://pd.qq.com/s/91t3v4mr3',
+	qrcodeTitle: '交流反馈渠道',
+	qrcodeMessage: '欢迎扫码联系我们',
+	qrcodeLink: 'https://oom-wg.dev/join',
 	navigation: [
 		{
 			title: '关于',
 			items: [
 				{
+					text: '成员列表',
+					link: 'https://oom-wg.dev/developers'
+				},
+				{
 					text: '团队信息',
-					link: '/About'
+					link: 'https://oom-wg.dev/about'
 				}
-				/*{
-          text: "赞助鸣谢",
-          link: "/support-us",
-        },*/
 			]
 		},
 		{
@@ -43,16 +43,8 @@ const footer: CustomConfig['footer'] = {
 			title: '更多',
 			items: [
 				{
-					text: 'QQ群聊',
-					link: 'https://qq.yumeyuka.plus'
-				},
-				{
-					text: 'QQ频道',
-					link: 'https://pd.qq.com/s/91t3v4mr3'
-				},
-				{
-					text: 'Discord频道',
-					link: 'https://discord.gg/RQBBVhSCa5'
+					text: '交流反馈',
+					link: 'https://oom-wg.dev/join'
 				},
 				{
 					text: 'Latest Module',

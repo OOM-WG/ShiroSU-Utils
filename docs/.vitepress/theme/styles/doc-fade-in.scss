@@ -53,7 +53,6 @@
 	html:not(.no-sliding) .slide-enter,
 	html:not(.no-sliding) .main > div > *,
 	html:not(.no-sliding) #VPContent > div > div.VPFeatures.VPHomeFeatures > *,
-	html:not(.no-sliding) .TeamPage > *,
 	html:not(.no-sliding) .VPHomeHero > * {
 		--enter-stage: 0;
 		--enter-step: 90ms;

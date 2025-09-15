@@ -6,8 +6,8 @@ export const nav: DefaultTheme.Config['nav'] = [
 		link: '/Know'
 	},
 	{
-		text: '关于苏柚',
-		link: '/About'
+		text: '关于团队',
+		link: 'https://oom-wg.dev/about'
 	},
 	{
 		text: '更新日志',

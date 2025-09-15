@@ -34,7 +34,6 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
 			}
 		]
 	},
-	{text: '关于苏柚', link: '/About'},
 	{
 		text: '更新日志',
 		collapsed: false,

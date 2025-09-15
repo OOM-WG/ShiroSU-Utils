@@ -39,7 +39,6 @@ import Update from './components/Update.vue'
 import SakuraLinkCard from './components/SakuraLinkCard.vue'
 import UnderConstructionBanner from './components/Width.vue'
 import Downloaded from './attached/Downloaded.vue'
-import TeamPage from './team/TeamPage.vue'
 import Music from './components/Music.vue'
 // import MouseToggle from "./components/MouseToggle.vue";
 import Mouse from './components/Mouse.vue'
@@ -160,7 +159,6 @@ export default {
 		app.component('RainbowAnimationSwitcher', RainbowAnimationSwitcher)
 		app.component('Confetti', Confetti)
 		app.component('Update', Update)
-		app.component('TeamPage', TeamPage)
 		app.component('ArticleMetadata', ArticleMetadata)
 		app.component('SakuraLinkCard', SakuraLinkCard)
 		app.component('Downloaded', Downloaded)
