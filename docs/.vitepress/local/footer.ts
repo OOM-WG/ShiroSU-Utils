@@ -47,8 +47,8 @@ const footer: CustomConfig['footer'] = {
 			title: '更多',
 			items: [
 				{
-					text: 'Latest Module',
-					link: 'https://www.mod.latestfile.zip'
+					text: 'Latest File',
+					link: 'https://latestfile.zip'
 				},
 				{
 					text: 'YumeYuka++',
