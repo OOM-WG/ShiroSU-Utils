@@ -9,6 +9,10 @@ const footer: CustomConfig['footer'] = {
 			title: '关于',
 			items: [
 				{
+					text: '交流反馈',
+					link: 'https://oom-wg.dev/join'
+				},
+				{
 					text: '成员列表',
 					link: 'https://oom-wg.dev/developers'
 				},
@@ -42,10 +46,6 @@ const footer: CustomConfig['footer'] = {
 		{
 			title: '更多',
 			items: [
-				{
-					text: '交流反馈',
-					link: 'https://oom-wg.dev/join'
-				},
 				{
 					text: 'Latest Module',
 					link: 'https://www.mod.latestfile.zip'
