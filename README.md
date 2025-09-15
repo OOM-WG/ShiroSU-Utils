@@ -8,7 +8,7 @@
 
 ## 文档
 
-文档已开源至 [此仓库](https://github.com/OOM-WG/SUU_Docs)，文档仓库不接受任何问题，如有问题请在本仓库提出
+文档已开源至 [docs 文件夹](docs)，是 <https://suu.oom-wg.dev> 的源代码
 
 ## 多语言
 
