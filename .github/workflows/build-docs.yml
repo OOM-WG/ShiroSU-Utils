@@ -16,6 +16,11 @@ on:
   # 可手动执行
   workflow_dispatch:
 
+# 确保同时只有一个部署在运行
+concurrency:
+  group: docs-builder
+  cancel-in-progress: true
+
 jobs:
   # 任务: 部署 Pages
   build-docs:
