@@ -1,4 +1,4 @@
-name: Build Docs
+name: Deploy Docs
 
 on:
   # 文档推送时执行
