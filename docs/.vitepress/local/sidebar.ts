@@ -15,13 +15,13 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
 		text: '功能',
 		collapsed: false,
 		items: [
-					{text: 'Nyanya整理', link: '/Feat/Android/Nyanya'},
-					{text: 'C&C清理'， link: '/Feat/Android/C&C'},
-					{text: 'GBB优质存储'， link: '/Feat/Android/GBB'},
-					{text: 'modify.my.id', link: '/Feat/Android/modify.my.id'},
-					{text: 'Xposed功能', link: '/Feat/Android/Xposed'},
-					{text: 'Toybox玩具箱', link: '/Feat/Android/Toybox'}
-				]
+			{text: 'Nyanya整理', link: '/Feat/Android/Nyanya'},
+			{text: 'C&C清理', link: '/Feat/Android/C&C'},
+			{text: 'GBB优质存储', link: '/Feat/Android/GBB'},
+			{text: 'modify.my.id', link: '/Feat/Android/modify.my.id'},
+			{text: 'Xposed功能', link: '/Feat/Android/Xposed'},
+			{text: 'Toybox玩具箱', link: '/Feat/Android/Toybox'}
+		]
 	},
 	{
 		text: '更新日志',
@@ -35,9 +35,9 @@ export const sidebar: DefaultTheme.Config['sidebar'] = [
 		text: '附录',
 		collapsed: false,
 		items: [
-					{text: '模式对照', link: '/Appendix/Android/Mode'},
-					{text: '路径对照'， link: '/Appendix/Android/Path'},
-					{text: '小贴士'， link: '/Appendix/Android/Tip'}
-				]
+			{text: '模式对照', link: '/Appendix/Android/Mode'},
+			{text: '路径对照', link: '/Appendix/Android/Path'},
+			{text: '小贴士', link: '/Appendix/Android/Tip'}
+		]
 	}
 ]
