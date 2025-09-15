@@ -1,12 +1,6 @@
-# 下面自己配置使用的 忽略文件
 .DS_Store
-# End of https://www.gitignore.io/api/visualstudiocode
  
-node_modules/
-package-lock.json
-dist/
-/.vitepress/cache
-/.vitepress/cache
-/.vitepress/cache
-/.vitepress/cache
-/.idea
+node_modules
+dist
+.vitepress/cache
+.idea
