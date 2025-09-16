@@ -1,0 +1,7 @@
+extends:
+  - stylelint-config-standard-scss
+  - stylelint-config-standard-vue/scss
+plugins:
+  - stylelint-prettier
+rules:
+  prettier/prettier: true
