@@ -1,19 +1,20 @@
-import { defineConfig } from 'vitepress'
-import { head } from './local/head'
-import { markdown } from './local/markdown'
-import { themeConfig } from './local/theme'
-import { fileURLToPath, URL } from 'node:url'
-import { GitChangelog, GitChangelogMarkdownSection } from '@nolebase/vitepress-plugin-git-changelog/vite'
-import { ThumbnailHashImages } from '@nolebase/vitepress-plugin-thumbnail-hash/vite'
-import { generateBreadcrumbsData } from '@nolebase/vitepress-plugin-breadcrumbs/vitepress'
-import { visualizer } from 'rollup-plugin-visualizer'
+import {defineConfig} from 'vitepress'
+import {head} from './local/head'
+import {markdown} from './local/markdown'
+import {themeConfig} from './local/theme'
+import {fileURLToPath, URL} from 'node:url'
+import {GitChangelog, GitChangelogMarkdownSection} from '@nolebase/vitepress-plugin-git-changelog/vite'
+import {ThumbnailHashImages} from '@nolebase/vitepress-plugin-thumbnail-hash/vite'
+import {generateBreadcrumbsData} from '@nolebase/vitepress-plugin-breadcrumbs/vitepress'
+import {visualizer} from 'rollup-plugin-visualizer'
 import {
 	PageProperties,
 	PagePropertiesMarkdownSection
 } from '@nolebase/vitepress-plugin-page-properties/vite'
-import { RSSOptions, RssPlugin } from 'vitepress-plugin-rss'
-import { withMermaid } from 'vitepress-plugin-mermaid'
-import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-icons'
+import {RSSOptions, RssPlugin} from 'vitepress-plugin-rss'
+import {withMermaid} from 'vitepress-plugin-mermaid'
+import {groupIconMdPlugin, groupIconVitePlugin} from 'vitepress-plugin-group-icons'
+import autoprefixer from 'autoprefixer'
 
 export default defineConfig({
 	title: '苏柚',
@@ -35,9 +36,9 @@ export default defineConfig({
 	markdown: markdown, // Markdown配置
 	themeConfig,
 	vite: {
-		experimental: {
-			renderBuiltUrl(filename, { hostType, type, hostId }) {
-				return 'https://sakitinsu.resource.sawahara.host/' + filename
+		css: {
+			postcss: {
+				plugins: [autoprefixer()]
 			}
 		},
 		define: {
@@ -103,13 +104,13 @@ export default defineConfig({
 			}),
 			...(process.env.ANALYZE
 				? [
-					visualizer({
-						filename: 'dist/stats.html',
-						open: true,
-						gzipSize: true,
-						brotliSize: true
-					})
-				]
+						visualizer({
+							filename: 'dist/stats.html',
+							open: true,
+							gzipSize: true,
+							brotliSize: true
+						})
+					]
 				: [])
 		],
 		optimizeDeps: {
