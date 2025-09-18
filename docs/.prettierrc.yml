@@ -2,6 +2,8 @@ printWidth: 106
 useTabs: true
 semi: false
 singleQuote: true
+quoteProps: as-needed
+jsxSingleQuote: true
 trailingComma: none
 bracketSpacing: false
 bracketSameLine: true

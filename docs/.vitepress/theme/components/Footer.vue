@@ -72,7 +72,9 @@ const isExpanded = (title: string) => {
 					</p>
 					<p class="text-left m-0">
 						Copyright © 2023-present&nbsp;
-						<a href="https://oom-wg.dev" style="color: var(--vp-c-brand); text-decoration: none">
+						<a
+							href="https://oom-wg.dev"
+							style="color: var(--vp-c-brand); text-decoration: none">
 							SUU Developers (O.O.M. W.G.)
 						</a>
 					</p>

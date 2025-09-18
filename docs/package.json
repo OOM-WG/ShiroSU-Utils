@@ -8,7 +8,8 @@
 	"scripts": {
 		"dev": "vitepress dev --port 31415",
 		"build": "vitepress build",
-		"preview": "vitepress preview"
+		"preview": "vitepress preview",
+		"lint": "prettier --write ."
 	},
 	"dependencies": {
 		"@mdit/plugin-container": "^0.22.1",

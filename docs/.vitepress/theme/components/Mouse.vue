@@ -2,7 +2,10 @@
 <template>
 	<div v-if="isEnabled" class="mouse-effects">
 		<!-- 鼠标跟随光标 -->
-		<div ref="cursor" class="cursor-follow" :style="{left: cursorX + 'px', top: cursorY + 'px'}"></div>
+		<div
+			ref="cursor"
+			class="cursor-follow"
+			:style="{left: cursorX + 'px', top: cursorY + 'px'}"></div>
 
 		<!-- 点击波纹效果 -->
 		<div

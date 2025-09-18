@@ -1,3 +1,4 @@
-.astro/
-dist/
-pnpm-lock.yaml
+.*.*
+
+*-lock.*
+*.lock

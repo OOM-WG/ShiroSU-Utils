@@ -16,7 +16,11 @@
 						<a href="/base/overview" class="cta-primary">
 							<span class="cta-text">开始使用</span>
 						</a>
-						<a href="https://join.oom-wg.dev" class="cta-secondary" target="_blank" rel="noopener">
+						<a
+							href="https://join.oom-wg.dev"
+							class="cta-secondary"
+							target="_blank"
+							rel="noopener">
 							<span class="cta-text">群组</span>
 						</a>
 					</div>

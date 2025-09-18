@@ -36,7 +36,14 @@ watch(
 						<div class="vuemastery-video-space">
 							<iframe
 								:src="VIDEO_SOURCE"
-								style="height: 100%; left: 0; position: absolute; top: 0; width: 100%; border-radius: 6px"
+								style="
+									height: 100%;
+									left: 0;
+									position: absolute;
+									top: 0;
+									width: 100%;
+									border-radius: 6px;
+								"
 								frameborder="0"
 								webkitallowfullscreen
 								mozallowfullscreen
