@@ -1,6 +1,20 @@
 * text=auto
 
 *.fvv text eol=lf
+*.fw text eol=lf
 *.fww text eol=lf
 
 *.md text eol=lf
+*.mkd text eol=lf
+
+*.css text eol=lf
+*.scss text eol=lf
+
+*.sh text eol=lf
+*.rc text eol=lf
+*.awk text eol=lf
+
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+*.vbs text eol=crlf
