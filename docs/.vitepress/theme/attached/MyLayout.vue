@@ -1,9 +1,10 @@
 <!-- .vitepress/theme/MyLayout.vue -->
 
 <script setup lang="ts">
-import DefaultTheme from 'vitepress/theme'
 import {useData} from 'vitepress'
-import {nextTick, provide, ref, onMounted} from 'vue'
+import DefaultTheme from 'vitepress/theme'
+import {nextTick, onMounted, provide, ref} from 'vue'
+
 import MouseClick from '../components/MouseClick.vue'
 import MouseFollower from '../components/MouseFollower.vue'
 import backtotop from '../components/backtotop.vue'

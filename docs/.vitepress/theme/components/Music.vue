@@ -117,18 +117,22 @@
 </template>
 
 <script setup lang="ts">
-import {ref, reactive, onMounted, onUnmounted, computed} from 'vue'
-import {NButton, NSlider, NIcon} from 'naive-ui'
+import {NButton, NIcon, NSlider} from 'naive-ui'
+import {computed, onMounted, onUnmounted, reactive, ref} from 'vue'
+// 监听音量变化
+import {watch} from 'vue'
+
 import {
-	Play as PlayIcon,
+	CloseSharp as CloseIcon,
 	Pause as PauseIcon,
+	Play as PlayIcon,
 	PlaySkipBackSharp as SkipBackIcon,
 	PlaySkipForwardSharp as SkipForwardIcon,
 	VolumeHighSharp as VolumeIcon,
-	VolumeMuteSharp as VolumeOffIcon,
-	CloseSharp as CloseIcon
+	VolumeMuteSharp as VolumeOffIcon
 } from '@vicons/ionicons5'
-import {musicConfig, type MusicTrack} from './config/musicConfig'
+
+import {type MusicTrack, musicConfig} from './config/musicConfig'
 
 // 响应式数据
 const isExpanded = ref(false)
@@ -327,7 +331,6 @@ const selectTrack = (index: number) => {
 	saveState()
 }
 
-// 监听音量变化
 const updateVolume = () => {
 	if (!audioElement.value) return
 	audioElement.value.volume = volume.value / 100
@@ -405,7 +408,7 @@ onUnmounted(() => {
 })
 
 // 监听音量变化
-import {watch} from 'vue'
+
 watch(volume, updateVolume)
 </script>
 

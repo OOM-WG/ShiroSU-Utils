@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import {onMounted} from 'vue'
 import confetti from 'canvas-confetti'
+import {onMounted} from 'vue'
 
 // 仅在客户端挂载后触发纸屑效果
 onMounted(() => {

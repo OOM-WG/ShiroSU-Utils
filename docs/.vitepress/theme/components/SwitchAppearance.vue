@@ -1,10 +1,10 @@
 <script lang="ts" setup>
-import {onMounted, ref, watch} from 'vue'
 import {useData} from 'vitepress/client'
 import {APPEARANCE_KEY, inBrowser} from 'vitepress/dist/client/shared.js'
 import VPSwitch from 'vitepress/dist/client/theme-default/components/VPSwitch.vue'
-import VPIconSun from 'vitepress/dist/client/theme-default/components/icons/VPIconSun.vue'
 import VPIconMoon from 'vitepress/dist/client/theme-default/components/icons/VPIconMoon.vue'
+import VPIconSun from 'vitepress/dist/client/theme-default/components/icons/VPIconSun.vue'
+import {onMounted, ref, watch} from 'vue'
 
 const {site, isDark} = useData()
 const checked = ref(false)

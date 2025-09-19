@@ -5,9 +5,10 @@
  * 2. uncomment and update BANNER_ID in ../../inlined-scripts/restorePreferences.ts
  * 3. update --vt-banner-height if necessary
  */
-import {ref, onMounted, watch} from 'vue'
-import {VTIconPlus} from '@vue/theme'
 import {useRoute} from 'vitepress/client'
+import {onMounted, ref, watch} from 'vue'
+
+import {VTIconPlus} from '@vue/theme'
 
 const open = ref(true)
 const isHomePage = ref(false)

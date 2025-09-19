@@ -5,7 +5,8 @@
 </template>
 
 <script setup>
-import {ref, onMounted, onUnmounted} from 'vue'
+import {onMounted, onUnmounted, ref} from 'vue'
+
 const canvas = ref(null)
 let ctx = null
 let particles = []

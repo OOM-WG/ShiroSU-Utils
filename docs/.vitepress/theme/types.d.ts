@@ -1,8 +1,9 @@
 // 扩展 VitePress 的 DefaultTheme 接口以包含我们的自定义属性
 // 正确继承并扩展 node_modules/vitepress/dist/node/index.d.ts 中的类型定义
-
 // 首先导入基础类型，确保继承关系
-import type {DefaultTheme as VitePressDefaultTheme} from 'vitepress' //* 这行不能删
+import type {DefaultTheme as VitePressDefaultTheme} from 'vitepress'
+
+//* 这行不能删
 
 // 扩展 VitePress 的默认主题配置
 declare module 'vitepress' {

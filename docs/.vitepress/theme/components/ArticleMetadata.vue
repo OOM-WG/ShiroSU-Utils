@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 import {useData} from 'vitepress'
-import {computed, ref, onMounted} from 'vue'
+import {computed, onMounted, ref} from 'vue'
+
 import {countWord} from '../utils/functions'
 
 const {page} = useData()

@@ -28,7 +28,7 @@
 </template>
 
 <script setup lang="ts">
-import {ref, onMounted, provide} from 'vue'
+import {onMounted, provide, ref} from 'vue'
 
 const VTIconChevronDown = {
 	template: `<svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">

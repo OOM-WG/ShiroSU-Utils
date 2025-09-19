@@ -12,7 +12,7 @@
 </template>
 
 <script setup lang="ts">
-import {ref, onMounted, nextTick} from 'vue'
+import {nextTick, onMounted, ref} from 'vue'
 
 interface Props {
 	content?: string

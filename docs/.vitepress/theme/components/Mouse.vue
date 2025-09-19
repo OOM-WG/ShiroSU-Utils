@@ -25,7 +25,7 @@
 </template>
 
 <script setup>
-import {ref, onMounted, onUnmounted, nextTick} from 'vue'
+import {nextTick, onMounted, onUnmounted, ref} from 'vue'
 
 // 响应式状态
 const isEnabled = ref(false)

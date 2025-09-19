@@ -52,23 +52,24 @@
 </template>
 
 <script setup>
-import {ref, computed} from 'vue'
-import {useData} from 'vitepress'
 import {
-	NCard,
-	NGrid,
-	NGi,
-	NSelect,
-	NButton,
-	NSpace,
-	NIcon,
-	NConfigProvider,
 	NAlert,
-	NMessageProvider,
+	NButton,
+	NCard,
+	NConfigProvider,
 	NDialogProvider,
+	NGi,
+	NGrid,
+	NIcon,
+	NMessageProvider,
 	NNotificationProvider,
+	NSelect,
+	NSpace,
 	darkTheme
 } from 'naive-ui'
+import {useData} from 'vitepress'
+import {computed, ref} from 'vue'
+
 import {DownloadOutline} from '@vicons/ionicons5'
 
 const {isDark} = useData()

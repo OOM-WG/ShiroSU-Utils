@@ -1,8 +1,8 @@
-import type {MarkdownOptions} from 'vitepress'
-import mathjax3 from 'markdown-it-mathjax3'
 import footnote from 'markdown-it-footnote'
-import timeline from 'vitepress-markdown-timeline'
+import mathjax3 from 'markdown-it-mathjax3'
 import taskLists from 'markdown-it-task-checkbox'
+import type {MarkdownOptions} from 'vitepress'
+import timeline from 'vitepress-markdown-timeline'
 
 export const markdown: MarkdownOptions = {
 	// Shiki主题, 所有主题参见: https://github.com/shikijs/shiki/blob/main/docs/themes.md

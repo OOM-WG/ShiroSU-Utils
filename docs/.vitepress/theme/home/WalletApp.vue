@@ -42,7 +42,7 @@
 </template>
 
 <script setup lang="ts">
-import {ref, onMounted, nextTick} from 'vue'
+import {nextTick, onMounted, ref} from 'vue'
 
 const content = ref('仅支持中文阅读 (Chinese Only)')
 const duration = 5000

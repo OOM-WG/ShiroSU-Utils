@@ -1,5 +1,5 @@
 <script setup>
-import {onBeforeUnmount, onMounted, ref, computed} from 'vue'
+import {computed, onBeforeUnmount, onMounted, ref} from 'vue'
 
 const showBackTop = ref(false) // 初始状态设为false
 const scrollProgress = ref(0)

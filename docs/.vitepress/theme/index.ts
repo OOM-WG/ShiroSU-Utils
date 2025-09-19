@@ -1,71 +1,75 @@
 // .vitepress/theme/index.ts
-
 // ===== 框架核心导入 =====
-import {setup} from '@css-render/vue3-ssr'
-import {NConfigProvider} from 'naive-ui'
-import type {Theme} from 'vitepress/client'
-// import DefaultTheme from "vitepress/theme";
-import DefaultTheme from 'vitepress/theme-without-fonts'
-import {useData, useRoute} from 'vitepress/client'
-import {defineAsyncComponent, defineComponent, inject, nextTick, onMounted, watch, h} from 'vue'
+import ElementPlus from 'element-plus'
+import 'element-plus/dist/index.css'
 // ===== 第三方库 =====
 import mediumZoom from 'medium-zoom'
-import ElementPlus from 'element-plus'
+import {NConfigProvider} from 'naive-ui'
+import 'nprogress-v2/dist/index.css'
+// 进度条组件
+import 'nprogress-v2/dist/index.css'
+import {NProgress} from 'nprogress-v2/dist/index.js'
+import 'virtual:group-icons.css'
+import {inBrowser} from 'vitepress'
+import 'vitepress-markdown-timeline/dist/theme/index.css'
 import Teek, {SpotlightStyle} from 'vitepress-theme-teek'
 import 'vitepress-theme-teek/index.css'
-import '@theojs/lumen'
+import type {Theme} from 'vitepress/client'
+import {useData, useRoute} from 'vitepress/client'
+// import DefaultTheme from "vitepress/theme";
+import DefaultTheme from 'vitepress/theme-without-fonts'
+import {defineAsyncComponent, defineComponent, h, inject, nextTick, onMounted, watch} from 'vue'
+
+import {setup} from '@css-render/vue3-ssr'
+import '@nolebase/vitepress-plugin-enhanced-mark/client/style.css'
+import {
+	NolebaseEnhancedReadabilitiesMenu,
+	NolebaseEnhancedReadabilitiesScreenMenu
+} from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
+import {NolebaseEnhancedReadabilitiesPlugin} from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
+import '@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css'
 // ===== Nolebase 插件 =====
 import {
 	NolebaseGitChangelogPlugin,
 	NolebaseGitContributors
 } from '@nolebase/vitepress-plugin-git-changelog/client'
-import {NolebaseUnlazyImg} from '@nolebase/vitepress-plugin-thumbnail-hash/client'
-import {
-	NolebaseEnhancedReadabilitiesMenu,
-	NolebaseEnhancedReadabilitiesScreenMenu
-} from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
+import '@nolebase/vitepress-plugin-git-changelog/client/style.css'
 import {NolebaseHighlightTargetedHeading} from '@nolebase/vitepress-plugin-highlight-targeted-heading/client'
+import '@nolebase/vitepress-plugin-highlight-targeted-heading/client/style.css'
 import {NolebaseInlineLinkPreviewPlugin} from '@nolebase/vitepress-plugin-inline-link-preview/client'
-import {NolebaseEnhancedReadabilitiesPlugin} from '@nolebase/vitepress-plugin-enhanced-readabilities/client'
+import '@nolebase/vitepress-plugin-inline-link-preview/client/style.css'
 import {
-	NolebasePagePropertiesEditor,
-	NolebasePageProperties
+	NolebasePageProperties,
+	NolebasePagePropertiesEditor
 } from '@nolebase/vitepress-plugin-page-properties/client'
-// ===== 本地组件 =====
-import RainbowAnimationSwitcher from './components/RainbowAnimationSwitcher.vue'
-import Confetti from './components/Confetti.vue'
-import ArticleMetadata from './components/ArticleMetadata.vue'
-import Update from './components/Update.vue'
-import SakuraLinkCard from './components/SakuraLinkCard.vue'
-import UnderConstructionBanner from './components/Width.vue'
+import '@nolebase/vitepress-plugin-page-properties/client/style.css'
+import {NolebaseUnlazyImg} from '@nolebase/vitepress-plugin-thumbnail-hash/client'
+import '@nolebase/vitepress-plugin-thumbnail-hash/client/style.css'
+import '@theojs/lumen'
+
 import Downloaded from './attached/Downloaded.vue'
-import Music from './components/Music.vue'
-// import MouseToggle from "./components/MouseToggle.vue";
-import Mouse from './components/Mouse.vue'
-import Carousel from './components/Carousel.vue'
+import MyLayout from './attached/MyLayout.vue'
+import ArticleMetadata from './components/ArticleMetadata.vue'
 // import backtotop from "./components/backtotop.vue";
 import ArticleShare from './components/ArticleShare.vue'
-import MyLayout from './attached/MyLayout.vue'
+import Carousel from './components/Carousel.vue'
+import Confetti from './components/Confetti.vue'
+// import MouseToggle from "./components/MouseToggle.vue";
+import Mouse from './components/Mouse.vue'
+import Music from './components/Music.vue'
+// ===== 本地组件 =====
+import RainbowAnimationSwitcher from './components/RainbowAnimationSwitcher.vue'
+import SakuraLinkCard from './components/SakuraLinkCard.vue'
+import Update from './components/Update.vue'
+import UnderConstructionBanner from './components/Width.vue'
 import WalletApp from './home/WalletApp.vue'
 // import MouseClick from "./components/MouseClick.vue";
 // import MouseFollower from "./components/MouseFollower.vue";
 
 // ===== 样式文件 =====
 import './styles/main.scss'
-import 'element-plus/dist/index.css'
-import 'vitepress-markdown-timeline/dist/theme/index.css'
-import 'nprogress-v2/dist/index.css'
-import '@nolebase/vitepress-plugin-enhanced-mark/client/style.css'
-import '@nolebase/vitepress-plugin-thumbnail-hash/client/style.css'
-import '@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css'
-import '@nolebase/vitepress-plugin-git-changelog/client/style.css'
-import '@nolebase/vitepress-plugin-highlight-targeted-heading/client/style.css'
-import '@nolebase/vitepress-plugin-inline-link-preview/client/style.css'
-import '@nolebase/vitepress-plugin-page-properties/client/style.css'
-import 'virtual:group-icons.css'
-import {NProgress} from 'nprogress-v2/dist/index.js' // 进度条组件
-import 'nprogress-v2/dist/index.css'
-import {inBrowser} from 'vitepress' // 进度条样式
+
+// 进度条样式
 
 let homePageStyle: HTMLStyleElement | undefined
 

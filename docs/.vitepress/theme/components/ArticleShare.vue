@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {ref, computed, onUnmounted, nextTick} from 'vue'
+import {computed, nextTick, onUnmounted, ref} from 'vue'
 
 // 定义组件的 props，用于从外部接收配置
 const props = defineProps({

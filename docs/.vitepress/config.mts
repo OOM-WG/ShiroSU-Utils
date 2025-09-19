@@ -1,20 +1,21 @@
-import {defineConfig} from 'vitepress'
-import {head} from './local/head'
-import {markdown} from './local/markdown'
-import {themeConfig} from './local/theme'
-import {fileURLToPath, URL} from 'node:url'
-import {GitChangelog, GitChangelogMarkdownSection} from '@nolebase/vitepress-plugin-git-changelog/vite'
-import {ThumbnailHashImages} from '@nolebase/vitepress-plugin-thumbnail-hash/vite'
-import {generateBreadcrumbsData} from '@nolebase/vitepress-plugin-breadcrumbs/vitepress'
+import autoprefixer from 'autoprefixer'
+import {URL, fileURLToPath} from 'node:url'
 import {visualizer} from 'rollup-plugin-visualizer'
+import {defineConfig} from 'vitepress'
+import {groupIconMdPlugin, groupIconVitePlugin} from 'vitepress-plugin-group-icons'
+import {RSSOptions, RssPlugin} from 'vitepress-plugin-rss'
+
+import {generateBreadcrumbsData} from '@nolebase/vitepress-plugin-breadcrumbs/vitepress'
+import {GitChangelog, GitChangelogMarkdownSection} from '@nolebase/vitepress-plugin-git-changelog/vite'
 import {
 	PageProperties,
 	PagePropertiesMarkdownSection
 } from '@nolebase/vitepress-plugin-page-properties/vite'
-import {RSSOptions, RssPlugin} from 'vitepress-plugin-rss'
-import {withMermaid} from 'vitepress-plugin-mermaid'
-import {groupIconMdPlugin, groupIconVitePlugin} from 'vitepress-plugin-group-icons'
-import autoprefixer from 'autoprefixer'
+import {ThumbnailHashImages} from '@nolebase/vitepress-plugin-thumbnail-hash/vite'
+
+import {head} from './local/head'
+import {markdown} from './local/markdown'
+import {themeConfig} from './local/theme'
 
 export default defineConfig({
 	title: '苏柚',
