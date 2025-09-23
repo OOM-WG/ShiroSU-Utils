@@ -28,21 +28,25 @@ export const head: HeadConfig[] = [
 	[
 		'script',
 		{},
-		`(function (w, d, s, q, i) {
-      w[q] = w[q] || [];
-      var f = d.getElementsByTagName(s)[0], j = d.createElement(s);
-      j.async = true;
-      j.id = 'beacon-aplus';
-      j.src = 'https://d.alicdn.com/alilog/mlog/aplus/' + i + '.js';
-      f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'aplus_queue', '203467608');
-    aplus_queue.push({
-      action: 'aplus.setMetaInfo',
-      arguments: ['appKey', '68234476bc47b67d8364a026']
-    });`
+		`;(function (w, d, s, q, i) {
+	w[q] = w[q] || []
+	const f = d.getElementsByTagName(s)[0],
+		j = d.createElement(s)
+	j.async = true
+	j.id = 'beacon-aplus'
+	j.src = 'https://d.alicdn.com/alilog/mlog/aplus/' + i + '.js'
+	j.onerror = function () {
+		console.warn('警告：友盟统计加载失败，可能已被广告拦截插件拦截。')
+	}
+	f.parentNode.insertBefore(j, f)
+})(window, document, 'script', 'aplus_queue', '203467608')
+aplus_queue.push({
+	action: 'aplus.setMetaInfo',
+	arguments: ['appKey', '68234476bc47b67d8364a026']
+})`
 	],
 
-	/* 
+	/*
     增强版导航修复脚本
     虽然我也不知道是怎么解决的,但是copilot这样写肯定有它的理由
     确实是修复了导航栏的问题
@@ -60,25 +64,25 @@ export const head: HeadConfig[] = [
           originalPushState.apply(this, arguments);
           fixNavigation();
         };
-        
+
         // 监听popstate事件（浏览器后退/前进）
         window.addEventListener('popstate', fixNavigation);
-        
+
         // 监听hashchange事件
         window.addEventListener('hashchange', fixNavigation);
-        
+
         // 监听页面点击事件，可能触发导航
         document.addEventListener('click', (e) => {
           // 延迟检查，以捕获可能的导航变化
           setTimeout(fixNavigation, 100);
         });
-        
+
         // 定期检查导航可见性
         setInterval(fixNavigation, 1000);
-        
+
         // 立即执行一次修复
         fixNavigation();
-        
+
         // 核心修复函数
         function fixNavigation() {
           const navbar = document.querySelector('.VPNav');
@@ -87,7 +91,7 @@ export const head: HeadConfig[] = [
             navbar.style.display = '';
             navbar.style.opacity = '1';
             navbar.style.visibility = 'visible';
-            
+
             // 修复logo
             const logo = document.querySelector('.VPNavBarTitle');
             if (logo) {
@@ -95,7 +99,7 @@ export const head: HeadConfig[] = [
               logo.style.opacity = '1';
               logo.style.visibility = 'visible';
             }
-            
+
             // 检查是否在团队页面
             if (window.location.pathname.includes('/About')) {
               // 在团队页面上额外处理
@@ -104,14 +108,14 @@ export const head: HeadConfig[] = [
           }
         }
       };
-      
+
       // 在DOMContentLoaded和load事件上都注册修复
       if (document.readyState === 'loading') {
         window.addEventListener('DOMContentLoaded', initNavFix);
       } else {
         initNavFix();
       }
-      
+
       window.addEventListener('load', initNavFix);
     }
   `

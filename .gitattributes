@@ -6,6 +6,7 @@
 
 *.md text eol=lf
 *.mkd text eol=lf
+*.mdx text eol=lf
 
 *.css text eol=lf
 *.scss text eol=lf
