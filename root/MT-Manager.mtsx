@@ -1,9 +1,0 @@
-{
-  name: ["FVV", ".fvv", ".fw"]
-  comment: {startsWith: "<", endsWith: ">"}
-  contains: [
-    {builtin: #JAVA_QUOTED_STRING#}
-    {builtin: #NORMAL_NUMBER#}
-    {match: keywordsToRegex("true false"), 0: "keyword"}
-  ]
-}
