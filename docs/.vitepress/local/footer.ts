@@ -26,10 +26,6 @@ const footer: CustomConfig['footer'] = {
 			title: '政策',
 			items: [
 				{
-					text: '免责声明',
-					link: '/More/Disclaimer'
-				},
-				{
 					text: '隐私政策',
 					link: '/More/Privacy'
 				},
