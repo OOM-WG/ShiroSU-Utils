@@ -3,6 +3,10 @@
 *.fvv text eol=lf
 *.fw text eol=lf
 *.fww text eol=lf
+*.rpp text eol=lf
+*.rxx text eol=lf
+*.r++ text eol=lf
+*.rr text eol=lf
 
 *.md text eol=lf
 *.mkd text eol=lf
