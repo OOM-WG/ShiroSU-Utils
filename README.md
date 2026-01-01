@@ -5,7 +5,7 @@
 
 ## 📚 文档
 
-- [文档地址](https://ssu.oom-wg.dev)
+- [文档地址](https://suu.oom-wg.dev)
 
 苏柚 Nyanya，让杂乱无章的文件世界变得如同精美画卷般整洁可爱喵~ ✨
 
