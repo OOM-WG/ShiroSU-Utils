@@ -8,7 +8,7 @@
 
 ## 文档
 
-文档已开源至 [docs 文件夹](docs)，是 <https://suu.oom-wg.dev> 的源代码
+苏柚 的独立文档已弃用，目前已合并至 <https://github.com/OOM-WG/OOM-Website>
 
 ## 多语言
 
