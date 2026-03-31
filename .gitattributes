@@ -1,12 +1,12 @@
 * text=auto
 
-*.fvv text eol=lf linguist-language=FVV linguist-detectable
-*.fw text eol=lf linguist-language=FVV linguist-detectable
-*.fww text eol=lf linguist-language=FWW linguist-detectable
-*.rpp text eol=lf linguist-language=FVV linguist-detectable
-*.rxx text eol=lf linguist-language=FVV linguist-detectable
-*.r++ text eol=lf linguist-language=FVV linguist-detectable
-*.rr text eol=lf linguist-language=FVV linguist-detectable
+*.fvv text eol=lf linguist-language=V
+*.fw text eol=lf linguist-language=V
+*.fww text eol=lf linguist-language=V
+*.rpp text eol=lf linguist-language=V
+*.rxx text eol=lf linguist-language=V
+*.r++ text eol=lf linguist-language=V
+*.rr text eol=lf linguist-language=V
 
 *.md text eol=lf linguist-documentation
 *.mkd text eol=lf linguist-documentation
