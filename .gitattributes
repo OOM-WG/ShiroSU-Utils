@@ -2,11 +2,10 @@
 
 *.fvv text eol=lf linguist-language=V
 *.fw text eol=lf linguist-language=V
+*.fyl text eol=lf linguist-language=V
 *.fww text eol=lf linguist-language=V
+*.fws text eol=lf linguist-language=V
 *.rpp text eol=lf linguist-language=V
-*.rxx text eol=lf linguist-language=V
-*.r++ text eol=lf linguist-language=V
-*.rr text eol=lf linguist-language=V
 
 *.md text eol=lf linguist-documentation
 *.mkd text eol=lf linguist-documentation
