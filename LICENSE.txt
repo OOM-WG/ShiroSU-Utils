@@ -1,35 +1,31 @@
-File to Download Public Resources License (F2DLPRL or F2DLPR License)
-
-This license applies to source code, distributions, written works, and other original forms of work.
+File to Downloader License
 
 OFFICIAL WEBSITE: http://license.fileto.download
-IN CASE OF DISCREPANCIES, THE OFFICIAL WEBSITE SHALL PREVAIL.
 
 
-Terms and conditions for use, reproduction and redistribution:
-
-The descriptions provided by the copyright owners in the source code, accompanying documentation, or other materials distributed with the original take precedence over the terms and conditions of this license.
-
-Use, reproduction, and redistribution of the original document constitutes acceptance of the opinions, values, or other content that may be contained in the original, including, but not limited to, political positions, cultural opinions, or other implied information, as well as additional or implicit content that may be involved.
-
-Use of the original is prohibited if it would cause damage to the interests of the copyright owners or contributors, except for normal wear and tear caused by normal use.
-
-Any subject is permitted to use, reproduction, and redistribute source code, textual works, or other forms of work.
-Distributions may only be used and copied, but may not be redistributed, even if modified.
-Source code, literary works, or other forms of work may be used for personal purposes, but not for commercial purposes, even if modified, but may be used for commercial purposes when included as dependencies for displaying content on user interface or as non‑core dependencies.
-Distributions may only be used for personal purposes and not for commercial purposes, even if modified, but the distributions used to display content on user interface may be used for commercial purposes.
-Only the copyright owners has the right to use the original for commercial purposes.
-The original cannot be used for exploitative purposes or model training.
-
-No subject is granted the right to use any copyright, patent, trade name, trademark, service mark, or product license derived from the original, except as reasonably and customarily required to describe the source of the original.
-
-Redistribution of the original requires retaining this license and the copyright owners' copyright notice, or providing a link to the original source of the original and acknowledging the copyright owners.
-If the distributions are redistributed in a compressed format that supports multiple files, this license must be included in the archive, otherwise, this license will need to be incorporated into the accompanying documentation or other materials redistributed with the original.
-Additionally, the copyright owners' copyright notice must be reproduced in the accompanying documentation or other materials redistributed with the original.
-
-If the modified version or derivative work of the original is redistributed, the changes must be clearly indicated.
+This License applies to any project, file, text, or other content that states it is licensed under this License, each referred to as the "Original".
 
 
-THIS ORIGINAL IS PROVIDED BY THE COPYRIGHT OWNERS AND CONTRIBUTORS "AS IS" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED.
-IN NO EVENT SHALL THE COPYRIGHT OWNERS AND CONTRIBUTORS BE LIABLE FOR ANY NEGATIVE IMPACT, BUT ONLY FOR THE POSITIVE IMPACT, WHETHER OR NOT THE USER, COPIER, OR REDISTRIBUTOR HAS BEEN INFORMED OF THE POSSIBILITY OF CAUSING DAMAGE.
-IN NO EVENT SHALL THE COPYRIGHT OWNERS AND CONTRIBUTORS GUARANTEE THE SUITABILITY OF THIS ORIGINAL FOR ANY PURPOSE, INCLUDING THE POSSIBILITY OF NORMAL USE OF THIS ORIGINAL.
+TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND REDISTRIBUTION:
+
+This License expressly grants any person or entity the rights to use, reproduce, and redistribute the Original, but such actions do not imply approval by the copyright owners or contributors.
+
+This License does not grant any right to use trade names, trademarks, service marks, product names, or product licenses, nor does it grant any patent license.
+
+Except for commercial uses expressly permitted by this License, the Original may be used only for non-commercial purposes.
+Commercial use is limited to use of the Original as an incidental feature, a non-core dependency, or for displaying glyphs or icons in a user interface;
+and the Original itself, or substantially similar content, must not serve as a primary feature or primary source of value.
+
+The Original may not be used, directly or indirectly, to train, fine-tune, distill, or improve machine learning or artificial intelligence models, or to create or expand related training datasets.
+
+When redistributing a version or derivative work formed by transforming or modifying the Original, the following actions are prohibited:
+removing copyright notices, license notices, information about the Original, or removing or failing to identify the source of the Original;
+impersonating the Original or an official version, misusing information of the copyright owners or contributors, or implying their approval;
+using product names, marks, or the names of the copyright owners or contributors for promotion, except as reasonably necessary to describe the source.
+
+All rights not expressly granted by this License are reserved by the copyright owners.
+Any matter not expressly permitted by this License or accompanying notices requires prior written permission from the copyright owners.
+
+
+THE ORIGINAL IS PROVIDED BY THE COPYRIGHT OWNERS AND CONTRIBUTORS "AS IS", WITHOUT ANY EXPRESS OR IMPLIED WARRANTY, INCLUDING ANY WARRANTY OF FITNESS, RELIABILITY, OR USABILITY.
+IN NO EVENT SHALL THE COPYRIGHT OWNERS OR CONTRIBUTORS BE LIABLE FOR ANY DAMAGES ARISING FROM THE USE OF OR INABILITY TO USE THE ORIGINAL, WHETHER OR NOT ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
