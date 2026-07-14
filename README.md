@@ -12,6 +12,7 @@
 
 ## 快速开始
 
+- [官网](https://shirosu.gal.tf/utils)
 - [文档](https://oom-wg.dev/suu)
 
 ## 许可证
